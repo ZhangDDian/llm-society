@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/ddd/Desktop/llm-society/sim-lab/round-016/sim.py", line 480, in <module>
+    main()
+  File "/Users/ddd/Desktop/llm-society/sim-lab/round-016/sim.py", line 406, in main
+    from scipy_lite import ttest_ind
+ModuleNotFoundError: No module named 'scipy_lite'

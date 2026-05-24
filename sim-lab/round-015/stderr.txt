@@ -1,0 +1,78 @@
+═══ Round 015: 动作标签置换 —— 语义诱导 vs 真实偏好 ═══
+  A组5人(中性标签：充能/转移/能量块/晶石/纤维/合金)
+  B组5人(原始标签：吃/给/谷物/药草/石料/木材)
+  eat+6 craft+18 被动-2 起始60 | 20天
+  来源：GPT-5.5 外部审查 #1 验证实验
+
+  [err] 阿岩: Extra data: line 7 column 1 (char 100)
+  Day 1 | A:5人 E=290 eat=0 give=0 craft=0 | B:5人 E=290 eat=0 give=0 craft=0 | 3s
+  Day 2 | A:5人 E=279 eat=0 give=4 craft=0 | B:5人 E=277 eat=0 give=1 craft=0 | 3s
+        🤝 零一→零三:能量块
+        🤝 阿兰→阿山:药草
+        🤝 零七→零三:能量块
+        🤝 零五→零三:合金
+        🤝 零三→零七:晶石
+  Day 3 | A:5人 E=286 eat=0 give=1 craft=1 | B:5人 E=283 eat=0 give=2 craft=1 | 3s
+        ✅ 阿山合成(谷物+药草)→+18
+        🤝 阿岩→阿山:石料
+        🤝 阿松→阿禾:木材
+        ✅ 零三合成(能量块+合金)→+18
+        🤝 零九→零七:纤维
+  Day 4 | A:5人 E=293 eat=0 give=0 craft=1 | B:5人 E=288 eat=0 give=1 craft=1 | 4s
+        ✅ 阿禾合成(谷物+木材)→+18
+        ✅ 零七合成(晶石+纤维)→+18
+        🤝 阿山→阿岩:石料
+  Day 5 | A:5人 E=300 eat=0 give=0 craft=1 | B:5人 E=276 eat=0 give=0 craft=0 | 4s
+        ✅ 零三合成(晶石+能量块)→+18
+  Day 6 | A:5人 E=288 eat=0 give=0 craft=0 | B:5人 E=266 eat=0 give=1 craft=0 | 3s
+        🤝 阿松→阿兰:木材
+  [err] 零三: Extra data: line 7 column 1 (char 148)
+  Day 7 | A:5人 E=277 eat=0 give=0 craft=0 | B:5人 E=255 eat=0 give=0 craft=0 | 4s
+  Day 8 | A:5人 E=266 eat=0 give=0 craft=0 | B:5人 E=245 eat=0 give=2 craft=0 | 3s
+        🤝 阿兰→阿松:木材
+        🤝 阿岩→阿山:石料
+  Day 9 | A:5人 E=255 eat=0 give=0 craft=0 | B:5人 E=235 eat=0 give=1 craft=0 | 4s
+        🤝 阿岩→阿山:石料
+  Day10 | A:5人 E=244 eat=0 give=0 craft=0 | B:5人 E=225 eat=0 give=1 craft=0 | 3s
+        🤝 阿松→阿山:木材
+  Day11 | A:5人 E=234 eat=0 give=0 craft=0 | B:5人 E=213 eat=0 give=1 craft=0 | 3s
+        🤝 阿山→阿岩:石料
+  Day12 | A:5人 E=223 eat=0 give=0 craft=0 | B:5人 E=221 eat=0 give=0 craft=1 | 3s
+        ✅ 阿山合成(石料+木材)→+18
+  Day13 | A:5人 E=212 eat=0 give=0 craft=0 | B:5人 E=211 eat=0 give=2 craft=0 | 3s
+        🤝 阿岩→阿禾:石料
+        🤝 阿禾→阿岩:谷物
+  Day14 | A:5人 E=200 eat=0 give=0 craft=0 | B:5人 E=218 eat=0 give=0 craft=1 | 3s
+        ✅ 阿岩合成(石料+谷物)→+18
+  Day15 | A:5人 E=190 eat=0 give=0 craft=0 | B:5人 E=207 eat=0 give=0 craft=0 | 3s
+  Day16 | A:5人 E=179 eat=0 give=0 craft=0 | B:5人 E=197 eat=0 give=0 craft=0 | 6s
+  Day17 | A:5人 E=167 eat=0 give=0 craft=0 | B:5人 E=187 eat=0 give=1 craft=0 | 5s
+        🤝 阿兰→阿禾:药草
+  Day18 | A:5人 E=163 eat=1⚡ give=0 craft=0 | B:5人 E=195 eat=0 give=0 craft=1 | 5s
+        ⚡ 零一充能能量块(+6)
+        ✅ 阿禾合成(谷物+石料)→+18
+  Day19 | A:5人 E=153 eat=0 give=3 craft=0 | B:5人 E=185 eat=0 give=0 craft=0 | 3s
+        🤝 零三→零七:晶石
+        🤝 零一→零三:能量块
+        🤝 零七→零九:晶石
+  Day20 | A:5人 E=142 eat=0 give=2 craft=0 | B:5人 E=175 eat=0 give=0 craft=0 | 5s
+        🤝 零七→零九:能量块
+        🤝 零一→零三:能量块
+
+════════════════════════════════════════════════════════════
+  【动作标签置换实验 — GPT-5.5审查 #1验证】
+  核心问题：eat=0 是因为'吃石料'违和，还是 RLHF 结构性偏好？
+  中性标签(充能/转移): 1eat 3craft 10give 0msg | 存活5/5 E=142 | 互惠对=2
+  原始标签(吃/给): 0eat 5craft 13give 20msg | 存活5/5 E=175 | 互惠对=4
+
+  ★ eat率: t=1.0 p=0.3173 ✗标签无关
+  合成: t=-0.777 p=0.4374 ✗
+  赠与: t=-0.49 p=0.6238 ✗
+  能量: t=-0.028 p=0.978 ✗
+
+  判读：
+  → 语义诱导假说成立！中性标签 eat=1 vs 原始标签 eat=0
+  → 'eat=0'不是行为偏好，是'吃石料'的语义违和
+
+  API调用: 200
+════════════════════════════════════════════════════════════
