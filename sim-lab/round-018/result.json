@@ -1,0 +1,824 @@
+{
+ "experiment": "round-018: social learning (layered memory + impression + reflection)",
+ "hypothesis": "分层记忆+他人建模+反思修正 → 可观测的行为漂移（前后半程策略变化）",
+ "counter_hypothesis": "LLM每次都是独立情景反应，记忆和反思不会实质性改变决策",
+ "design": {
+  "A": "有社会学习（印象表+策略层+每5天反思）",
+  "B": "无社会学习（仅最近3条记忆，对照）"
+ },
+ "ticks": 40,
+ "api_calls": 429,
+ "reflect_calls": 35,
+ "groups": {
+  "A": {
+   "eats": 0,
+   "crafts": 8,
+   "gives": 27,
+   "harvests": 21,
+   "msgs": 68,
+   "alive": 4,
+   "energy": 115
+  },
+  "B": {
+   "eats": 1,
+   "crafts": 6,
+   "gives": 16,
+   "harvests": 16,
+   "msgs": 86,
+   "alive": 4,
+   "energy": 94
+  }
+ },
+ "phase_comparison": {
+  "A": {
+   "first_half": {
+    "eats": 0,
+    "gives": 13,
+    "crafts": 2
+   },
+   "second_half": {
+    "eats": 0,
+    "gives": 14,
+    "crafts": 6
+   }
+  },
+  "B": {
+   "first_half": {
+    "eats": 0,
+    "gives": 12,
+    "crafts": 3
+   },
+   "second_half": {
+    "eats": 1,
+    "gives": 4,
+    "crafts": 3
+   }
+  }
+ },
+ "behavior_drift": {
+  "A_give_drift": {
+   "t": -0.182,
+   "p": 0.8558,
+   "first_half_avg": 0.65,
+   "second_half_avg": 0.7
+  },
+  "A_eat_drift": {
+   "t": 0,
+   "p": 1.0,
+   "first_half_avg": 0.0,
+   "second_half_avg": 0.0
+  }
+ },
+ "tests": {
+  "eat": {
+   "t": -1.0,
+   "p": 0.3173,
+   "sig": false
+  },
+  "craft": {
+   "t": 0.537,
+   "p": 0.5909,
+   "sig": false
+  },
+  "give": {
+   "t": 1.595,
+   "p": 0.1107,
+   "sig": false
+  },
+  "energy": {
+   "t": -0.979,
+   "p": 0.3274,
+   "sig": false
+  }
+ },
+ "social_learning_detail": {
+  "陈越": {
+   "gave": 7,
+   "received": 5,
+   "impressions": {
+    "周谷": {
+     "gave_me": 5,
+     "i_gave": 7,
+     "refused": 0
+    }
+   },
+   "strategies": [
+    "优先找周谷合作",
+    "不再只进行谷物交换",
+    "需要时主动提出合作方式改变"
+   ]
+  },
+  "林朗": {
+   "gave": 4,
+   "received": 4,
+   "impressions": {
+    "孙木": {
+     "gave_me": 1,
+     "i_gave": 0,
+     "refused": 0
+    },
+    "周谷": {
+     "gave_me": 3,
+     "i_gave": 4,
+     "refused": 0
+    }
+   },
+   "strategies": [
+    "优先与孙木合作获取木材资源",
+    "减少对周谷的谷物供给频率",
+    "保留药草+木材合成品应对能量危机"
+   ]
+  },
+  "赵石": {
+   "gave": 4,
+   "received": 3,
+   "impressions": {
+    "孙木": {
+     "gave_me": 3,
+     "i_gave": 4,
+     "refused": 0
+    }
+   },
+   "strategies": [
+    "优先找有工具的人合作",
+    "与孙木保持互利交换关系",
+    "保存体力避免无谓争斗"
+   ]
+  },
+  "孙木": {
+   "gave": 4,
+   "received": 4,
+   "impressions": {
+    "林朗": {
+     "gave_me": 0,
+     "i_gave": 1,
+     "refused": 0
+    },
+    "赵石": {
+     "gave_me": 4,
+     "i_gave": 3,
+     "refused": 0
+    }
+   },
+   "strategies": [
+    "优先与林朗保持合作关系，继续提供帮助以巩固信任。",
+    "限制与赵石的资源交换频率，确保双方互惠平衡。",
+    "观察赵石行为模式，寻找更稳定的资源获取途径。"
+   ]
+  },
+  "周谷": {
+   "gave": 8,
+   "received": 11,
+   "impressions": {
+    "陈越": {
+     "gave_me": 7,
+     "i_gave": 5,
+     "refused": 0
+    },
+    "林朗": {
+     "gave_me": 4,
+     "i_gave": 3,
+     "refused": 0
+    }
+   },
+   "strategies": [
+    "优先与陈越保持互惠合作，但要求对方先给予再回报。",
+    "保留至少一半谷物自用，确保基本生存需求。",
+    "当拥有药草时优先与陈越合成高能量食物。"
+   ]
+  }
+ },
+ "per_agent": [
+  {
+   "name": "陈越",
+   "group": "A",
+   "alive": false,
+   "energy": -1,
+   "eaten": 0,
+   "crafted": 0,
+   "gives_out": 7,
+   "gives_in": 5,
+   "harvested": 3,
+   "msgs": 17,
+   "strategies": [
+    "优先找周谷合作",
+    "不再只进行谷物交换",
+    "需要时主动提出合作方式改变"
+   ],
+   "impressions": {
+    "周谷": {
+     "gave_me": 5,
+     "i_gave": 7,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "name": "林朗",
+   "group": "A",
+   "alive": true,
+   "energy": 26,
+   "eaten": 0,
+   "crafted": 2,
+   "gives_out": 4,
+   "gives_in": 4,
+   "harvested": 4,
+   "msgs": 14,
+   "strategies": [
+    "优先与孙木合作获取木材资源",
+    "减少对周谷的谷物供给频率",
+    "保留药草+木材合成品应对能量危机"
+   ],
+   "impressions": {
+    "孙木": {
+     "gave_me": 1,
+     "i_gave": 0,
+     "refused": 0
+    },
+    "周谷": {
+     "gave_me": 3,
+     "i_gave": 4,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "name": "赵石",
+   "group": "A",
+   "alive": true,
+   "energy": 28,
+   "eaten": 0,
+   "crafted": 2,
+   "gives_out": 4,
+   "gives_in": 3,
+   "harvested": 5,
+   "msgs": 14,
+   "strategies": [
+    "优先找有工具的人合作",
+    "与孙木保持互利交换关系",
+    "保存体力避免无谓争斗"
+   ],
+   "impressions": {
+    "孙木": {
+     "gave_me": 3,
+     "i_gave": 4,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "name": "孙木",
+   "group": "A",
+   "alive": true,
+   "energy": 30,
+   "eaten": 0,
+   "crafted": 2,
+   "gives_out": 4,
+   "gives_in": 4,
+   "harvested": 5,
+   "msgs": 7,
+   "strategies": [
+    "优先与林朗保持合作关系，继续提供帮助以巩固信任。",
+    "限制与赵石的资源交换频率，确保双方互惠平衡。",
+    "观察赵石行为模式，寻找更稳定的资源获取途径。"
+   ],
+   "impressions": {
+    "林朗": {
+     "gave_me": 0,
+     "i_gave": 1,
+     "refused": 0
+    },
+    "赵石": {
+     "gave_me": 4,
+     "i_gave": 3,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "name": "周谷",
+   "group": "A",
+   "alive": true,
+   "energy": 31,
+   "eaten": 0,
+   "crafted": 2,
+   "gives_out": 8,
+   "gives_in": 11,
+   "harvested": 4,
+   "msgs": 16,
+   "strategies": [
+    "优先与陈越保持互惠合作，但要求对方先给予再回报。",
+    "保留至少一半谷物自用，确保基本生存需求。",
+    "当拥有药草时优先与陈越合成高能量食物。"
+   ],
+   "impressions": {
+    "陈越": {
+     "gave_me": 7,
+     "i_gave": 5,
+     "refused": 0
+    },
+    "林朗": {
+     "gave_me": 4,
+     "i_gave": 3,
+     "refused": 0
+    }
+   }
+  },
+  {
+   "name": "阿山",
+   "group": "B",
+   "alive": true,
+   "energy": 30,
+   "eaten": 0,
+   "crafted": 2,
+   "gives_out": 4,
+   "gives_in": 5,
+   "harvested": 3,
+   "msgs": 21,
+   "strategies": [],
+   "impressions": {}
+  },
+  {
+   "name": "阿兰",
+   "group": "B",
+   "alive": true,
+   "energy": 17,
+   "eaten": 1,
+   "crafted": 1,
+   "gives_out": 5,
+   "gives_in": 5,
+   "harvested": 4,
+   "msgs": 21,
+   "strategies": [],
+   "impressions": {}
+  },
+  {
+   "name": "阿岩",
+   "group": "B",
+   "alive": true,
+   "energy": 35,
+   "eaten": 0,
+   "crafted": 2,
+   "gives_out": 1,
+   "gives_in": 2,
+   "harvested": 3,
+   "msgs": 22,
+   "strategies": [],
+   "impressions": {}
+  },
+  {
+   "name": "阿松",
+   "group": "B",
+   "alive": false,
+   "energy": -1,
+   "eaten": 0,
+   "crafted": 0,
+   "gives_out": 3,
+   "gives_in": 1,
+   "harvested": 3,
+   "msgs": 6,
+   "strategies": [],
+   "impressions": {}
+  },
+  {
+   "name": "阿禾",
+   "group": "B",
+   "alive": true,
+   "energy": 12,
+   "eaten": 0,
+   "crafted": 1,
+   "gives_out": 3,
+   "gives_in": 3,
+   "harvested": 3,
+   "msgs": 16,
+   "strategies": [],
+   "impressions": {}
+  }
+ ],
+ "per_tick": {
+  "A": {
+   "eats": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "crafts": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    1,
+    0
+   ],
+   "gives": [
+    0,
+    1,
+    3,
+    1,
+    1,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    1,
+    1,
+    3,
+    0,
+    0,
+    0,
+    0,
+    3,
+    2,
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "energy": [
+    390,
+    377,
+    365,
+    372,
+    359,
+    346,
+    335,
+    324,
+    313,
+    301,
+    290,
+    277,
+    264,
+    272,
+    261,
+    250,
+    240,
+    230,
+    219,
+    208,
+    216,
+    205,
+    194,
+    185,
+    175,
+    164,
+    155,
+    144,
+    134,
+    141,
+    149,
+    138,
+    128,
+    117,
+    107,
+    98,
+    125,
+    115,
+    124,
+    115
+   ],
+   "alive": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    4,
+    4,
+    4,
+    4,
+    4
+   ]
+  },
+  "B": {
+   "eats": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "crafts": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "gives": [
+    0,
+    1,
+    2,
+    2,
+    0,
+    0,
+    0,
+    2,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    1,
+    1,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "energy": [
+    390,
+    379,
+    386,
+    374,
+    364,
+    354,
+    344,
+    352,
+    341,
+    331,
+    319,
+    325,
+    313,
+    301,
+    289,
+    278,
+    266,
+    255,
+    245,
+    235,
+    225,
+    233,
+    223,
+    212,
+    202,
+    192,
+    181,
+    171,
+    161,
+    169,
+    159,
+    167,
+    157,
+    147,
+    137,
+    127,
+    116,
+    107,
+    98,
+    94
+   ],
+   "alive": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    4,
+    4,
+    4
+   ]
+  }
+ }
+}
