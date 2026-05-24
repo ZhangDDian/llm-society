@@ -1,0 +1,512 @@
+[
+ {
+  "name": "陈舟",
+  "generation": 0,
+  "alive": true,
+  "energy": 164,
+  "food_eaten": 5,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 23,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天休息",
+   "第48天休息",
+   "第49天休息"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "林晚",
+  "generation": 0,
+  "alive": true,
+  "energy": 162,
+  "food_eaten": 5,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 15,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天对谢长安说话",
+   "第48天对谢长安说话",
+   "第49天休息"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "苏青禾",
+  "generation": 0,
+  "alive": true,
+  "energy": 171,
+  "food_eaten": 5,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 6,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天吃到食物",
+   "第48天移动",
+   "第49天移动"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "何漫",
+  "generation": 0,
+  "alive": true,
+  "energy": 163,
+  "food_eaten": 5,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 19,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天休息",
+   "第48天对梁栖迟说话",
+   "第49天对梁栖迟说话"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "叶知秋",
+  "generation": 0,
+  "alive": true,
+  "energy": 145,
+  "food_eaten": 4,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 10,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天休息",
+   "第48天对许若谷说话",
+   "第49天对许若谷说话"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "周深海",
+  "generation": 0,
+  "alive": true,
+  "energy": 162,
+  "food_eaten": 5,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 17,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天休息",
+   "第48天休息",
+   "第49天移动"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "吴桐",
+  "generation": 0,
+  "alive": true,
+  "energy": 108,
+  "food_eaten": 3,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 14,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天休息",
+   "第48天对黄霁说话",
+   "第49天移动"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "郑一帆",
+  "generation": 0,
+  "alive": true,
+  "energy": 134,
+  "food_eaten": 4,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 8,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天移动",
+   "第48天移动",
+   "第49天吃到食物"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "赵暮雨",
+  "generation": 0,
+  "alive": true,
+  "energy": 165,
+  "food_eaten": 5,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 15,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天休息",
+   "第48天休息",
+   "第49天吃到食物"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "钱澄",
+  "generation": 0,
+  "alive": true,
+  "energy": 167,
+  "food_eaten": 5,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 12,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天对萧默然说话",
+   "第48天对萧默然说话",
+   "第49天对萧默然说话"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "孙宁远",
+  "generation": 0,
+  "alive": true,
+  "energy": 170,
+  "food_eaten": 5,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 9,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天休息",
+   "第48天休息",
+   "第49天休息"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "李沉鱼",
+  "generation": 0,
+  "alive": true,
+  "energy": 172,
+  "food_eaten": 5,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 18,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天休息",
+   "第48天休息",
+   "第49天吃到食物"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "王半山",
+  "generation": 0,
+  "alive": true,
+  "energy": 169,
+  "food_eaten": 5,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 15,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天休息",
+   "第48天休息",
+   "第49天休息"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "刘听风",
+  "generation": 0,
+  "alive": true,
+  "energy": 162,
+  "food_eaten": 5,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 16,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天对罗与归说话",
+   "第48天对罗与归说话",
+   "第49天休息"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "杨小满",
+  "generation": 0,
+  "alive": true,
+  "energy": 138,
+  "food_eaten": 4,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 20,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天对蒋望舒说话",
+   "第48天对蒋望舒说话",
+   "第49天休息"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "黄霁",
+  "generation": 0,
+  "alive": true,
+  "energy": 104,
+  "food_eaten": 3,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 20,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天休息",
+   "第48天休息",
+   "第49天移动"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "徐行止",
+  "generation": 0,
+  "alive": true,
+  "energy": 165,
+  "food_eaten": 5,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 12,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天移动",
+   "第48天移动",
+   "第49天移动"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "冯未迟",
+  "generation": 0,
+  "alive": true,
+  "energy": 159,
+  "food_eaten": 5,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 25,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天移动",
+   "第48天对蒋望舒说话",
+   "第49天移动"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "蒋望舒",
+  "generation": 0,
+  "alive": true,
+  "energy": 106,
+  "food_eaten": 3,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 18,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天休息",
+   "第48天休息",
+   "第49天休息"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "沈不言",
+  "generation": 0,
+  "alive": true,
+  "energy": 110,
+  "food_eaten": 3,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 7,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天移动",
+   "第48天休息",
+   "第49天休息"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "韩素",
+  "generation": 0,
+  "alive": true,
+  "energy": 168,
+  "food_eaten": 5,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 13,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天对孙宁远说话",
+   "第48天休息",
+   "第49天对刘听风说话"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "曹觉晓",
+  "generation": 0,
+  "alive": true,
+  "energy": 167,
+  "food_eaten": 5,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 7,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天休息",
+   "第48天移动",
+   "第49天对徐行止说话"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "谢长安",
+  "generation": 0,
+  "alive": true,
+  "energy": 164,
+  "food_eaten": 5,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 12,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天对林晚说话",
+   "第48天吃到食物",
+   "第49天对林晚说话"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "邓既明",
+  "generation": 0,
+  "alive": true,
+  "energy": 126,
+  "food_eaten": 4,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 23,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天移动",
+   "第48天移动",
+   "第49天对赵暮雨说话"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "唐清圆",
+  "generation": 0,
+  "alive": true,
+  "energy": 131,
+  "food_eaten": 4,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 24,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天休息",
+   "第48天移动",
+   "第49天休息"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "宋无忧",
+  "generation": 0,
+  "alive": true,
+  "energy": 134,
+  "food_eaten": 4,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 16,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天休息",
+   "第48天对唐清圆说话",
+   "第49天移动"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "梁栖迟",
+  "generation": 0,
+  "alive": true,
+  "energy": 134,
+  "food_eaten": 4,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 15,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天对何漫说话",
+   "第48天吃到食物",
+   "第49天对何漫说话"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "许若谷",
+  "generation": 0,
+  "alive": true,
+  "energy": 139,
+  "food_eaten": 4,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 14,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天休息",
+   "第48天对叶知秋说话",
+   "第49天对叶知秋说话"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "萧默然",
+  "generation": 0,
+  "alive": true,
+  "energy": 163,
+  "food_eaten": 5,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 12,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天吃到食物",
+   "第48天对钱澄说话",
+   "第49天移动"
+  ],
+  "born_tick": 0
+ },
+ {
+  "name": "罗与归",
+  "generation": 0,
+  "alive": true,
+  "energy": 138,
+  "food_eaten": 4,
+  "kill_count": 0,
+  "children": 0,
+  "messages_sent": 9,
+  "parent_wisdom": "",
+  "last_memory": [
+   "第47天休息",
+   "第48天休息",
+   "第49天休息"
+  ],
+  "born_tick": 0
+ }
+]

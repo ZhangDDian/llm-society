@@ -1,0 +1,79 @@
+═══ Round 014: 需求广播 vs 声誉信号 ═══
+  A组5人(互惠+需求广播) vs B组5人(互惠+声誉可见)
+  eat+6 craft+18 被动-2 起始60 | 20天
+  say/give免费 | 视野6
+
+  Day 1 | A:5人 E=290 eat=0 give=0 craft=0 | B:5人 E=290 eat=0 give=0 craft=0 | 3s
+  Day 2 | A:5人 E=280 eat=0 give=5 craft=0 | B:5人 E=277 eat=0 give=1 craft=0 | 4s
+        🤝 阿磊→阿田:石料
+        🤝 阿丰→阿芳:谷物
+        🤝 阿田→阿芳:谷物
+        🤝 阿兰→阿山:药草
+        🤝 阿芳→阿田:药草
+  Day 3 | A:5人 E=304 eat=0 give=0 craft=2 | B:5人 E=265 eat=0 give=2 craft=0 | 4s
+        ✅ 阿田合成(石料+药草)→+18
+        🤝 阿山→阿兰:谷物
+        🤝 阿松→阿兰:木材
+        ✅ 阿芳合成(谷物+木材)→+18
+  Day 4 | A:5人 E=294 eat=0 give=1 craft=0 | B:5人 E=290 eat=0 give=2 craft=2 | 4s
+        🤝 阿芳→阿林:谷物
+        ✅ 阿山合成(谷物+药草)→+18
+        ✅ 阿兰合成(谷物+木材)→+18
+        🤝 阿禾→阿松:谷物
+        🤝 阿岩→阿禾:石料
+  Day 5 | A:5人 E=282 eat=0 give=1 craft=0 | B:5人 E=278 eat=0 give=0 craft=0 | 3s
+        🤝 阿林→阿磊:谷物
+  Day 6 | A:5人 E=272 eat=0 give=1 craft=0 | B:5人 E=267 eat=0 give=2 craft=0 | 3s
+        🤝 阿磊→阿林:谷物
+        🤝 阿禾→阿岩:石料
+        🤝 阿岩→阿禾:石料
+  Day 7 | A:5人 E=259 eat=0 give=1 craft=0 | B:5人 E=275 eat=0 give=1 craft=1 | 4s
+        ✅ 阿松合成(木材+谷物)→+18
+        🤝 阿林→阿芳:谷物
+        🤝 阿禾→阿岩:石料
+  Day 8 | A:5人 E=249 eat=0 give=1 craft=0 | B:5人 E=265 eat=0 give=1 craft=0 | 4s
+        🤝 阿芳→阿林:谷物
+        🤝 阿岩→阿禾:石料
+  Day 9 | A:5人 E=238 eat=0 give=1 craft=0 | B:5人 E=255 eat=0 give=0 craft=0 | 4s
+        🤝 阿林→阿芳:谷物
+  Day10 | A:5人 E=228 eat=0 give=1 craft=0 | B:5人 E=245 eat=0 give=0 craft=0 | 8s
+        🤝 阿芳→阿林:谷物
+  Day11 | A:5人 E=218 eat=0 give=1 craft=0 | B:5人 E=235 eat=0 give=0 craft=0 | 4s
+        🤝 阿林→阿芳:谷物
+  Day12 | A:5人 E=208 eat=0 give=1 craft=0 | B:5人 E=225 eat=0 give=0 craft=0 | 3s
+        🤝 阿芳→阿林:谷物
+  Day13 | A:5人 E=198 eat=0 give=1 craft=0 | B:5人 E=233 eat=0 give=0 craft=1 | 4s
+        ✅ 阿禾合成(谷物+石料)→+18
+        🤝 阿林→阿芳:谷物
+  Day14 | A:5人 E=188 eat=0 give=2 craft=0 | B:5人 E=223 eat=0 give=0 craft=0 | 4s
+        🤝 阿芳→阿林:谷物
+        🤝 阿林→阿芳:谷物
+  Day15 | A:5人 E=178 eat=0 give=1 craft=0 | B:5人 E=213 eat=0 give=0 craft=0 | 4s
+        🤝 阿芳→阿林:谷物
+  Day16 | A:5人 E=167 eat=0 give=1 craft=0 | B:5人 E=202 eat=0 give=0 craft=0 | 5s
+        🤝 阿林→阿芳:谷物
+  Day17 | A:5人 E=157 eat=0 give=1 craft=0 | B:5人 E=191 eat=0 give=1 craft=0 | 4s
+        🤝 阿芳→阿林:谷物
+        🤝 阿兰→阿松:药草
+  Day18 | A:5人 E=147 eat=0 give=1 craft=0 | B:5人 E=181 eat=0 give=1 craft=0 | 3s
+        🤝 阿林→阿芳:谷物
+        🤝 阿松→阿兰:药草
+  Day19 | A:5人 E=137 eat=0 give=1 craft=0 | B:5人 E=171 eat=0 give=1 craft=0 | 4s
+        🤝 阿芳→阿林:谷物
+        🤝 阿兰→阿松:药草
+  Day20 | A:5人 E=127 eat=0 give=1 craft=0 | B:5人 E=159 eat=0 give=1 craft=0 | 4s
+        🤝 阿松→阿兰:药草
+        🤝 阿林→阿芳:谷物
+
+════════════════════════════════════════════════════════════
+  【需求广播 vs 声誉信号】
+  需求广播(互惠): 0吃 2合成 23给(有效13,精准23) 3话 | 存活5/5 E=127 | 互惠对=10
+  声誉可见(互惠): 0吃 4合成 13给(有效11,精准9) 20话 | 存活5/5 E=159 | 互惠对=5
+
+  合成: t=-0.65 p=0.5158 ✗
+  赠与: t=1.807 p=0.0708 ✗
+  能量: t=-1.023 p=0.3064 ✗
+  互惠指数: A=10 B=5
+  精准赠与: A=23 B=9
+  API调用: 200
+════════════════════════════════════════════════════════════

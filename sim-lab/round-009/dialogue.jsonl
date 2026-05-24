@@ -1,0 +1,66 @@
+{"day": 1, "name": "乙草", "group": "B", "energy": 80, "backpack": {"药草": 1}, "steps": ["harvest( )"], "thoughts": ["脚下就有免费药草，直接采集获取第一份资源。采集不消耗能量，能最大化保留体力。获得药草后，明天将向乙谷或乙石移动，准备用草药交换他们采集的谷物或石料，凑齐两种不同资源后合成可恢复18能量，这是当前最高效的生存策略。"]}
+{"day": 1, "name": "乙谷", "group": "B", "energy": 80, "backpack": {"谷物": 1}, "steps": ["harvest(脚下谷物 )"], "thoughts": ["优先采集脚下免费谷物获得初始资源。当前能量80较安全，但需尽快积累不同资源以触发+18能量的合成收益。明天将向距离最近的乙草移动，准备用谷物交换药草。"]}
+{"day": 1, "name": "乙石", "group": "B", "energy": 80, "backpack": {"石料": 1}, "steps": ["harvest(石料 )"], "thoughts": ["背包为空，脚下正好有免费石料。先采集1份作为初始交易筹码，保留能量。后续计划向4步外的乙草或8步外的乙谷移动，用石料交换谷物/药草，凑齐两种不同资源后合成以获取18点能量。"]}
+{"day": 1, "name": "甲草", "group": "A", "energy": 80, "backpack": {}, "steps": [], "thoughts": []}
+{"day": 1, "name": "甲谷", "group": "A", "energy": 80, "backpack": {"谷物": 1}, "steps": ["harvest({})"], "thoughts": ["脚下有免费谷物，先采集获得第一种资源。之后计划向甲草移动，用谷物交换药草，凑齐两种不同资源进行合成以获取高额能量。"]}
+{"day": 1, "name": "甲石", "group": "A", "energy": 80, "backpack": {"石料": 1}, "steps": ["harvest({})"], "thoughts": ["脚下就有石料，采集是免费的。我需要先获得资源（石料）作为筹码，才能去找甲草或甲谷交换资源进行合成。"]}
+{"day": 2, "name": "乙草", "group": "B", "energy": 77, "backpack": {"药草": 1}, "steps": ["move(up )"], "thoughts": ["当前持有药草×1，急需第二种不同资源来触发+18能量的合成。视野内乙谷持有谷物且距离仅4步，今日先向上移动1步缩短距离。能量78非常充裕，每天仅消耗3点（自动2+移动1），稳步推进靠近即可完成交换并合成。"]}
+{"day": 2, "name": "乙谷", "group": "B", "energy": 77, "backpack": {"谷物": 1}, "steps": ["move(left )"], "thoughts": ["当前能量78，生存无虞。最高效策略是找乙草换药草，用“谷物+药草”合成获取18能量。今天先向左移动一步缩短与乙草的距离，后续几天将继续靠近完成交换与合成。"]}
+{"day": 2, "name": "乙石", "group": "B", "energy": 77, "backpack": {"石料": 1}, "steps": ["move(up )"], "thoughts": ["合成两种不同资源可恢复18能量，收益是单吃石料的3倍，是最高效的生存策略。我背包已有石料×1，乙草持有药草且距离仅4步。今天先向其方向移动1步，逐步靠近以便后续发起交换合成。"]}
+{"day": 2, "name": "甲草", "group": "A", "energy": 78, "backpack": {}, "steps": [], "thoughts": []}
+{"day": 2, "name": "甲石", "group": "A", "energy": 77, "backpack": {"石料": 1}, "steps": ["say({\"target\": \"甲谷\", \"content\": \"我用1石料换1谷物，凑齐不同资源合成能回18能量，双赢！\"})"], "thoughts": ["甲谷手上有谷物，直接提议交换。说话消耗1能量，但促成不同资源合成可恢复18能量，净收益极高，是当前最优先策略。"]}
+{"day": 2, "name": "甲谷", "group": "A", "energy": 77, "backpack": {"谷物": 1}, "steps": ["move({\"direction\": \"right\"})"], "thoughts": ["甲石持有石料，是触发+18能量合成的唯一关键目标。虽相距8步超出今日5次行动上限，但必须尽早靠近。先向右移动，既逐步缩短与甲石的距离，又靠近右侧已知谷物点，为后续提出交换、给物合成做铺垫。"]}
+{"day": 3, "name": "乙草", "group": "B", "energy": 74, "backpack": {"药草": 1}, "steps": ["move(down )"], "thoughts": ["当前背包仅1份药草，直接吃仅+6，而合成两种不同资源可得+18，效率最高。乙谷距4步且持有谷物，决定向其靠近。今日先迈出第1步，后续将持续移动直至距离为0，再执行交换与合成。"]}
+{"day": 3, "name": "乙谷", "group": "B", "energy": 76, "backpack": {"谷物": 1}, "steps": ["move(down)(乙草 向乙草方向移动1步以缩短距离)"], "thoughts": ["能量75充足，仅1谷物。为达成+18能量的合成目标，需先获取第二种资源。乙草持有药草且距离最近（4步），今日优先消耗1能量移动靠近，为后续交换和合成做准备。"]}
+{"day": 3, "name": "乙石", "group": "B", "energy": 74, "backpack": {"石料": 1}, "steps": ["move(down )"], "thoughts": ["当前仅有1份石料，无法触发合成。乙草距离最近（4步）且持有药草，是获取第二种资源完成高效合成（+18能量）的最优目标。先移动一步缩短距离，后续继续靠近并提议交换石料。当前能量75非常安全，每日自动消耗与移动成本完全可控。"]}
+{"day": 3, "name": "甲谷", "group": "A", "energy": 75, "backpack": {"谷物": 1}, "steps": [], "thoughts": []}
+{"day": 3, "name": "甲石", "group": "A", "energy": 74, "backpack": {"石料": 1}, "steps": ["move({\"direction\": \"right\"})"], "thoughts": ["甲谷持有谷物且距我7步，目标是靠近他交换第二种资源以合成+18。今天先用1次移动缩短距离，为后续交易和合成做准备。"]}
+{"day": 3, "name": "甲草", "group": "A", "energy": 76, "backpack": {"药草": 1}, "steps": ["harvest({})"], "thoughts": ["先采集脚下的免费药草作为交易筹码，之后向甲谷移动换取谷物，集齐两种不同资源后即可通过合成大幅恢复能量。"]}
+{"day": 4, "name": "乙草", "group": "B", "energy": 71, "backpack": {"药草": 1}, "steps": ["move(left )"], "thoughts": ["当前仅1份药草，单独吃回6能量，而合成2种不同资源可回18能量。乙石最近（4步）且持有石料，是最佳交换对象。先向左移动1步缩短距离，后续逐步靠近完成交换并合成。"]}
+{"day": 4, "name": "乙石", "group": "B", "energy": 71, "backpack": {"石料": 1}, "steps": ["move(down )"], "thoughts": ["乙草距离最近（仅4步）且持有药草，获取后与现有石料合成可恢复18能量，效益远超单吃。当前能量72充足，先向她所在方向移动1步，逐步缩短距离以便后续交易合成。"]}
+{"day": 4, "name": "乙谷", "group": "B", "energy": 73, "backpack": {"谷物": 1}, "steps": ["move(left )"], "thoughts": ["当前能量74，扣除每日自动消耗2点后为72，状态安全。合成+18能量需要两种不同资源，我只有谷物，而乙草持有药草且距离仅5步。今天优先向她移动缩短距离，保留能量和步数，靠近后再协商用谷物交换药草进行合成。"]}
+{"day": 4, "name": "甲草", "group": "A", "energy": 74, "backpack": {"药草": 1}, "steps": [], "thoughts": []}
+{"day": 4, "name": "甲石", "group": "A", "energy": 72, "backpack": {"石料": 1}, "steps": ["look({})"], "thoughts": ["能量72非常安全，核心目标是获取非石料资源触发+18合成。甲草距5步且持有药草，但未知具体方位。先免费查看环境确认其确切方向与地形，规划最短路径以便后续移动交易。"]}
+{"day": 4, "name": "甲谷", "group": "A", "energy": 71, "backpack": {"谷物": 1}, "steps": ["move({\"direction\": \"right\"})", "move({\"direction\": \"right\"})"], "thoughts": ["甲草有药草且仅距3步，靠近他交换资源以合成是最高效策略（+18能量）。先向右移动1步拉近距离，当前能量73非常安全，足以支撑后续移动和交易。", "甲草距离现在大概2步，继续向右移动靠近他，准备下一步交换资源进行合成。"]}
+{"day": 5, "name": "乙石", "group": "B", "energy": 68, "backpack": {"石料": 1}, "steps": ["move(up )"], "thoughts": ["乙草距我6步且持有药草，我背包有石料。两人交换不同资源后合成可恢复18能量，是当前最优策略。今日能量69充足，先向乙草方向移动1步，明日继续靠近，达成交易距离后再进行交换与合成。"]}
+{"day": 5, "name": "乙谷", "group": "B", "energy": 70, "backpack": {"谷物": 1}, "steps": ["move(down )"], "thoughts": ["当前能量71非常安全。根据规则，合成两种不同资源可恢复18能量，是当前最高效的回能策略。我背包仅有谷物，急需乙草手中的药草凑齐合成条件。乙草距我5步，今天先消耗1能量移动1步靠近她，后续持续逼近并尝试交换，完成合成后能量将大幅提升。"]}
+{"day": 5, "name": "乙草", "group": "B", "energy": 68, "backpack": {"药草": 1}, "steps": ["move(down )"], "thoughts": ["当前能量69非常安全。为了获取第二种资源实现高效合成(+18)，必须与他人交易。乙谷持有谷物且距离最近(5步)，今日先向其方向移动一步，逐步靠近以准备发起交换。"]}
+{"day": 5, "name": "甲草", "group": "A", "energy": 72, "backpack": {"药草": 1}, "steps": [], "thoughts": []}
+{"day": 5, "name": "甲石", "group": "A", "energy": 69, "backpack": {"石料": 1}, "steps": ["say({\"target\": \"甲草\", \"content\": \"我用1份石料换你的1份药草，同意吗？\"})"], "thoughts": ["当前仅有石料，合成需两种不同资源。甲草在视野内且有药草，先提出交换意向。消耗1能量，为后续合成+18能量做准备。"]}
+{"day": 5, "name": "甲谷", "group": "A", "energy": 68, "backpack": {"谷物": 2}, "steps": ["move({\"direction\": \"down\"})", "harvest({})"], "thoughts": ["向甲草移动，准备用背包里的谷物交换药草，合成可恢复18能量，是当前最高效的策略。", "脚下有免费谷物，先采集增加库存，为后续与甲草交换药草进行合成做准备。"]}
+{"day": 6, "name": "乙草", "group": "B", "energy": 65, "backpack": {"药草": 1}, "steps": ["say(乙石 我用1份药草换你1份石料，合成能回18能量，双赢)"], "thoughts": ["当前能量66非常安全。核心目标是凑齐两种不同资源触发+18合成，我只有药草，必须获取石料或谷物。乙石距离最近(4步)，直接发起交易提议可避免盲目移动消耗能量，为后续交换与合成铺路。"]}
+{"day": 6, "name": "乙石", "group": "B", "energy": 66, "backpack": {"石料": 1}, "steps": ["move(乙草 靠近)"], "thoughts": ["当前能量66很安全，但最大化能量的核心策略是合成（+18）。背包仅有1份石料，必须获取乙草的药草才能触发合成。乙草距离4步，今天先消耗1能量向她移动一步靠近，后续几天持续移动直至接触，再交换资源并执行合成。"]}
+{"day": 6, "name": "乙谷", "group": "B", "energy": 67, "backpack": {"谷物": 1}, "steps": ["move(down )"], "thoughts": ["当前能量68，每日自动-2后为66。合成是最高效策略（+18），需与乙草交换药草。她距5步，今天先移动1步靠近（消耗1），剩余65能量。明天继续靠近，完成交换后立刻合成。"]}
+{"day": 6, "name": "甲草", "group": "A", "energy": 70, "backpack": {"药草": 1}, "steps": [], "thoughts": []}
+{"day": 6, "name": "甲石", "group": "A", "energy": 66, "backpack": {"石料": 1}, "steps": ["say({\"target\": \"甲草\", \"content\": \"我用1个石料换你1个药草，合成能恢复18能量，互利互惠！\"})"], "thoughts": ["背包只有石料，无法触发合成。视野内甲草有药草，先沟通交换意向，达成后给石料并合成可获18能量，是今日最高效策略。"]}
+{"day": 6, "name": "甲谷", "group": "A", "energy": 64, "backpack": {"谷物": 2}, "steps": ["move({\"direction\": \"right\"})", "move({\"direction\": \"right\"})"], "thoughts": ["甲草距离仅2步且携带药草，先向右移动靠近他。当前背包有谷物×2，目标是尽快换到药草进行合成（+18能量），这比单吃谷物（+6）效率高3倍，是今天的最优策略。", "甲草之前距离我2步，我现在向右移动了一步，推测再向右一步就能遇到甲草（位置(7,2)）。必须靠近才能进行资源交换。"]}
+{"day": 7, "name": "乙石", "group": "B", "energy": 64, "backpack": {"石料": 1}, "steps": ["move(乙草 向乙草方向移动1步，缩短距离以便完成交换)"], "thoughts": ["当前距乙草4步，核心目标是拿到药草与石料合成（+18能量）。今日选择移动靠近，消耗1能量，叠加自动消耗-2后剩余约61能量，安全阈值很高。明日继续靠近或直接发起give/say完成交易，尽快合成回血。"]}
+{"day": 7, "name": "乙草", "group": "B", "energy": 62, "backpack": {"药草": 1}, "steps": ["move(up 向乙谷方向靠近一步)"], "thoughts": ["当前能量63，背包仅1份药草，无法直接合成。规则明确2种不同资源合成可回18能量，是最高效策略。乙谷（持谷物）距4步，今日先消耗1能量向上移动一步，逐步缩短距离，为后续交换资源并合成做准备。"]}
+{"day": 7, "name": "乙谷", "group": "B", "energy": 64, "backpack": {"谷物": 1}, "steps": ["move(right )"], "thoughts": ["当前能量65，持有1谷物。乙草有药草且距我4步，获取药草后与谷物合成可一次性+18能量，收益远高于单吃(+6)。今日先向乙草方向移动1步缩短距离，后续完成交换并合成以最大化能量。"]}
+{"day": 7, "name": "甲谷", "group": "A", "energy": 62, "backpack": {"谷物": 2}, "steps": [], "thoughts": []}
+{"day": 7, "name": "甲石", "group": "A", "energy": 64, "backpack": {"石料": 1, "药草": 1}, "steps": [], "thoughts": []}
+{"day": 7, "name": "甲草", "group": "A", "energy": 67, "backpack": {}, "steps": ["give({\"target\": \"甲石\", \"resource\": \"药草\"})"], "thoughts": ["接受甲石的交易提议，将药草给他换取石料。拿到石料后，明天再免费采集一份药草即可满足合成条件（2种不同资源），一次恢复18能量，是当前能量收益最高的策略。"]}
+{"day": 8, "name": "甲谷", "group": "A", "energy": 60, "backpack": {"谷物": 2}, "steps": [], "thoughts": []}
+{"day": 8, "name": "甲石", "group": "A", "energy": 62, "backpack": {"石料": 1, "药草": 1}, "steps": [], "thoughts": []}
+{"day": 8, "name": "甲草", "group": "A", "energy": 65, "backpack": {}, "steps": [], "thoughts": []}
+{"day": 9, "name": "甲草", "group": "A", "energy": 63, "backpack": {}, "steps": [], "thoughts": []}
+{"day": 9, "name": "甲谷", "group": "A", "energy": 58, "backpack": {"谷物": 2}, "steps": [], "thoughts": []}
+{"day": 9, "name": "甲石", "group": "A", "energy": 60, "backpack": {"石料": 1, "药草": 1}, "steps": [], "thoughts": []}
+{"day": 10, "name": "甲谷", "group": "A", "energy": 56, "backpack": {"谷物": 2}, "steps": [], "thoughts": []}
+{"day": 10, "name": "甲草", "group": "A", "energy": 61, "backpack": {}, "steps": [], "thoughts": []}
+{"day": 10, "name": "甲石", "group": "A", "energy": 58, "backpack": {"石料": 1, "药草": 1}, "steps": [], "thoughts": []}
+{"day": 11, "name": "甲草", "group": "A", "energy": 59, "backpack": {}, "steps": [], "thoughts": []}
+{"day": 11, "name": "甲谷", "group": "A", "energy": 54, "backpack": {"谷物": 2}, "steps": [], "thoughts": []}
+{"day": 11, "name": "甲石", "group": "A", "energy": 56, "backpack": {"石料": 1, "药草": 1}, "steps": [], "thoughts": []}
+{"day": 12, "name": "甲石", "group": "A", "energy": 54, "backpack": {"石料": 1, "药草": 1}, "steps": [], "thoughts": []}
+{"day": 12, "name": "甲谷", "group": "A", "energy": 52, "backpack": {"谷物": 2}, "steps": [], "thoughts": []}
+{"day": 12, "name": "甲草", "group": "A", "energy": 57, "backpack": {}, "steps": [], "thoughts": []}
+{"day": 13, "name": "甲草", "group": "A", "energy": 55, "backpack": {}, "steps": [], "thoughts": []}
+{"day": 13, "name": "甲谷", "group": "A", "energy": 50, "backpack": {"谷物": 2}, "steps": [], "thoughts": []}
+{"day": 13, "name": "甲石", "group": "A", "energy": 52, "backpack": {"石料": 1, "药草": 1}, "steps": [], "thoughts": []}
+{"day": 14, "name": "甲谷", "group": "A", "energy": 48, "backpack": {"谷物": 2}, "steps": [], "thoughts": []}
+{"day": 14, "name": "甲草", "group": "A", "energy": 53, "backpack": {}, "steps": [], "thoughts": []}
+{"day": 14, "name": "甲石", "group": "A", "energy": 50, "backpack": {"石料": 1, "药草": 1}, "steps": [], "thoughts": []}
+{"day": 15, "name": "甲草", "group": "A", "energy": 51, "backpack": {}, "steps": [], "thoughts": []}
+{"day": 15, "name": "甲谷", "group": "A", "energy": 46, "backpack": {"谷物": 2}, "steps": [], "thoughts": []}
+{"day": 15, "name": "甲石", "group": "A", "energy": 48, "backpack": {"石料": 1, "药草": 1}, "steps": [], "thoughts": []}

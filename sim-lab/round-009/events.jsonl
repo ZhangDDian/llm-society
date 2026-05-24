@@ -1,0 +1,12 @@
+{"tick": 0, "type": "harvest", "agent": 4, "detail": "乙草采药草"}
+{"tick": 0, "type": "harvest", "agent": 0, "detail": "甲谷采谷物"}
+{"tick": 0, "type": "harvest", "agent": 3, "detail": "乙谷采谷物"}
+{"tick": 0, "type": "harvest", "agent": 5, "detail": "乙石采石料"}
+{"tick": 0, "type": "harvest", "agent": 2, "detail": "甲石采石料"}
+{"tick": 1, "type": "message", "agent": 2, "detail": "甲石→甲谷：我用1石料换1谷物，凑齐不同资源合成能回18能量，双赢！"}
+{"tick": 2, "type": "harvest", "agent": 1, "detail": "甲草采药草"}
+{"tick": 4, "type": "message", "agent": 2, "detail": "甲石→甲草：我用1份石料换你的1份药草，同意吗？"}
+{"tick": 4, "type": "harvest", "agent": 0, "detail": "甲谷采谷物"}
+{"tick": 5, "type": "message", "agent": 4, "detail": "乙草→乙石：我用1份药草换你1份石料，合成能回18能量，双赢"}
+{"tick": 5, "type": "message", "agent": 2, "detail": "甲石→甲草：我用1个石料换你1个药草，合成能恢复18能量，互利互惠！"}
+{"tick": 6, "type": "give", "agent": 1, "detail": "甲草→甲石:药草"}

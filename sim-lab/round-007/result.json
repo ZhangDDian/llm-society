@@ -1,0 +1,14 @@
+{
+  "fuzzy": {
+    "total_messages": 3,
+    "total_food_eaten": 18,
+    "final_alive": 0,
+    "relationship_density": 0.007894736842105263
+  },
+  "precise": {
+    "total_messages": 3,
+    "total_food_eaten": 18,
+    "final_alive": 0,
+    "relationship_density": 0.007894736842105263
+  }
+}

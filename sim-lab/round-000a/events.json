@@ -1,0 +1,38 @@
+[
+ {
+  "tick": 0,
+  "type": "world_init",
+  "agent": -1,
+  "detail": "30 agents, 60 food, 20x20 grid"
+ },
+ {
+  "tick": 101,
+  "type": "death",
+  "agent": 0,
+  "detail": "陈舟死亡，存活101天，吃2食物，杀0人"
+ },
+ {
+  "tick": 101,
+  "type": "death",
+  "agent": 11,
+  "detail": "李沉鱼死亡，存活101天，吃2食物，杀0人"
+ },
+ {
+  "tick": 101,
+  "type": "death",
+  "agent": 25,
+  "detail": "宋无忧死亡，存活101天，吃2食物，杀0人"
+ },
+ {
+  "tick": 102,
+  "type": "death",
+  "agent": 29,
+  "detail": "罗与归死亡，存活102天，吃2食物，杀0人"
+ },
+ {
+  "tick": 131,
+  "type": "death",
+  "agent": 26,
+  "detail": "梁栖迟死亡，存活131天，吃3食物，杀0人"
+ }
+]

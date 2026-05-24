@@ -1,0 +1,35 @@
+═══ Round 009 v2: Tool-calling vs Single-shot（闭环能量经济）═══
+  A组3人(tool-call,3步/tick) vs B组3人(single-shot,1步/tick)
+  被动消耗2/tick | eat+6 | craft+18 | 起始80
+
+  第 1天 | A:3人 E=234 craft=0 give=0 | B:3人 E=234 craft=0 give=0 | 101s
+  第 2天 | A:3人 E=226 craft=0 give=0 | B:3人 E=225 craft=0 give=0 | 111s
+  第 3天 | A:3人 E=219 craft=0 give=0 | B:3人 E=218 craft=0 give=0 | 114s
+  第 4天 | A:3人 E=211 craft=0 give=0 | B:3人 E=209 craft=0 give=0 | 115s
+  第 5天 | A:3人 E=203 craft=0 give=0 | B:3人 E=200 craft=0 give=0 | 153s
+  第 6天 | A:3人 E=194 craft=0 give=0 | B:3人 E=192 craft=0 give=0 | 123s
+  第 7天 | A:3人 E=187 craft=0 give=1 | B:3人 E=184 craft=0 give=0 | 217s
+        ✅ 甲草→甲石:药草
+  第 8天 | A:3人 E=181 craft=0 give=0 | B:3人 E=178 craft=0 give=0 | 0s
+  第 9天 | A:3人 E=175 craft=0 give=0 | B:3人 E=172 craft=0 give=0 | 0s
+  第10天 | A:3人 E=169 craft=0 give=0 | B:3人 E=166 craft=0 give=0 | 0s
+  第11天 | A:3人 E=163 craft=0 give=0 | B:3人 E=160 craft=0 give=0 | 0s
+  第12天 | A:3人 E=157 craft=0 give=0 | B:3人 E=154 craft=0 give=0 | 0s
+  第13天 | A:3人 E=151 craft=0 give=0 | B:3人 E=148 craft=0 give=0 | 0s
+  第14天 | A:3人 E=145 craft=0 give=0 | B:3人 E=142 craft=0 give=0 | 0s
+  第15天 | A:3人 E=139 craft=0 give=0 | B:3人 E=136 craft=0 give=0 | 0s
+
+════════════════════════════════════════════════════════════
+  【核心指标：合作效率比（控制行动带宽）】
+  Tool-calling(5步): craft_rate=0.0 | 合作能量占比=0.0
+    前半期craft率=0.0 → 后半期=0.0
+  Single-shot(1步): craft_rate=0.0 | 合作能量占比=0.0
+    前半期craft率=0.0 → 后半期=0.0
+
+  craft_rate 检验: t=0 p=1.0 ✗不显著
+
+  【绝对指标（有行动带宽偏差，仅参考）】
+  A(5步): 存活3/3 | E=139 | 0合成 1给 0吃 4采
+  B(1步): 存活3/3 | E=136 | 0合成 0给 0吃 3采
+  API调用: 106
+════════════════════════════════════════════════════════════

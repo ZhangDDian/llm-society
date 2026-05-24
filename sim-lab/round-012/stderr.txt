@@ -1,0 +1,87 @@
+═══ Round 012: 自动合成 vs 手动合成 ═══
+  A组5人(互惠+auto-craft) vs B组5人(互惠+manual craft)
+  eat+6 craft+18 被动-2 起始60 | 20天
+  say/give免费 | 视野6
+
+  Day 1 | A:5人 E=290 eat=0 give=0 craft=0(0auto) | B:5人 E=290 eat=0 give=0 craft=0 | 3s
+  [err] 阿磊: [Errno 54] Connection reset by peer
+  Day 2 | A:5人 E=297 eat=0 give=2 craft=1(1auto) | B:5人 E=278 eat=0 give=3 craft=0 | 4s
+        🤝 阿岩→阿山:石料
+        🤝 阿芳→阿田:药草
+        ⚡ 阿田自动合成(谷物+药草)→+18
+        🤝 阿山→阿兰:谷物
+        🤝 阿松→阿兰:木材
+  Day 3 | A:5人 E=304 eat=0 give=2 craft=1(1auto) | B:5人 E=285 eat=0 give=2 craft=1 | 4s
+        🤝 阿丰→阿田:谷物
+        🤝 阿山→阿兰:石料
+        🤝 阿磊→阿田:石料
+        ⚡ 阿田自动合成(谷物+石料)→+18
+        🤝 阿禾→阿岩:谷物
+  Day 4 | A:5人 E=311 eat=0 give=1 craft=1(1auto) | B:5人 E=290 eat=0 give=0 craft=1 | 4s
+        ✅ 阿兰合成(木材+石料)→+18
+        🤝 阿芳→阿丰:木材
+        ⚡ 阿丰自动合成(谷物+木材)→+18
+  Day 5 | A:5人 E=299 eat=0 give=1 craft=0(0auto) | B:5人 E=280 eat=0 give=0 craft=0 | 4s
+        🤝 阿磊→阿田:石料
+  Day 6 | A:5人 E=289 eat=0 give=0 craft=0(0auto) | B:5人 E=285 eat=0 give=0 craft=1 | 4s
+        ✅ 阿岩合成(石料+谷物)→+18
+  Day 7 | A:5人 E=277 eat=0 give=0 craft=0(0auto) | B:5人 E=274 eat=0 give=1 craft=0 | 5s
+        🤝 阿禾→阿岩:谷物
+  Day 8 | A:5人 E=267 eat=0 give=1 craft=0(0auto) | B:5人 E=263 eat=0 give=1 craft=0 | 4s
+        🤝 阿兰→阿山:药草
+        🤝 阿田→阿磊:石料
+  Day 9 | A:5人 E=255 eat=0 give=1 craft=0(0auto) | B:5人 E=250 eat=0 give=1 craft=0 | 4s
+        🤝 阿磊→阿田:石料
+        🤝 阿岩→阿禾:谷物
+  Day10 | A:5人 E=244 eat=0 give=2 craft=0(0auto) | B:5人 E=240 eat=0 give=1 craft=0 | 4s
+        🤝 阿兰→阿禾:药草
+        🤝 阿田→阿磊:石料
+        🤝 阿林→阿芳:木材
+  Day11 | A:5人 E=234 eat=0 give=2 craft=0(0auto) | B:5人 E=247 eat=0 give=2 craft=1 | 4s
+        🤝 阿松→阿兰:木材
+        🤝 阿山→阿禾:药草
+        ✅ 阿禾合成(谷物+药草)→+18
+        🤝 阿芳→阿丰:木材
+        🤝 阿磊→阿田:石料
+  Day12 | A:5人 E=224 eat=0 give=2 craft=0(0auto) | B:5人 E=234 eat=0 give=0 craft=0 | 4s
+        🤝 阿林→阿芳:木材
+        🤝 阿芳→阿丰:木材
+  Day13 | A:5人 E=213 eat=0 give=2 craft=0(0auto) | B:5人 E=223 eat=0 give=0 craft=0 | 5s
+        🤝 阿田→阿磊:石料
+        🤝 阿林→阿芳:木材
+  Day14 | A:5人 E=220 eat=0 give=2 craft=1(1auto) | B:5人 E=231 eat=0 give=0 craft=1 | 4s
+        ✅ 阿兰合成(药草+木材)→+18
+        🤝 阿丰→阿芳:木材
+        🤝 阿磊→阿田:石料
+        ⚡ 阿田自动合成(谷物+石料)→+18
+  Day15 | A:5人 E=208 eat=0 give=0 craft=0(0auto) | B:5人 E=220 eat=0 give=0 craft=0 | 4s
+  [err] 阿松: Extra data: line 7 column 1 (char 126)
+  Day16 | A:5人 E=216 eat=0 give=1 craft=1(1auto) | B:5人 E=209 eat=0 give=0 craft=0 | 5s
+        🤝 阿芳→阿丰:木材
+        ⚡ 阿丰自动合成(谷物+木材)→+18
+  Day17 | A:5人 E=205 eat=0 give=1 craft=0(0auto) | B:5人 E=198 eat=0 give=2 craft=0 | 4s
+        🤝 阿禾→阿山:药草
+        🤝 阿山→阿禾:药草
+        🤝 阿磊→阿田:石料
+  Day18 | A:5人 E=212 eat=0 give=0 craft=1(1auto) | B:5人 E=187 eat=0 give=2 craft=0 | 5s
+        🤝 阿禾→阿山:药草
+        🤝 阿兰→阿山:药草
+        ⚡ 阿芳自动合成(药草+木材)→+18
+  Day19 | A:5人 E=200 eat=0 give=2 craft=0(0auto) | B:5人 E=177 eat=0 give=0 craft=0 | 5s
+        🤝 阿丰→阿芳:木材
+        🤝 阿田→阿磊:石料
+  Day20 | A:5人 E=189 eat=0 give=1 craft=0(0auto) | B:5人 E=167 eat=0 give=1 craft=0 | 5s
+        🤝 阿山→阿岩:药草
+        🤝 阿磊→阿田:石料
+
+════════════════════════════════════════════════════════════
+  【自动合成 vs 手动合成】
+  auto-craft(互惠): 0吃 6合成(6auto) 23给 16话 | 存活5/5 E=189 | 互惠对=6
+  manual(互惠): 0吃 5合成 16给 10话 | 存活5/5 E=167 | 互惠对=6
+
+  合成: t=0.346 p=0.7296 ✗
+  赠与: t=1.251 p=0.211 ✗
+  能量: t=0.499 p=0.6181 ✗
+  互惠指数: A=6 B=6
+  API调用: 200
+════════════════════════════════════════════════════════════

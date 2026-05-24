@@ -1,0 +1,78 @@
+═══ Round 013: 声誉透明度 vs 无声誉 ═══
+  A组5人(互惠+声誉可见) vs B组5人(互惠+无声誉)
+  eat+6 craft+18 被动-2 起始60 | 20天
+  say/give免费 | 视野6
+
+  Day 1 | A:5人 E=290 eat=0 give=0 craft=0 | B:5人 E=290 eat=0 give=0 craft=0 | 8s
+  Day 2 | A:5人 E=276 eat=0 give=1 craft=0 | B:5人 E=277 eat=0 give=1 craft=0 | 5s
+        🤝 阿岩→阿山:石料
+        🤝 阿芳→阿田:药草
+  Day 3 | A:5人 E=283 eat=0 give=1 craft=1 | B:5人 E=285 eat=0 give=0 craft=1 | 5s
+        ✅ 阿田合成(谷物+药草)→+18
+        ✅ 阿山合成(谷物+石料)→+18
+        🤝 阿林→阿芳:木材
+  Day 4 | A:5人 E=273 eat=0 give=3 craft=0 | B:5人 E=272 eat=0 give=2 craft=0 | 6s
+        🤝 阿禾→阿岩:谷物
+        🤝 阿松→阿兰:木材
+        🤝 阿芳→阿丰:木材
+        🤝 阿磊→阿林:石料
+        🤝 阿丰→阿芳:谷物
+  Day 5 | A:5人 E=281 eat=0 give=1 craft=1 | B:5人 E=280 eat=0 give=2 craft=1 | 4s
+        🤝 阿岩→阿兰:谷物
+        ✅ 阿兰合成(药草+木材)→+18
+        ✅ 阿丰合成(谷物+木材)→+18
+        🤝 阿禾→阿岩:谷物
+        🤝 阿芳→阿磊:谷物
+  Day 6 | A:5人 E=270 eat=0 give=1 craft=0 | B:5人 E=269 eat=0 give=1 craft=0 | 4s
+        🤝 阿磊→阿芳:谷物
+        🤝 阿兰→阿岩:谷物
+  Day 7 | A:5人 E=260 eat=0 give=1 craft=0 | B:5人 E=259 eat=0 give=1 craft=0 | 4s
+        🤝 阿岩→阿山:谷物
+        🤝 阿芳→阿丰:谷物
+  Day 8 | A:5人 E=249 eat=0 give=2 craft=0 | B:5人 E=247 eat=0 give=1 craft=0 | 3s
+        🤝 阿山→阿岩:谷物
+        🤝 阿林→阿芳:石料
+        🤝 阿丰→阿芳:谷物
+  [err] 阿磊: Extra data: line 8 column 1 (char 210)
+  Day 9 | A:5人 E=257 eat=0 give=0 craft=1 | B:5人 E=237 eat=0 give=1 craft=0 | 7s
+        🤝 阿岩→阿山:谷物
+        ✅ 阿芳合成(谷物+石料)→+18
+  Day10 | A:5人 E=245 eat=0 give=0 craft=0 | B:5人 E=225 eat=0 give=0 craft=0 | 4s
+  Day11 | A:5人 E=234 eat=0 give=0 craft=0 | B:5人 E=214 eat=0 give=1 craft=0 | 4s
+        🤝 阿山→阿岩:谷物
+  Day12 | A:5人 E=223 eat=0 give=1 craft=0 | B:5人 E=204 eat=0 give=2 craft=0 | 3s
+        🤝 阿岩→阿山:谷物
+        🤝 阿松→阿兰:木材
+        🤝 阿林→阿磊:木材
+  Day13 | A:5人 E=211 eat=0 give=0 craft=0 | B:5人 E=192 eat=0 give=1 craft=0 | 4s
+        🤝 阿岩→阿山:谷物
+  Day14 | A:5人 E=200 eat=0 give=0 craft=0 | B:5人 E=181 eat=0 give=2 craft=0 | 3s
+        🤝 阿兰→阿山:木材
+        🤝 阿山→阿岩:谷物
+  Day15 | A:5人 E=206 eat=0 give=1 craft=1 | B:5人 E=188 eat=0 give=0 craft=1 | 4s
+        ✅ 阿磊合成(石料+木材)→+18
+        ✅ 阿山合成(谷物+木材)→+18
+        🤝 阿林→阿磊:木材
+  Day16 | A:5人 E=194 eat=0 give=0 craft=0 | B:5人 E=177 eat=0 give=0 craft=0 | 3s
+  Day17 | A:5人 E=182 eat=0 give=2 craft=0 | B:5人 E=166 eat=0 give=0 craft=0 | 4s
+        🤝 阿磊→阿林:木材
+        🤝 阿芳→阿林:药草
+  Day18 | A:5人 E=187 eat=0 give=0 craft=1 | B:5人 E=155 eat=0 give=0 craft=0 | 3s
+        ✅ 阿林合成(木材+药草)→+18
+  [err] 阿兰: Extra data: line 7 column 1 (char 147)
+  Day19 | A:5人 E=176 eat=0 give=1 craft=0 | B:5人 E=144 eat=0 give=0 craft=0 | 4s
+        🤝 阿田→阿磊:谷物
+  Day20 | A:5人 E=181 eat=0 give=0 craft=1 | B:5人 E=132 eat=0 give=0 craft=0 | 4s
+        ✅ 阿磊合成(石料+谷物)→+18
+
+════════════════════════════════════════════════════════════
+  【声誉透明 vs 无声誉】
+  声誉可见(互惠): 0吃 6合成 15给(有效15) 25话 | 存活5/5 E=181 | 互惠对=6
+  无声誉(互惠): 0吃 3合成 15给(有效9) 18话 | 存活5/5 E=132 | 互惠对=4
+
+  合成: t=1.125 p=0.2604 ✗
+  赠与: t=0.0 p=1.0 ✗
+  能量: t=0.985 p=0.3245 ✗
+  互惠指数: A=6 B=4
+  API调用: 200
+════════════════════════════════════════════════════════════

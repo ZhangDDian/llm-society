@@ -1,0 +1,600 @@
+{
+  "tick": 29,
+  "agents": {
+    "agent_00": {
+      "id": "agent_00",
+      "position": {
+        "x": 12,
+        "y": 0
+      },
+      "energy": 0,
+      "skill": "种植",
+      "skill_level": 3,
+      "inventory": {
+        "食物": 1,
+        "工具": 2
+      },
+      "alive": false
+    },
+    "agent_01": {
+      "id": "agent_01",
+      "position": {
+        "x": 13,
+        "y": 1
+      },
+      "energy": 0,
+      "skill": "采集",
+      "skill_level": 1,
+      "inventory": {
+        "食物": 1,
+        "工具": 1
+      },
+      "alive": false
+    },
+    "agent_02": {
+      "id": "agent_02",
+      "position": {
+        "x": 12,
+        "y": 5
+      },
+      "energy": 0,
+      "skill": "制作",
+      "skill_level": 1,
+      "inventory": {
+        "食物": 1,
+        "工具": 2
+      },
+      "alive": false
+    },
+    "agent_03": {
+      "id": "agent_03",
+      "position": {
+        "x": 9,
+        "y": 4
+      },
+      "energy": 0,
+      "skill": "狩猎",
+      "skill_level": 2,
+      "inventory": {
+        "食物": 1,
+        "工具": 0
+      },
+      "alive": false
+    },
+    "agent_04": {
+      "id": "agent_04",
+      "position": {
+        "x": 15,
+        "y": 0
+      },
+      "energy": 0,
+      "skill": "医疗",
+      "skill_level": 1,
+      "inventory": {
+        "食物": 4,
+        "工具": 2
+      },
+      "alive": false
+    },
+    "agent_05": {
+      "id": "agent_05",
+      "position": {
+        "x": 16,
+        "y": 4
+      },
+      "energy": 0,
+      "skill": "建筑",
+      "skill_level": 1,
+      "inventory": {
+        "食物": 2,
+        "工具": 0
+      },
+      "alive": false
+    },
+    "agent_06": {
+      "id": "agent_06",
+      "position": {
+        "x": 17,
+        "y": 18
+      },
+      "energy": 0,
+      "skill": "种植",
+      "skill_level": 2,
+      "inventory": {
+        "食物": 1,
+        "工具": 2
+      },
+      "alive": false
+    },
+    "agent_07": {
+      "id": "agent_07",
+      "position": {
+        "x": 2,
+        "y": 3
+      },
+      "energy": 0,
+      "skill": "采集",
+      "skill_level": 2,
+      "inventory": {
+        "食物": 4,
+        "工具": 1
+      },
+      "alive": false
+    },
+    "agent_08": {
+      "id": "agent_08",
+      "position": {
+        "x": 2,
+        "y": 16
+      },
+      "energy": 0,
+      "skill": "制作",
+      "skill_level": 1,
+      "inventory": {
+        "食物": 1,
+        "工具": 1
+      },
+      "alive": false
+    },
+    "agent_09": {
+      "id": "agent_09",
+      "position": {
+        "x": 8,
+        "y": 0
+      },
+      "energy": 0,
+      "skill": "狩猎",
+      "skill_level": 2,
+      "inventory": {
+        "食物": 1,
+        "工具": 2
+      },
+      "alive": false
+    },
+    "agent_10": {
+      "id": "agent_10",
+      "position": {
+        "x": 17,
+        "y": 9
+      },
+      "energy": 0,
+      "skill": "医疗",
+      "skill_level": 1,
+      "inventory": {
+        "食物": 1,
+        "工具": 0
+      },
+      "alive": false
+    },
+    "agent_11": {
+      "id": "agent_11",
+      "position": {
+        "x": 9,
+        "y": 16
+      },
+      "energy": 0,
+      "skill": "建筑",
+      "skill_level": 2,
+      "inventory": {
+        "食物": 4,
+        "工具": 0
+      },
+      "alive": false
+    },
+    "agent_12": {
+      "id": "agent_12",
+      "position": {
+        "x": 13,
+        "y": 6
+      },
+      "energy": 0,
+      "skill": "种植",
+      "skill_level": 1,
+      "inventory": {
+        "食物": 4,
+        "工具": 0
+      },
+      "alive": false
+    },
+    "agent_13": {
+      "id": "agent_13",
+      "position": {
+        "x": 4,
+        "y": 6
+      },
+      "energy": 0,
+      "skill": "采集",
+      "skill_level": 1,
+      "inventory": {
+        "食物": 1,
+        "工具": 1
+      },
+      "alive": false
+    },
+    "agent_14": {
+      "id": "agent_14",
+      "position": {
+        "x": 6,
+        "y": 1
+      },
+      "energy": 0,
+      "skill": "制作",
+      "skill_level": 3,
+      "inventory": {
+        "食物": 1,
+        "工具": 1
+      },
+      "alive": false
+    },
+    "agent_15": {
+      "id": "agent_15",
+      "position": {
+        "x": 15,
+        "y": 12
+      },
+      "energy": 0,
+      "skill": "狩猎",
+      "skill_level": 2,
+      "inventory": {
+        "食物": 4,
+        "工具": 2
+      },
+      "alive": false
+    },
+    "agent_16": {
+      "id": "agent_16",
+      "position": {
+        "x": 17,
+        "y": 9
+      },
+      "energy": 0,
+      "skill": "医疗",
+      "skill_level": 1,
+      "inventory": {
+        "食物": 3,
+        "工具": 3
+      },
+      "alive": false
+    },
+    "agent_17": {
+      "id": "agent_17",
+      "position": {
+        "x": 13,
+        "y": 1
+      },
+      "energy": 0,
+      "skill": "建筑",
+      "skill_level": 3,
+      "inventory": {
+        "食物": 1,
+        "工具": 0
+      },
+      "alive": false
+    },
+    "agent_18": {
+      "id": "agent_18",
+      "position": {
+        "x": 12,
+        "y": 18
+      },
+      "energy": 0,
+      "skill": "种植",
+      "skill_level": 2,
+      "inventory": {
+        "食物": 1,
+        "工具": 2
+      },
+      "alive": false
+    },
+    "agent_19": {
+      "id": "agent_19",
+      "position": {
+        "x": 17,
+        "y": 5
+      },
+      "energy": 0,
+      "skill": "采集",
+      "skill_level": 2,
+      "inventory": {
+        "食物": 1,
+        "工具": 0
+      },
+      "alive": false
+    }
+  },
+  "resources": {
+    "food_0": {
+      "id": "food_0",
+      "position": {
+        "x": 3,
+        "y": 18
+      },
+      "resource_type": "食物",
+      "amount": 3
+    },
+    "food_1": {
+      "id": "food_1",
+      "position": {
+        "x": 16,
+        "y": 0
+      },
+      "resource_type": "食物",
+      "amount": 0
+    },
+    "food_2": {
+      "id": "food_2",
+      "position": {
+        "x": 7,
+        "y": 18
+      },
+      "resource_type": "食物",
+      "amount": 2
+    },
+    "food_3": {
+      "id": "food_3",
+      "position": {
+        "x": 15,
+        "y": 16
+      },
+      "resource_type": "食物",
+      "amount": 3
+    },
+    "food_4": {
+      "id": "food_4",
+      "position": {
+        "x": 9,
+        "y": 9
+      },
+      "resource_type": "食物",
+      "amount": 2
+    },
+    "food_5": {
+      "id": "food_5",
+      "position": {
+        "x": 18,
+        "y": 15
+      },
+      "resource_type": "食物",
+      "amount": 1
+    },
+    "food_6": {
+      "id": "food_6",
+      "position": {
+        "x": 14,
+        "y": 3
+      },
+      "resource_type": "食物",
+      "amount": 2
+    },
+    "food_7": {
+      "id": "food_7",
+      "position": {
+        "x": 3,
+        "y": 12
+      },
+      "resource_type": "食物",
+      "amount": 1
+    },
+    "food_8": {
+      "id": "food_8",
+      "position": {
+        "x": 5,
+        "y": 16
+      },
+      "resource_type": "食物",
+      "amount": 3
+    },
+    "food_9": {
+      "id": "food_9",
+      "position": {
+        "x": 17,
+        "y": 9
+      },
+      "resource_type": "食物",
+      "amount": 0
+    },
+    "food_10": {
+      "id": "food_10",
+      "position": {
+        "x": 2,
+        "y": 10
+      },
+      "resource_type": "食物",
+      "amount": 3
+    },
+    "food_11": {
+      "id": "food_11",
+      "position": {
+        "x": 15,
+        "y": 0
+      },
+      "resource_type": "食物",
+      "amount": 0
+    },
+    "food_12": {
+      "id": "food_12",
+      "position": {
+        "x": 18,
+        "y": 14
+      },
+      "resource_type": "食物",
+      "amount": 3
+    },
+    "food_13": {
+      "id": "food_13",
+      "position": {
+        "x": 2,
+        "y": 11
+      },
+      "resource_type": "食物",
+      "amount": 2
+    },
+    "food_14": {
+      "id": "food_14",
+      "position": {
+        "x": 5,
+        "y": 2
+      },
+      "resource_type": "食物",
+      "amount": 2
+    },
+    "food_15": {
+      "id": "food_15",
+      "position": {
+        "x": 2,
+        "y": 8
+      },
+      "resource_type": "食物",
+      "amount": 2
+    },
+    "food_16": {
+      "id": "food_16",
+      "position": {
+        "x": 11,
+        "y": 16
+      },
+      "resource_type": "食物",
+      "amount": 3
+    },
+    "food_17": {
+      "id": "food_17",
+      "position": {
+        "x": 12,
+        "y": 16
+      },
+      "resource_type": "食物",
+      "amount": 2
+    },
+    "food_18": {
+      "id": "food_18",
+      "position": {
+        "x": 5,
+        "y": 15
+      },
+      "resource_type": "食物",
+      "amount": 3
+    },
+    "food_19": {
+      "id": "food_19",
+      "position": {
+        "x": 15,
+        "y": 12
+      },
+      "resource_type": "食物",
+      "amount": 0
+    },
+    "food_20": {
+      "id": "food_20",
+      "position": {
+        "x": 10,
+        "y": 6
+      },
+      "resource_type": "食物",
+      "amount": 1
+    },
+    "food_21": {
+      "id": "food_21",
+      "position": {
+        "x": 9,
+        "y": 16
+      },
+      "resource_type": "食物",
+      "amount": 0
+    },
+    "food_22": {
+      "id": "food_22",
+      "position": {
+        "x": 2,
+        "y": 3
+      },
+      "resource_type": "食物",
+      "amount": 0
+    },
+    "food_23": {
+      "id": "food_23",
+      "position": {
+        "x": 16,
+        "y": 4
+      },
+      "resource_type": "食物",
+      "amount": 0
+    },
+    "food_24": {
+      "id": "food_24",
+      "position": {
+        "x": 9,
+        "y": 14
+      },
+      "resource_type": "食物",
+      "amount": 1
+    },
+    "food_25": {
+      "id": "food_25",
+      "position": {
+        "x": 9,
+        "y": 1
+      },
+      "resource_type": "食物",
+      "amount": 2
+    },
+    "food_26": {
+      "id": "food_26",
+      "position": {
+        "x": 0,
+        "y": 11
+      },
+      "resource_type": "食物",
+      "amount": 1
+    },
+    "food_27": {
+      "id": "food_27",
+      "position": {
+        "x": 13,
+        "y": 6
+      },
+      "resource_type": "食物",
+      "amount": 0
+    },
+    "food_28": {
+      "id": "food_28",
+      "position": {
+        "x": 4,
+        "y": 4
+      },
+      "resource_type": "食物",
+      "amount": 2
+    },
+    "food_29": {
+      "id": "food_29",
+      "position": {
+        "x": 10,
+        "y": 9
+      },
+      "resource_type": "食物",
+      "amount": 2
+    }
+  },
+  "messages": [
+    {
+      "from": "agent_16",
+      "to": "agent_10",
+      "content": "你好agent_10，我是agent_16，我有医疗技能，我们可以合作获取更多食物资源",
+      "tick": 4,
+      "timestamp": "2026-05-24T11:13:22.913526"
+    },
+    {
+      "from": "agent_16",
+      "to": "agent_10",
+      "content": "你好agent_10，我需要食物来维持能量，你有多余的食物可以交易吗？我可以提供医疗帮助作为回报。",
+      "tick": 5,
+      "timestamp": "2026-05-24T11:13:44.857176"
+    },
+    {
+      "from": "agent_16",
+      "to": "agent_10",
+      "content": "你好agent_10，我需要食物来维持能量，你有食物可以交易吗？我可以用医疗技能帮助你。",
+      "tick": 6,
+      "timestamp": "2026-05-24T11:14:18.224273"
+    }
+  ]
+}

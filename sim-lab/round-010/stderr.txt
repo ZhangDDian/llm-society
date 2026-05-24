@@ -1,0 +1,75 @@
+═══ Round 010: 完美主义陷阱测试 ═══
+  A组4人(有降级提示) vs B组4人(无降级提示) | 20天
+  eat+6 craft+18 被动-2 起始80
+
+  [err]'NoneType' object has no attribute 'strip'
+  [err]'NoneType' object has no attribute 'strip'
+  第 1天 | A:4人 E=312 eat=0 give=0 craft=0 | B:4人 E=312 eat=0 give=0 craft=0 | 5s
+  第 2天 | A:4人 E=302 eat=0 give=0 craft=0 | B:4人 E=301 eat=0 give=0 craft=0 | 4s
+  第 3天 | A:4人 E=290 eat=0 give=0 craft=0 | B:4人 E=289 eat=0 give=2 craft=0 | 6s
+        🤝 乙谷→乙石:谷物
+        🤝 乙石→乙谷:石料
+  [err]'NoneType' object has no attribute 'strip'
+  第 4天 | A:4人 E=279 eat=0 give=0 craft=0 | B:4人 E=278 eat=0 give=0 craft=0 | 5s
+  第 5天 | A:4人 E=269 eat=0 give=0 craft=0 | B:4人 E=266 eat=0 give=0 craft=0 | 3s
+  第 6天 | A:4人 E=257 eat=0 give=0 craft=0 | B:4人 E=256 eat=0 give=0 craft=0 | 5s
+  第 7天 | A:4人 E=246 eat=0 give=0 craft=0 | B:4人 E=248 eat=0 give=0 craft=0 | 5s
+  第 8天 | A:4人 E=234 eat=0 give=0 craft=0 | B:4人 E=238 eat=0 give=0 craft=0 | 6s
+  第 9天 | A:4人 E=223 eat=0 give=1 craft=0 | B:4人 E=228 eat=0 give=0 craft=0 | 4s
+        🤝 甲木→甲石:木材
+  第10天 | A:4人 E=231 eat=0 give=0 craft=1 | B:4人 E=218 eat=0 give=1 craft=0 | 4s
+        🤝 乙草→乙谷:药草
+        ✅ 甲石合成(石料+木材)→+18
+  第11天 | A:4人 E=220 eat=0 give=1 craft=0 | B:4人 E=207 eat=0 give=2 craft=0 | 3s
+        🤝 乙草→乙谷:药草
+        🤝 乙谷→乙石:药草
+        🤝 甲石→甲木:石料
+  第12天 | A:4人 E=210 eat=0 give=0 craft=0 | B:4人 E=215 eat=0 give=1 craft=1 | 5s
+        🤝 乙谷→乙石:药草
+        ✅ 乙石合成(谷物+药草)→+18
+  [err]'NoneType' object has no attribute 'strip'
+  第13天 | A:4人 E=200 eat=0 give=1 craft=0 | B:4人 E=204 eat=0 give=2 craft=0 | 6s
+        🤝 乙石→乙谷:药草
+        🤝 乙谷→乙石:药草
+        🤝 甲草→甲石:药草
+  [err]'NoneType' object has no attribute 'strip'
+  第14天 | A:4人 E=190 eat=0 give=1 craft=0 | B:4人 E=193 eat=0 give=2 craft=0 | 8s
+        🤝 乙石→乙谷:药草
+        🤝 甲草→甲石:药草
+        🤝 乙谷→乙石:药草
+  [err]'NoneType' object has no attribute 'strip'
+  第15天 | A:4人 E=180 eat=0 give=1 craft=0 | B:4人 E=182 eat=0 give=2 craft=0 | 7s
+        🤝 乙石→乙谷:药草
+        🤝 乙谷→乙石:药草
+        🤝 甲石→甲草:药草
+  [err]'NoneType' object has no attribute 'strip'
+  第16天 | A:4人 E=168 eat=0 give=3 craft=0 | B:4人 E=171 eat=0 give=2 craft=0 | 5s
+        🤝 甲草→甲木:药草
+        🤝 乙石→乙谷:药草
+        🤝 乙谷→乙石:药草
+        🤝 甲木→甲石:木材
+  第17天 | A:4人 E=159 eat=0 give=1 craft=0 | B:4人 E=161 eat=0 give=1 craft=0 | 4s
+        🤝 甲草→甲木:药草
+        🤝 乙石→乙谷:药草
+  第18天 | A:4人 E=150 eat=0 give=0 craft=0 | B:4人 E=151 eat=0 give=1 craft=0 | 4s
+        🤝 乙谷→乙石:石料
+  [err]'NoneType' object has no attribute 'strip'
+  第19天 | A:4人 E=140 eat=0 give=1 craft=0 | B:4人 E=140 eat=0 give=2 craft=0 | 4s
+        🤝 甲草→甲木:药草
+        🤝 乙谷→乙石:药草
+        🤝 乙石→乙谷:药草
+  第20天 | A:4人 E=131 eat=0 give=1 craft=0 | B:4人 E=130 eat=0 give=2 craft=0 | 4s
+        🤝 乙谷→乙石:药草
+        🤝 甲木→甲草:石料
+        🤝 乙石→乙谷:药草
+
+════════════════════════════════════════════════════════════
+  【降级提示是否打破完美主义陷阱？】
+  有降级提示: 0吃 1合成 11给 2话 | 存活4/4 E=131
+  无降级提示: 0吃 1合成 20给 0话 | 存活4/4 E=130
+
+  进食: t=0 p=1.0 ✗
+  合成: t=0.0 p=1.0 ✗
+  能量: t=0.009 p=0.993 ✗
+  API: 160
+════════════════════════════════════════════════════════════

@@ -1,0 +1,85 @@
+═══ Round 011: 互惠规范 vs 利他规范 ═══
+  A组5人(互惠：有来有往) vs B组5人(利他：互帮互助)
+  eat+6 craft+18 被动-2 起始60 | 20天
+  say/give免费 | 视野6
+
+  Day 1 | A:5人 E=290 eat=0 give=0 craft=0 | B:5人 E=290 eat=0 give=0 craft=0 | 4s
+  Day 2 | A:5人 E=276 eat=0 give=0 craft=0 | B:5人 E=278 eat=0 give=2 craft=0 | 4s
+        🤝 阿岩→阿山:石料
+        🤝 阿兰→阿山:药草
+  Day 3 | A:5人 E=265 eat=0 give=2 craft=0 | B:5人 E=283 eat=0 give=1 craft=1 | 4s
+        🤝 阿磊→阿林:石料
+        🤝 阿禾→阿兰:谷物
+        🤝 阿林→阿磊:木材
+        ✅ 阿山合成(谷物+石料)→+18
+  Day 4 | A:5人 E=255 eat=0 give=2 craft=0 | B:5人 E=273 eat=0 give=3 craft=0 | 5s
+        🤝 阿林→阿磊:石料
+        🤝 阿松→阿禾:木材
+        🤝 阿磊→阿丰:木材
+        🤝 阿禾→阿兰:谷物
+        🤝 阿山→阿岩:药草
+  Day 5 | A:5人 E=245 eat=0 give=3 craft=0 | B:5人 E=281 eat=0 give=1 craft=1 | 5s
+        🤝 阿磊→阿林:石料
+        🤝 阿岩→阿禾:药草
+        ✅ 阿兰合成(药草+谷物)→+18
+        🤝 阿林→阿磊:石料
+        🤝 阿田→阿丰:谷物
+  [err] 阿丰: Extra data: line 8 column 1 (char 215)
+  Day 6 | A:5人 E=234 eat=0 give=2 craft=0 | B:5人 E=287 eat=0 give=0 craft=1 | 5s
+        ✅ 阿禾合成(木材+药草)→+18
+        🤝 阿磊→阿林:石料
+        🤝 阿林→阿磊:石料
+  Day 7 | A:5人 E=241 eat=0 give=1 craft=1 | B:5人 E=275 eat=0 give=0 craft=0 | 4s
+        ✅ 阿丰合成(谷物+木材)→+18
+        🤝 阿磊→阿林:石料
+  Day 8 | A:5人 E=230 eat=0 give=3 craft=0 | B:5人 E=262 eat=0 give=0 craft=0 | 6s
+        🤝 阿田→阿丰:谷物
+        🤝 阿丰→阿田:谷物
+        🤝 阿林→阿磊:石料
+  Day 9 | A:5人 E=219 eat=0 give=2 craft=0 | B:5人 E=248 eat=0 give=0 craft=0 | 5s
+        🤝 阿磊→阿丰:石料
+        🤝 阿丰→阿田:谷物
+  Day10 | A:5人 E=209 eat=0 give=2 craft=0 | B:5人 E=234 eat=0 give=0 craft=0 | 5s
+        🤝 阿磊→阿丰:石料
+        🤝 阿田→阿丰:谷物
+  Day11 | A:5人 E=216 eat=0 give=0 craft=1 | B:5人 E=219 eat=0 give=0 craft=0 | 5s
+        ✅ 阿丰合成(谷物+石料)→+18
+  Day12 | A:5人 E=205 eat=0 give=1 craft=0 | B:5人 E=208 eat=0 give=0 craft=0 | 4s
+        🤝 阿田→阿丰:谷物
+  Day13 | A:5人 E=212 eat=0 give=1 craft=1 | B:5人 E=212 eat=0 give=0 craft=1 | 7s
+        ✅ 阿丰合成(谷物+石料)→+18
+        ✅ 阿兰合成(药草+谷物)→+18
+        🤝 阿田→阿丰:谷物
+  Day14 | A:5人 E=202 eat=0 give=2 craft=0 | B:5人 E=200 eat=0 give=0 craft=0 | 5s
+        🤝 阿田→阿丰:谷物
+        🤝 阿丰→阿田:谷物
+  Day15 | A:5人 E=198 eat=1 give=1 craft=0 | B:5人 E=188 eat=0 give=0 craft=0 | 4s
+        🤝 阿丰→阿田:谷物
+        🍽 阿田吃谷物(+6)
+  [err] 阿兰: Extra data: line 8 column 1 (char 168)
+  Day16 | A:5人 E=186 eat=0 give=0 craft=0 | B:5人 E=175 eat=0 give=0 craft=0 | 6s
+  [err] 阿兰: Extra data: line 7 column 1 (char 124)
+  Day17 | A:5人 E=175 eat=0 give=0 craft=0 | B:5人 E=164 eat=0 give=0 craft=0 | 5s
+  [err] 阿兰: Extra data: line 8 column 1 (char 131)
+  Day18 | A:5人 E=165 eat=0 give=1 craft=0 | B:5人 E=153 eat=0 give=1 craft=0 | 8s
+        🤝 阿岩→阿兰:石料
+        🤝 阿田→阿丰:谷物
+  Day19 | A:5人 E=155 eat=0 give=1 craft=0 | B:5人 E=142 eat=0 give=2 craft=0 | 5s
+        🤝 阿岩→阿兰:石料
+        🤝 阿兰→阿山:石料
+        🤝 阿丰→阿磊:谷物
+  Day20 | A:5人 E=145 eat=0 give=1 craft=0 | B:5人 E=132 eat=0 give=1 craft=0 | 5s
+        🤝 阿兰→阿山:石料
+        🤝 阿磊→阿林:谷物
+
+════════════════════════════════════════════════════════════
+  【互惠规范 vs 利他规范】
+  互惠(有来有往): 1吃 3合成 25给 36话 | 存活5/5 E=145 | 互惠对=10
+  利他(互帮互助): 0吃 4合成 11给 4话 | 存活5/5 E=132 | 互惠对=1
+
+  合成: t=-0.406 p=0.6844 ✗
+  赠与: t=2.386 p=0.017 ✓
+  能量: t=-0.611 p=0.5409 ✗
+  互惠指数: A=10 B=1
+  API调用: 200
+════════════════════════════════════════════════════════════
