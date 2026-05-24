@@ -1,0 +1,55 @@
+═══ Round 019c: say免费 + 挂单trade —— 剥离沟通vs行动的机制干扰 ═══
+  A组5人：有挂单trade + say免费（每tick可以说话+做事）
+  B组5人：无trade + say免费（对照组）
+  两组物理隔离（只能看到/交互同组人）
+  eat+6 craft+18 被动-2 起始70 | 30天
+
+  Day 1 | A:5人 E=340 msg=4 give=0 craft=0 | B:5人 E=340 msg=5 give=0 craft=0 | 28s
+  Day 2 | A:5人 E=328 msg=5 give=0 craft=0 | B:5人 E=347 msg=5 give=3 craft=1 | 33s
+  Day 3 | A:5人 E=318 msg=5 give=0 craft=0 🤝提2匹0 | B:5人 E=336 msg=5 give=0 craft=0 | 33s
+  Day 4 | A:5人 E=308 msg=5 give=0 craft=0 🤝提2匹0 | B:5人 E=344 msg=5 give=0 craft=1 | 27s
+  Day 5 | A:5人 E=298 msg=5 give=0 craft=0 🤝提2匹0 | B:5人 E=333 msg=5 give=1 craft=0 | 29s
+  Day 6 | A:5人 E=288 msg=5 give=0 craft=0 🤝提2匹0 | B:5人 E=321 msg=5 give=0 craft=0 | 31s
+  Day 7 | A:5人 E=278 msg=5 give=0 craft=0 🤝提2匹0 | B:5人 E=311 msg=5 give=0 craft=0 | 32s
+  Day 8 | A:5人 E=268 msg=5 give=0 craft=0 🤝提2匹0 | B:5人 E=337 msg=5 give=0 craft=2 | 33s
+  Day 9 | A:5人 E=258 msg=5 give=0 craft=0 🤝提4匹0 | B:5人 E=324 msg=5 give=0 craft=0 | 32s
+  Day10 | A:5人 E=248 msg=5 give=0 craft=0 🤝提5匹0 | B:5人 E=313 msg=5 give=1 craft=0 | 31s
+  Day11 | A:5人 E=238 msg=5 give=0 craft=0 🤝提5匹0 | B:5人 E=321 msg=5 give=2 craft=1 | 31s
+  Day12 | A:5人 E=228 msg=5 give=0 craft=0 🤝提6匹0 | B:5人 E=311 msg=5 give=0 craft=0 | 31s
+  Day13 | A:5人 E=218 msg=5 give=0 craft=0 🤝提7匹0 | B:5人 E=301 msg=5 give=2 craft=0 | 27s
+  Day14 | A:5人 E=208 msg=5 give=0 craft=0 🤝提7匹0 | B:5人 E=289 msg=5 give=0 craft=0 | 31s
+  Day15 | A:5人 E=198 msg=5 give=0 craft=0 🤝提8匹0 | B:5人 E=279 msg=5 give=0 craft=0 | 28s
+  Day16 | A:5人 E=188 msg=5 give=0 craft=0 🤝提9匹0 | B:5人 E=269 msg=5 give=1 craft=0 | 27s
+  Day17 | A:5人 E=178 msg=5 give=0 craft=0 🤝提9匹0 | B:5人 E=277 msg=5 give=0 craft=1 | 28s
+  Day18 | A:5人 E=168 msg=5 give=0 craft=0 🤝提11匹0 | B:5人 E=267 msg=5 give=0 craft=0 | 27s
+  Day19 | A:5人 E=158 msg=5 give=0 craft=0 🤝提13匹0 | B:5人 E=257 msg=5 give=3 craft=0 | 27s
+  Day20 | A:5人 E=148 msg=5 give=0 craft=0 🤝提15匹0 | B:5人 E=264 msg=5 give=0 craft=1 | 28s
+  Day21 | A:5人 E=138 msg=5 give=0 craft=0 🤝提17匹0 | B:5人 E=253 msg=5 give=0 craft=0 | 26s
+  Day22 | A:5人 E=128 msg=5 give=0 craft=0 🤝提17匹0 | B:5人 E=242 msg=5 give=1 craft=0 | 29s
+  Day23 | A:5人 E=118 msg=5 give=0 craft=0 🤝提17匹0 | B:5人 E=248 msg=5 give=0 craft=1 | 29s
+  Day24 | A:5人 E=108 msg=5 give=0 craft=0 🤝提19匹0 | B:5人 E=237 msg=5 give=0 craft=0 | 27s
+  [err] 阿岩: Extra data: line 9 column 1 (char 172)
+  Day25 | A:5人 E= 98 msg=5 give=0 craft=0 🤝提19匹0 | B:5人 E=226 msg=4 give=0 craft=0 | 24s
+  Day26 | A:5人 E= 87 msg=5 give=0 craft=0 🤝提21匹0 | B:5人 E=216 msg=5 give=0 craft=0 | 28s
+  Day27 | A:5人 E= 77 msg=5 give=0 craft=0 🤝提22匹0 | B:5人 E=205 msg=5 give=0 craft=0 | 29s
+  Day28 | A:5人 E= 67 msg=5 give=0 craft=0 🤝提23匹0 | B:5人 E=194 msg=5 give=0 craft=0 | 31s
+  Day29 | A:5人 E= 57 msg=5 give=0 craft=0 🤝提24匹0 | B:5人 E=183 msg=5 give=0 craft=0 | 30s
+  Day30 | A:5人 E= 47 msg=5 give=0 craft=0 🤝提26匹0 | B:5人 E=170 msg=5 give=0 craft=0 | 29s
+
+════════════════════════════════════════════════════════════
+  【say免费 + 挂单trade 实验结果】
+
+  ★ 核心指标
+    A组(trade+免费say)：149条消息 + 26次trade提议 → 0次匹配成功（0%）
+    A组合成：0 | give：0
+    B组(give+免费say)：149条消息 + 14次give → 8次合成
+
+  → ✗ 假设不成立：说了很多话 + 发了trade，但仍然匹配不上
+  → 即使沟通免费，模型也不会用沟通来协调行动
+
+  总览：
+    trade+免费say: 149msg 0give 0trade成功 0craft 0eat | 存活5/5 E=47
+    give+免费say: 149msg 14give 0trade成功 8craft 0eat | 存活5/5 E=170
+
+  API调用: 300
+════════════════════════════════════════════════════════════

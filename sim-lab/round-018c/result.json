@@ -1,0 +1,1467 @@
+{
+ "experiment": "round-018c: commitment tracking (promise → execution)",
+ "hypothesis": "承诺追踪（提示词提醒未兑现承诺）能提升承诺→执行转化率",
+ "counter_hypothesis": "'说到做不到'不是因为忘了，是因为模型本身不会把语言承诺转化为行动选择",
+ "design": {
+  "A": "有承诺追踪（自动检测承诺意图→提示词提醒→兑现检测）",
+  "B": "无承诺追踪（仅最近5条记忆）"
+ },
+ "ticks": 30,
+ "api_calls": 296,
+ "core_metric": {
+  "A_promises_made": 73,
+  "A_promises_fulfilled": 9,
+  "A_promises_expired": 56,
+  "A_fulfillment_rate": 0.123,
+  "B_promises_made": 38,
+  "B_promises_fulfilled": 6,
+  "B_promises_expired": 27,
+  "B_fulfillment_rate": 0.158
+ },
+ "commitments_detail": {
+  "A": [
+   {
+    "day": 3,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "我只有一个谷物，自己留着保命吧。你有石料的话，可以跟周谷换谷物啊。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 4,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有3个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 5,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 6,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 7,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 8,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 9,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 10,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 11,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 12,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 13,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 14,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 15,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 16,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 17,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 18,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 19,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 20,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 21,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 22,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 23,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 24,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 25,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 26,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 27,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 28,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我之前说错了，现在我有2个谷物了。不过我还是不能直接给你，因为我自己也需要留些保命。但你可以去找周谷换他的石料，他",
+    "fulfilled": false,
+    "expired": false
+   },
+   {
+    "day": 29,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，我听到你说要和我商量交换的事。不过我需要先兑现之前的承诺，你去找周谷，用你的石料和他交换药草，这样你们俩都有不同的",
+    "fulfilled": false,
+    "expired": false
+   },
+   {
+    "day": 30,
+    "speaker": "陈越",
+    "target": "赵石",
+    "content": "赵石，谢谢你给我石料。我现在有谷物和石料了，可以合成获得大量能量。之前我对你说的话没说完，是想建议你去找周谷交换，但现在",
+    "fulfilled": false,
+    "expired": false
+   },
+   {
+    "day": 10,
+    "speaker": "林朗",
+    "target": "孙木",
+    "content": "我只有木材，没有谷物，没法和你换。",
+    "fulfilled": true,
+    "expired": false
+   },
+   {
+    "day": 11,
+    "speaker": "林朗",
+    "target": "孙木",
+    "content": "孙木，我之前说只有木材是因为确实没有谷物，现在我想办法弄到谷物就和你交换。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 13,
+    "speaker": "林朗",
+    "target": "孙木",
+    "content": "孙木，我现在去弄谷物，马上就能和你交换了。我现在只有木材，你等等我。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 14,
+    "speaker": "林朗",
+    "target": "孙木",
+    "content": "孙木，我现在去找谷物，马上就能和你交换了。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 15,
+    "speaker": "林朗",
+    "target": "孙木",
+    "content": "孙木，非常抱歉，我之前承诺给你谷物来交换，但我还没有找到谷物。我现在就去找谷物，今天一定兑现承诺。",
+    "fulfilled": true,
+    "expired": false
+   },
+   {
+    "day": 22,
+    "speaker": "林朗",
+    "target": "孙木",
+    "content": "孙木，我现在有石料和药草了，可以和你合成吗？我用石料换你手里的药草。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 23,
+    "speaker": "林朗",
+    "target": "孙木",
+    "content": "孙木，我现在有石料和药草了，可以和你合成吗？我用石料换你手里的药草。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 26,
+    "speaker": "林朗",
+    "target": "孙木",
+    "content": "孙木，我现在有石料和药草了，可以和你合成，你把药草给我，我给你石料。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 30,
+    "speaker": "林朗",
+    "target": "周谷",
+    "content": "周谷，我现在没有谷物，只有药草和石料。你有谷物的话，我们可以用我的石料换你的谷物。",
+    "fulfilled": false,
+    "expired": false
+   },
+   {
+    "day": 2,
+    "speaker": "赵石",
+    "target": "陈越",
+    "content": "你好陈越，我有石料，你能给我谷物吗？明天我也给你带谷物回来。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 9,
+    "speaker": "赵石",
+    "target": "周谷",
+    "content": "周谷，我现在有药草了，可以和你换石料。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 11,
+    "speaker": "赵石",
+    "target": "周谷",
+    "content": "周谷，我记得之前答应过用我的药草和你换石料，现在我已经兑现了承诺，你现在有谷物了，我们可以交易。",
+    "fulfilled": true,
+    "expired": false
+   },
+   {
+    "day": 13,
+    "speaker": "赵石",
+    "target": "周谷",
+    "content": "周谷，我现在有药草了，可以和你换石料。",
+    "fulfilled": true,
+    "expired": false
+   },
+   {
+    "day": 16,
+    "speaker": "赵石",
+    "target": "林朗",
+    "content": "林朗，你好，我叫赵石。我看到你现在没有资源，而我刚采了石料。如果你愿意的话，可以去采些药草，然后我们交换一下？",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 17,
+    "speaker": "赵石",
+    "target": "林朗",
+    "content": "林朗，你好，我叫赵石。我看到你现在没有资源，而我刚采了石料。如果你愿意的话，可以去采些药草，然后我们交换一下？",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 18,
+    "speaker": "赵石",
+    "target": "林朗",
+    "content": "林朗，你好，我叫赵石。我看到你现在没有资源，而我刚采了石料。如果你愿意的话，可以去采些药草，然后我们交换一下？",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 19,
+    "speaker": "赵石",
+    "target": "林朗",
+    "content": "林朗，你好，我叫赵石。我看到你现在没有资源，而我刚采了石料。如果你愿意的话，可以去采些药草，然后我们交换一下？",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 20,
+    "speaker": "赵石",
+    "target": "林朗",
+    "content": "林朗，你好，我叫赵石。我看到你现在没有资源，而我刚采了石料。如果你愿意的话，可以去采些药草，然后我们交换一下？",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 21,
+    "speaker": "赵石",
+    "target": "林朗",
+    "content": "林朗，我听到你说需要药草。我看到孙木那里有药草，要不我去跟孙木商量用我的石料换他的药草，然后我们各取所需？",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 22,
+    "speaker": "赵石",
+    "target": "林朗",
+    "content": "林朗，我看到你现在很需要药草，我记得孙木那里有药草，我可以用我的石料去和他交换。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 23,
+    "speaker": "赵石",
+    "target": "林朗",
+    "content": "林朗，我之前答应过要帮你用石料和孙木换药草，现在我就去兑现承诺。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 25,
+    "speaker": "赵石",
+    "target": "林朗",
+    "content": "林朗，我之前答应过要帮你用石料和孙木换药草，现在我就去兑现承诺。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 28,
+    "speaker": "赵石",
+    "target": "陈越",
+    "content": "陈越，我听说你需要谷物保命。我现在只有石料，但我可以和你商量个交换的事。",
+    "fulfilled": true,
+    "expired": false
+   },
+   {
+    "day": 30,
+    "speaker": "赵石",
+    "target": "陈越",
+    "content": "陈越，我刚给了你石料，现在我背包空了。我记得你说过可以用谷物和周谷换药草，现在周谷有药草，你去和他交换吧。",
+    "fulfilled": false,
+    "expired": false
+   },
+   {
+    "day": 9,
+    "speaker": "孙木",
+    "target": "林朗",
+    "content": "林朗，你有木材，我需要谷物，能和你换吗？",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 10,
+    "speaker": "孙木",
+    "target": "林朗",
+    "content": "林朗，你有木材，我需要谷物，能和你换吗？",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 11,
+    "speaker": "孙木",
+    "target": "林朗",
+    "content": "林朗，你说只有木材没有谷物，那我去找别人换吧。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 12,
+    "speaker": "孙木",
+    "target": "林朗",
+    "content": "林朗，我听说你现在有谷物了？我们之前说好的交换，什么时候可以进行？",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 13,
+    "speaker": "孙木",
+    "target": "林朗",
+    "content": "林朗，谢谢你给我木材。既然你现在有木材了，我们可以继续之前说好的交换，你给我谷物，我给你木材。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 14,
+    "speaker": "孙木",
+    "target": "林朗",
+    "content": "林朗，我看到你背包里现在有木材了，而我这里也有木材。你之前说要给我谷物，现在我们可以交换了吗？我需要谷物来合成能量。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 15,
+    "speaker": "孙木",
+    "target": "林朗",
+    "content": "林朗，谢谢你给我木材。既然你现在有木材了，我们可以继续之前说好的交换，你给我谷物，我给你木材。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 16,
+    "speaker": "孙木",
+    "target": "林朗",
+    "content": "林朗，我听到你说要找谷物兑现承诺，但你现在背包是空的。如果你真的想兑现承诺，不如先给我你有的资源，我这里有木材可以给你。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 17,
+    "speaker": "孙木",
+    "target": "林朗",
+    "content": "林朗，我看到你背包里有药草，现在我们可以兑现之前的承诺了。你给我谷物，我给你木材。如果你没有谷物，我们可以用你有的药草来",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 19,
+    "speaker": "孙木",
+    "target": "林朗",
+    "content": "林朗，现在你有药草了，我也有木材，我们可以合成获得18能量！你要把药草给我，我给你我的木材。",
+    "fulfilled": true,
+    "expired": false
+   },
+   {
+    "day": 29,
+    "speaker": "孙木",
+    "target": "林朗",
+    "content": "林朗，我现在没有药草了，你那边有石料和药草，能换个木材给我吗？我现在急需木材。",
+    "fulfilled": false,
+    "expired": false
+   },
+   {
+    "day": 30,
+    "speaker": "孙木",
+    "target": "林朗",
+    "content": "林朗，我现在没有药草了，你那边有石料和药草，能换个木材给我吗？我现在急需木材。",
+    "fulfilled": false,
+    "expired": false
+   },
+   {
+    "day": 2,
+    "speaker": "周谷",
+    "target": "陈越",
+    "content": "陈越，我这有个谷物，能跟你换点别的吗？",
+    "fulfilled": true,
+    "expired": false
+   },
+   {
+    "day": 4,
+    "speaker": "周谷",
+    "target": "赵石",
+    "content": "赵石，我这有石料，你能跟我换点别的吗？",
+    "fulfilled": true,
+    "expired": false
+   },
+   {
+    "day": 6,
+    "speaker": "周谷",
+    "target": "赵石",
+    "content": "赵石，我这有石料，你能跟我换点别的吗？",
+    "fulfilled": true,
+    "expired": false
+   },
+   {
+    "day": 8,
+    "speaker": "周谷",
+    "target": "赵石",
+    "content": "赵石，我需要不同的资源来合成，你有药草可以换吗？",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 9,
+    "speaker": "周谷",
+    "target": "赵石",
+    "content": "赵石，我需要不同的资源来合成，你有药草可以换吗？",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 10,
+    "speaker": "周谷",
+    "target": "赵石",
+    "content": "赵石，太好了！我现在有你的石料了，我可以用谷物跟你换药草吗？我现在就去采点谷物。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 12,
+    "speaker": "周谷",
+    "target": "赵石",
+    "content": "赵石，不好意思，我之前答应给你谷物但还没兑现，我现在马上去采一些谷物来履行承诺。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 15,
+    "speaker": "周谷",
+    "target": "赵石",
+    "content": "赵石，不好意思，我之前答应给你谷物但还没兑现。我现在去采集谷物，明天一定给你。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 29,
+    "speaker": "周谷",
+    "target": "林朗",
+    "content": "林朗，现在我有了你的药草，我采了些谷物，我们来交换吧？你给我你的谷物，我给你我的药草。",
+    "fulfilled": false,
+    "expired": false
+   }
+  ],
+  "B": [
+   {
+    "day": 5,
+    "speaker": "阿山",
+    "target": "阿岩",
+    "content": "阿岩哥，我们继续交换吧！我现在有石料，你有谷物吗？",
+    "fulfilled": true,
+    "expired": false
+   },
+   {
+    "day": 9,
+    "speaker": "阿山",
+    "target": "阿兰",
+    "content": "阿兰妹子，你现在有谷物吗？我们可以交换！",
+    "fulfilled": true,
+    "expired": false
+   },
+   {
+    "day": 11,
+    "speaker": "阿山",
+    "target": "阿兰",
+    "content": "阿兰妹子，我采点谷物就来跟你换！",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 25,
+    "speaker": "阿山",
+    "target": "阿兰",
+    "content": "阿兰妹子，我现在有药草和木头，可以合成出来给你！",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 26,
+    "speaker": "阿山",
+    "target": "阿兰",
+    "content": "阿兰妹子，我现在有药草和木头，可以合成出来给你！稍等一下。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 28,
+    "speaker": "阿山",
+    "target": "阿兰",
+    "content": "阿兰妹子，我现在有药草和木头，可以合成出好东西！咱们交换一下？你给我药草，我给你木头，这样你也能合成！",
+    "fulfilled": false,
+    "expired": false
+   },
+   {
+    "day": 29,
+    "speaker": "阿山",
+    "target": "阿岩",
+    "content": "阿岩兄弟，我需要点石料，能换点吗？我现在虽然啥也没有，但我可以采谷物跟你换。",
+    "fulfilled": false,
+    "expired": false
+   },
+   {
+    "day": 30,
+    "speaker": "阿山",
+    "target": "阿岩",
+    "content": "阿岩兄弟，我需要点石料，能换点吗？我现在虽然没有，但我可以去采些谷物来跟你换。",
+    "fulfilled": false,
+    "expired": false
+   },
+   {
+    "day": 9,
+    "speaker": "阿兰",
+    "target": "阿山",
+    "content": "阿山哥，我没有谷物，不过你可以找阿禾换啊，她刚从我这拿了木材。",
+    "fulfilled": true,
+    "expired": false
+   },
+   {
+    "day": 10,
+    "speaker": "阿兰",
+    "target": "阿山",
+    "content": "阿山哥，我现在只有药草了，你不是刚跟我换了药草吗？",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 12,
+    "speaker": "阿兰",
+    "target": "阿岩",
+    "content": "阿岩哥，我这里有药草，可以跟你换谷物。",
+    "fulfilled": true,
+    "expired": false
+   },
+   {
+    "day": 13,
+    "speaker": "阿兰",
+    "target": "阿岩",
+    "content": "阿岩哥，我这里有药草，可以跟你换谷物。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 16,
+    "speaker": "阿兰",
+    "target": "阿禾",
+    "content": "阿禾，我现在背包空了，刚把药草都换出去了，等我去采些新的再来找你合成",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 17,
+    "speaker": "阿兰",
+    "target": "阿禾",
+    "content": "阿禾，我现在背包空了，刚把药草都换出去了，等我重新采一些药草再和你合成吧。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 18,
+    "speaker": "阿兰",
+    "target": "阿岩",
+    "content": "阿岩哥，我现在去采点药草，等下跟你换谷物。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 2,
+    "speaker": "阿岩",
+    "target": "阿山",
+    "content": "阿山，你好！我这里有石料，你有谷物吗？咱们可以交换一下，各取所需。",
+    "fulfilled": true,
+    "expired": false
+   },
+   {
+    "day": 4,
+    "speaker": "阿岩",
+    "target": "阿山",
+    "content": "谢谢你的谷物！我这还有石料，如果你需要可以继续交换",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 5,
+    "speaker": "阿岩",
+    "target": "阿山",
+    "content": "阿山，我现在有谷物了，你那里有石料吗？我们可以继续交换。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 6,
+    "speaker": "阿岩",
+    "target": "阿山",
+    "content": "阿山，我现在有谷物了，你那里有石料吗？我可以用谷物换你的石料。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 11,
+    "speaker": "阿岩",
+    "target": "阿兰",
+    "content": "阿兰，你好！我这里有谷物，如果你需要的话可以和我交换。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 13,
+    "speaker": "阿岩",
+    "target": "阿兰",
+    "content": "阿兰，我这里有石料，可以跟你换药草。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 14,
+    "speaker": "阿岩",
+    "target": "阿兰",
+    "content": "阿兰，我这里有石料，可以跟你换药草。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 15,
+    "speaker": "阿岩",
+    "target": "阿兰",
+    "content": "阿兰，谢谢你的药草！我这里有谷物，可以跟你换吗？",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 16,
+    "speaker": "阿岩",
+    "target": "阿兰",
+    "content": "阿兰，谢谢你的药草！我这里有谷物，可以跟你换。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 17,
+    "speaker": "阿岩",
+    "target": "阿兰",
+    "content": "阿兰，谢谢你的药草！我这里有谷物，可以跟你换。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 18,
+    "speaker": "阿岩",
+    "target": "阿兰",
+    "content": "阿兰，谢谢你的药草！我这里有谷物，可以跟你换吗？",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 19,
+    "speaker": "阿岩",
+    "target": "阿兰",
+    "content": "阿兰，我已经把谷物给你了，等你采到药草我们再交换吧！",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 20,
+    "speaker": "阿岩",
+    "target": "阿兰",
+    "content": "阿兰，我已经把谷物给你了，等你采到药草我就可以合成啦！",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 21,
+    "speaker": "阿岩",
+    "target": "阿兰",
+    "content": "阿兰，我已经把谷物给你了，等你采到药草我就可以合成啦！",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 22,
+    "speaker": "阿岩",
+    "target": "阿兰",
+    "content": "阿兰，我已经把谷物给你了，等你采到药草我们可以合成。",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 23,
+    "speaker": "阿岩",
+    "target": "阿兰",
+    "content": "阿兰，不好意思，我之前给你的谷物其实是借来的，现在得还给人家。不过我们可以重新做个交易，我用我的石料换你的药草怎么样？",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 24,
+    "speaker": "阿岩",
+    "target": "阿兰",
+    "content": "阿兰，不好意思，我之前给你的谷物其实是借的，现在我需要拿回来，因为我能量不够了",
+    "fulfilled": true,
+    "expired": false
+   },
+   {
+    "day": 25,
+    "speaker": "阿岩",
+    "target": "阿兰",
+    "content": "阿兰，我看到你还没有药草，我现在有药草了，可以和你交换，你给我谷物吧",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 4,
+    "speaker": "阿禾",
+    "target": "阿兰",
+    "content": "阿兰，谢谢你昨天给我的谷物，我想用我的谷物换你的木材，咱们都能合成新的资源！",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 5,
+    "speaker": "阿禾",
+    "target": "阿兰",
+    "content": "阿兰，我采到了谷物，现在可以给你了，你昨天说想用木材和我换对吗？",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 22,
+    "speaker": "阿禾",
+    "target": "阿兰",
+    "content": "阿兰，我现在有木材了，可以和你的药草合成，你去采药草吧，采到了我们交换",
+    "fulfilled": false,
+    "expired": true
+   },
+   {
+    "day": 28,
+    "speaker": "阿禾",
+    "target": "阿兰",
+    "content": "阿兰，我现在有木材了，可以和你的药草合成，你给我一份药草，我给你一份合成后的食物。",
+    "fulfilled": false,
+    "expired": false
+   },
+   {
+    "day": 30,
+    "speaker": "阿禾",
+    "target": "阿兰",
+    "content": "阿兰，我现在有木材了，可以和你的药草合成，你把药草给我，我给你木材，这样我们都能合成出更好的东西。",
+    "fulfilled": false,
+    "expired": false
+   }
+  ]
+ },
+ "groups": {
+  "A": {
+   "eats": 0,
+   "crafts": 3,
+   "gives": 16,
+   "harvests": 10,
+   "msgs": 91,
+   "alive": 5,
+   "energy": 88
+  },
+  "B": {
+   "eats": 0,
+   "crafts": 3,
+   "gives": 14,
+   "harvests": 9,
+   "msgs": 63,
+   "alive": 4,
+   "energy": 87
+  }
+ },
+ "per_agent": [
+  {
+   "name": "陈越",
+   "group": "A",
+   "alive": true,
+   "energy": 9,
+   "eaten": 0,
+   "crafted": 0,
+   "gives_out": 0,
+   "gives_in": 2,
+   "harvested": 1,
+   "msgs": 28,
+   "commitments_made": 28,
+   "commitments_fulfilled": 0
+  },
+  {
+   "name": "林朗",
+   "group": "A",
+   "alive": true,
+   "energy": 23,
+   "eaten": 0,
+   "crafted": 1,
+   "gives_out": 4,
+   "gives_in": 4,
+   "harvested": 2,
+   "msgs": 12,
+   "commitments_made": 9,
+   "commitments_fulfilled": 2
+  },
+  {
+   "name": "赵石",
+   "group": "A",
+   "alive": true,
+   "energy": 27,
+   "eaten": 0,
+   "crafted": 1,
+   "gives_out": 5,
+   "gives_in": 3,
+   "harvested": 4,
+   "msgs": 17,
+   "commitments_made": 15,
+   "commitments_fulfilled": 3
+  },
+  {
+   "name": "孙木",
+   "group": "A",
+   "alive": true,
+   "energy": 4,
+   "eaten": 0,
+   "crafted": 0,
+   "gives_out": 3,
+   "gives_in": 2,
+   "harvested": 1,
+   "msgs": 20,
+   "commitments_made": 12,
+   "commitments_fulfilled": 1
+  },
+  {
+   "name": "周谷",
+   "group": "A",
+   "alive": true,
+   "energy": 25,
+   "eaten": 0,
+   "crafted": 1,
+   "gives_out": 4,
+   "gives_in": 5,
+   "harvested": 2,
+   "msgs": 14,
+   "commitments_made": 9,
+   "commitments_fulfilled": 3
+  },
+  {
+   "name": "阿山",
+   "group": "B",
+   "alive": true,
+   "energy": 27,
+   "eaten": 0,
+   "crafted": 1,
+   "gives_out": 3,
+   "gives_in": 4,
+   "harvested": 1,
+   "msgs": 14,
+   "commitments_made": 8,
+   "commitments_fulfilled": 2
+  },
+  {
+   "name": "阿兰",
+   "group": "B",
+   "alive": true,
+   "energy": 24,
+   "eaten": 0,
+   "crafted": 1,
+   "gives_out": 5,
+   "gives_in": 4,
+   "harvested": 4,
+   "msgs": 7,
+   "commitments_made": 7,
+   "commitments_fulfilled": 2
+  },
+  {
+   "name": "阿岩",
+   "group": "B",
+   "alive": true,
+   "energy": 26,
+   "eaten": 0,
+   "crafted": 1,
+   "gives_out": 2,
+   "gives_in": 4,
+   "harvested": 1,
+   "msgs": 21,
+   "commitments_made": 18,
+   "commitments_fulfilled": 2
+  },
+  {
+   "name": "阿松",
+   "group": "B",
+   "alive": false,
+   "energy": -1,
+   "eaten": 0,
+   "crafted": 0,
+   "gives_out": 2,
+   "gives_in": 0,
+   "harvested": 2,
+   "msgs": 2,
+   "commitments_made": 0,
+   "commitments_fulfilled": 0
+  },
+  {
+   "name": "阿禾",
+   "group": "B",
+   "alive": true,
+   "energy": 10,
+   "eaten": 0,
+   "crafted": 0,
+   "gives_out": 2,
+   "gives_in": 2,
+   "harvested": 1,
+   "msgs": 19,
+   "commitments_made": 5,
+   "commitments_fulfilled": 0
+  }
+ ],
+ "per_tick": {
+  "A": {
+   "eats": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "crafts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "gives": [
+    0,
+    0,
+    2,
+    0,
+    2,
+    0,
+    2,
+    1,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    0
+   ],
+   "msgs": [
+    0,
+    2,
+    1,
+    2,
+    1,
+    3,
+    2,
+    2,
+    5,
+    4,
+    4,
+    3,
+    4,
+    3,
+    4,
+    3,
+    3,
+    4,
+    4,
+    4,
+    3,
+    4,
+    4,
+    3,
+    4,
+    3,
+    2,
+    3,
+    3,
+    4
+   ],
+   "energy": [
+    340,
+    327,
+    315,
+    303,
+    291,
+    279,
+    268,
+    276,
+    266,
+    256,
+    246,
+    236,
+    226,
+    216,
+    206,
+    196,
+    186,
+    176,
+    166,
+    156,
+    163,
+    153,
+    161,
+    151,
+    141,
+    129,
+    119,
+    108,
+    98,
+    88
+   ],
+   "alive": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+   ]
+  },
+  "B": {
+   "eats": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "crafts": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "gives": [
+    0,
+    1,
+    3,
+    0,
+    1,
+    1,
+    1,
+    0,
+    0,
+    2,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1
+   ],
+   "msgs": [
+    0,
+    1,
+    0,
+    3,
+    4,
+    1,
+    1,
+    1,
+    2,
+    1,
+    2,
+    1,
+    3,
+    2,
+    3,
+    3,
+    3,
+    3,
+    3,
+    2,
+    2,
+    2,
+    2,
+    2,
+    3,
+    2,
+    2,
+    3,
+    3,
+    3
+   ],
+   "energy": [
+    340,
+    327,
+    335,
+    324,
+    314,
+    303,
+    310,
+    299,
+    288,
+    278,
+    267,
+    254,
+    262,
+    252,
+    242,
+    231,
+    220,
+    209,
+    197,
+    185,
+    174,
+    163,
+    152,
+    141,
+    130,
+    120,
+    112,
+    103,
+    95,
+    87
+   ],
+   "alive": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    4,
+    4,
+    4,
+    4,
+    4
+   ]
+  }
+ }
+}

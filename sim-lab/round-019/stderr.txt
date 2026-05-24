@@ -1,0 +1,60 @@
+═══ Round 019: 原子化交换协议 —— trade 动作能否解决说到做不到 ═══
+  A组5人：有 trade 动作（双方同 tick 匹配自动交换）
+  B组5人：无 trade 动作（只有 give，交换靠两步单方面赠与）
+  eat+6 craft+18 被动-2 起始70 | 30天
+
+  Day 1 | A:5人 E=340 msg=0 give=0 craft=0 | B:5人 E=340 msg=0 give=0 craft=0 | 22s
+  Day 2 | A:5人 E=330 msg=0 give=0 craft=0 🤝trade提2匹0 | B:5人 E=347 msg=0 give=3 craft=1 | 26s
+  Day 3 | A:5人 E=320 msg=0 give=0 craft=0 🤝trade提4匹0 | B:5人 E=336 msg=0 give=2 craft=0 | 30s
+  Day 4 | A:5人 E=328 msg=1 give=0 craft=1 🤝trade提5匹0 | B:5人 E=344 msg=0 give=0 craft=1 | 26s
+  [err] 阿岩: Extra data: line 7 column 1 (char 97)
+  Day 5 | A:5人 E=318 msg=0 give=0 craft=0 🤝trade提7匹0 | B:5人 E=334 msg=0 give=1 craft=0 | 29s
+  Day 6 | A:5人 E=308 msg=0 give=0 craft=0 🤝trade提11匹0 | B:5人 E=342 msg=0 give=0 craft=1 | 28s
+  Day 7 | A:5人 E=298 msg=0 give=0 craft=0 🤝trade提12匹0 | B:5人 E=330 msg=0 give=0 craft=0 | 31s
+  Day 8 | A:5人 E=288 msg=0 give=0 craft=0 🤝trade提15匹0 | B:5人 E=320 msg=0 give=1 craft=0 | 27s
+  [err] 陈越: Extra data: line 8 column 1 (char 178)
+  Day 9 | A:5人 E=278 msg=0 give=0 craft=0 🤝trade提18匹0 | B:5人 E=327 msg=0 give=2 craft=1 | 32s
+  Day10 | A:5人 E=268 msg=0 give=0 craft=0 🤝trade提20匹0 | B:5人 E=315 msg=0 give=0 craft=0 | 28s
+  Day11 | A:5人 E=258 msg=0 give=0 craft=0 🤝trade提22匹0 | B:5人 E=305 msg=0 give=3 craft=0 | 27s
+  Day12 | A:5人 E=248 msg=0 give=0 craft=0 🤝trade提25匹0 | B:5人 E=295 msg=0 give=4 craft=0 | 27s
+  Day13 | A:5人 E=238 msg=0 give=0 craft=0 🤝trade提28匹0 | B:5人 E=303 msg=0 give=0 craft=1 | 28s
+  Day14 | A:5人 E=228 msg=0 give=0 craft=0 🤝trade提32匹0 | B:5人 E=292 msg=1 give=0 craft=0 | 31s
+  [err] 阿岩: Extra data: line 7 column 1 (char 164)
+  Day15 | A:5人 E=218 msg=0 give=0 craft=0 🤝trade提34匹0 | B:5人 E=300 msg=0 give=1 craft=1 | 28s
+  Day16 | A:5人 E=208 msg=0 give=0 craft=0 🤝trade提36匹0 | B:5人 E=289 msg=0 give=0 craft=0 | 29s
+  Day17 | A:5人 E=198 msg=0 give=0 craft=0 🤝trade提38匹0 | B:5人 E=278 msg=0 give=0 craft=0 | 28s
+  [err] 阿岩: Extra data: line 8 column 1 (char 120)
+  Day18 | A:5人 E=188 msg=0 give=0 craft=0 🤝trade提42匹0 | B:5人 E=267 msg=0 give=0 craft=0 | 30s
+  [err] 陈越: Extra data: line 7 column 1 (char 196)
+  Day19 | A:5人 E=178 msg=0 give=0 craft=0 🤝trade提45匹0 | B:5人 E=257 msg=0 give=1 craft=0 | 28s
+  Day20 | A:5人 E=168 msg=0 give=0 craft=0 🤝trade提49匹0 | B:5人 E=247 msg=1 give=1 craft=0 | 27s
+  Day21 | A:5人 E=158 msg=0 give=0 craft=0 🤝trade提51匹0 | B:5人 E=237 msg=2 give=1 craft=0 | 28s
+  Day22 | A:5人 E=148 msg=0 give=0 craft=0 🤝trade提53匹0 | B:5人 E=226 msg=1 give=1 craft=0 | 31s
+  Day23 | A:5人 E=138 msg=0 give=0 craft=0 🤝trade提55匹0 | B:5人 E=216 msg=2 give=0 craft=0 | 31s
+  Day24 | A:5人 E=128 msg=0 give=0 craft=0 🤝trade提57匹0 | B:5人 E=223 msg=1 give=1 craft=1 | 25s
+  Day25 | A:5人 E=118 msg=0 give=0 craft=0 🤝trade提60匹0 | B:5人 E=213 msg=1 give=0 craft=0 | 26s
+  Day26 | A:5人 E=126 msg=0 give=0 craft=1 🤝trade提60匹0 | B:5人 E=203 msg=1 give=1 craft=0 | 26s
+  Day27 | A:5人 E=116 msg=0 give=0 craft=0 🤝trade提62匹0 | B:5人 E=193 msg=0 give=4 craft=0 | 32s
+  Day28 | A:5人 E=106 msg=0 give=0 craft=0 🤝trade提65匹0 | B:5人 E=201 msg=0 give=3 craft=1 | 32s
+  Day29 | A:5人 E= 96 msg=0 give=0 craft=0 🤝trade提66匹0 | B:5人 E=191 msg=0 give=2 craft=0 | 28s
+  Day30 | A:5人 E= 86 msg=0 give=0 craft=0 🤝trade提68匹0 | B:5人 E=205 msg=0 give=1 craft=1 | 27s
+
+════════════════════════════════════════════════════════════
+  【原子化交换协议实验结果】
+
+  ★ 核心指标：交换效率
+    A组(有trade)：提出68次trade，匹配成功0次 → 匹配率 0%
+    A组额外give：0次 | 合成：2次
+    B组(只有give)：赠与33次 | 合成：9次
+
+  ★ 有效交换总量：A=0 vs B=33
+  ★ 合成总量：A=2 vs B=9
+
+  → 部分支持：A 组尝试了 trade 但匹配率为 0（同步问题）
+
+  总览：
+    有trade: 1msg 0give 0trade成功 2craft 0eat | 存活5/5 E=86
+    只有give: 10msg 33give 0trade成功 9craft 1eat | 存活5/5 E=205
+
+  API调用: 300
+════════════════════════════════════════════════════════════

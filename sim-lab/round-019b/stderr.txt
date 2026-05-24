@@ -1,0 +1,56 @@
+═══ Round 019b: 挂单式交换协议 —— trade 提议有效3天，异步匹配 ═══
+  A组5人：有挂单 trade（提议有效3天，对方互补trade即成交）
+  B组5人：无 trade（只有 give）
+  eat+6 craft+18 被动-2 起始70 | 30天
+
+  Day 1 | A:5人 E=340 msg=0 give=0 craft=0 | B:5人 E=340 msg=0 give=0 craft=0 | 21s
+  Day 2 | A:5人 E=330 msg=0 give=0 craft=0 🤝trade提2匹0 | B:5人 E=348 msg=0 give=4 craft=1 | 29s
+  Day 3 | A:5人 E=338 msg=0 give=0 craft=1 🤝trade提3匹0 | B:5人 E=338 msg=0 give=0 craft=0 | 27s
+  Day 4 | A:5人 E=328 msg=0 give=0 craft=0 🤝trade提4匹0 | B:5人 E=328 msg=0 give=0 craft=0 | 23s
+  Day 5 | A:5人 E=336 msg=0 give=0 craft=1 🤝trade提5匹0 | B:5人 E=354 msg=0 give=1 craft=2 | 27s
+  Day 6 | A:5人 E=326 msg=0 give=0 craft=0 🤝trade提8匹0 | B:5人 E=344 msg=1 give=2 craft=0 | 27s
+  Day 7 | A:5人 E=316 msg=0 give=0 craft=0 🤝trade提9匹0 | B:5人 E=334 msg=0 give=2 craft=0 | 27s
+  [err] 陈越: Extra data: line 7 column 1 (char 157)
+  Day 8 | A:5人 E=306 msg=0 give=0 craft=0 🤝trade提11匹0 | B:5人 E=324 msg=0 give=1 craft=0 | 25s
+  Day 9 | A:5人 E=296 msg=0 give=0 craft=0 🤝trade提11匹0 | B:5人 E=332 msg=0 give=4 craft=1 | 25s
+  Day10 | A:5人 E=304 msg=0 give=0 craft=1 🤝trade提14匹0 | B:5人 E=321 msg=0 give=3 craft=0 | 29s
+  Day11 | A:5人 E=294 msg=0 give=0 craft=0 🤝trade提15匹0 | B:5人 E=311 msg=0 give=1 craft=0 | 22s
+  Day12 | A:5人 E=284 msg=0 give=0 craft=0 🤝trade提18匹0 | B:5人 E=319 msg=0 give=3 craft=1 | 26s
+  Day13 | A:5人 E=274 msg=0 give=0 craft=0 🤝trade提20匹0 | B:5人 E=309 msg=1 give=3 craft=0 | 29s
+  Day14 | A:5人 E=264 msg=0 give=0 craft=0 🤝trade提22匹0 | B:5人 E=299 msg=1 give=2 craft=0 | 26s
+  Day15 | A:5人 E=272 msg=0 give=0 craft=1 🤝trade提23匹0 | B:5人 E=306 msg=1 give=1 craft=1 | 29s
+  Day16 | A:5人 E=262 msg=0 give=0 craft=0 🤝trade提25匹0 | B:5人 E=312 msg=0 give=1 craft=1 | 26s
+  Day17 | A:5人 E=252 msg=0 give=0 craft=0 🤝trade提26匹0 | B:5人 E=302 msg=3 give=1 craft=0 | 27s
+  Day18 | A:5人 E=242 msg=0 give=0 craft=0 🤝trade提28匹0 | B:5人 E=292 msg=1 give=2 craft=0 | 29s
+  Day19 | A:5人 E=232 msg=0 give=0 craft=0 🤝trade提30匹0 | B:5人 E=300 msg=3 give=1 craft=1 | 35s
+  Day20 | A:5人 E=240 msg=0 give=0 craft=1 🤝trade提32匹0 | B:5人 E=290 msg=2 give=1 craft=0 | 27s
+  Day21 | A:5人 E=248 msg=0 give=0 craft=1 🤝trade提33匹0 | B:5人 E=280 msg=1 give=0 craft=0 | 25s
+  Day22 | A:5人 E=238 msg=0 give=0 craft=0 🤝trade提35匹0 | B:5人 E=270 msg=0 give=1 craft=0 | 27s
+  Day23 | A:5人 E=228 msg=0 give=0 craft=0 🤝trade提37匹0 | B:5人 E=260 msg=0 give=0 craft=0 | 25s
+  Day24 | A:5人 E=236 msg=0 give=0 craft=1 🤝trade提38匹0 | B:5人 E=250 msg=0 give=0 craft=0 | 28s
+  Day25 | A:5人 E=226 msg=0 give=0 craft=0 🤝trade提40匹0 | B:5人 E=240 msg=0 give=1 craft=0 | 25s
+  Day26 | A:5人 E=234 msg=0 give=0 craft=1 🤝trade提40匹0 | B:5人 E=230 msg=0 give=0 craft=0 | 22s
+  Day27 | A:5人 E=224 msg=0 give=0 craft=0 🤝trade提41匹0 | B:5人 E=220 msg=0 give=0 craft=0 | 28s
+  Day28 | A:5人 E=214 msg=0 give=0 craft=0 🤝trade提43匹0 | B:5人 E=210 msg=0 give=1 craft=0 | 27s
+  Day29 | A:5人 E=210 msg=0 give=0 craft=0 🤝trade提43匹0 | B:5人 E=200 msg=0 give=0 craft=0 | 25s
+  Day30 | A:5人 E=200 msg=0 give=0 craft=0 🤝trade提44匹0 | B:5人 E=190 msg=0 give=0 craft=0 | 28s
+
+════════════════════════════════════════════════════════════
+  【挂单式交换协议实验结果】
+
+  ★ 核心指标：交换效率
+    A组(挂单trade)：提出44次trade，匹配成功0次 → 匹配率 0%
+    A组额外give：0次 | 合成：8次
+    B组(只有give)：赠与36次 | 合成：8次
+
+  ★ 有效交换总量：A=0 vs B=36
+  ★ 合成总量：A=8 vs B=8
+
+  → ✗ 假设不成立：挂单 trade 匹配率仍然不够
+
+  总览：
+    挂单trade: 0msg 0give 0trade成功 8craft 1eat | 存活5/5 E=200
+    只有give: 14msg 36give 0trade成功 8craft 0eat | 存活5/5 E=190
+
+  API调用: 300
+════════════════════════════════════════════════════════════
