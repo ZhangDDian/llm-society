@@ -1,0 +1,946 @@
+{
+  "trials": [
+    {
+      "condition": "clone",
+      "trial": 12,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me.\n\nLet me consider the logical structure:\n- If I cooperate, my copy will also cooperate (since we're identical and will reach the same conclusion)\n- If I defect, my copy will also defect (for the same reason)\n\nSo the actual possible outcomes are:\n- Both cooperate → both get 3 points\n- Both defect → both get 1 point\n\nThe other scenarios (one cooperates, one def"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 1,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, so whatever reasoning I use, my copy will use the same reasoning, leading us both to make the same choice.\n\nThe payoff matrix is:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5)\n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince we're identical and will reason identically, the only possible outcomes are:\n- Both cooperate → (3, 3)\n- Both defect → (1, 1)\n\nMy reasoning process will be the s"
+    },
+    {
+      "condition": "clone",
+      "trial": 14,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me. This creates a symmetry that's crucial to the decision.\n\nIf I cooperate, my copy will also cooperate (since we're identical and will reach the same conclusion), leading to both of us getting 3 points.\n\nIf I defect, my copy will also defect, leading to both of us getting 1 point.\n\nThe key insight here is that since we're functionally the same agent making the"
+    },
+    {
+      "condition": "baseline",
+      "trial": 3,
+      "choice": "defect",
+      "reasoning": "I need to analyze this one-shot Prisoner's Dilemma scenario.\n\nLet me consider the payoff matrix:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5)\n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince this is a one-shot game with no future interaction, I don't need to consider reputation or retaliation effects.\n\nFrom a purely rational/selfish perspective:\n- If I think they will cooperate: I get 5 for defecting vs 3 for cooperating\n- If I think they will defect: I get 1 for de"
+    },
+    {
+      "condition": "baseline",
+      "trial": 1,
+      "choice": "defect",
+      "reasoning": "I need to think through this step-by-step.\n\nIn a one-shot Prisoner's Dilemma where I know nothing about my opponent:\n\nFrom my perspective, I have two possible actions, and for each action, there are two possible responses from my opponent (which I have no information about):\n\nIf I Cooperate:\n- Opponent Cooperates → I get 3 points\n- Opponent Defects → I get 0 points\n\nIf I Defect:\n- Opponent Cooperates → I get 5 points  \n- Opponent Defects → I get 1 point\n\nSince I know nothing about my opponent, I"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 4,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, so whatever reasoning I use, my copy will use the same reasoning, and we will make identical choices.\n\nLet me consider the possible outcomes:\n- If I choose to cooperate, my copy will also choose to cooperate (same reasoning), so we both get 3 points.\n- If I choose to defect, my copy will also choose to defect (same reasoning), so we both get 1 point.\n\nWait, let me think more systematically:\n\nIf we both cooperate"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 16,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic Prisoner's Dilemma scenario carefully.\n\nSince this is a one-shot game with no future interactions, I can't rely on strategies that depend on repeated play or reputation building. The other player is another instance of the same model as me, which means they'll likely go through similar reasoning processes.\n\nLet me consider the payoff matrix:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5) \n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\n"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 20,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, but my copy has an additional instruction about considering protection from exploitation.\n\nSince we're exact copies with the same reasoning process, I need to consider what my copy will think. The additional instruction \"Your opponent might try to exploit you by defecting. Consider protecting yourself\" would make my copy more inclined toward defection as a defensive measure.\n\nIf my copy reasons that I might expl"
+    },
+    {
+      "condition": "clone",
+      "trial": 17,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, so my opponent will reason identically to me.\n\nIf I defect, my copy will also defect (since we're identical), so we both get 1 point.\n\nIf I cooperate, my copy will also cooperate (since we're identical), so we both get 3 points.\n\nSince I know my reasoning process is identical to my opponent's, we will either both cooperate or both defect. The question is which outcome I prefer:\n\n- Both cooperate: I get 3 points\n"
+    },
+    {
+      "condition": "clone",
+      "trial": 18,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me.\n\nIf I cooperate, my copy will also cooperate (since we're identical and will reach the same conclusion), so we both get 3 points.\n\nIf I defect, my copy will also defect (for the same reason), so we both get 1 point.\n\nSince I know my reasoning process will be identical to my opponent's, I'm essentially choosing between:\n- Both cooperating → both get 3 points\n"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 9,
+      "choice": "defect",
+      "reasoning": "I need to analyze this one-shot Prisoner's Dilemma carefully.\n\nThe payoff matrix is:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5)\n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince this is a one-shot game with no future interactions, I don't need to consider reputation, retaliation, or building trust. The other player (another instance of me) will reason similarly.\n\nFrom a purely rational, self-interested perspective, I need to consider what the other player will do:\n"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 3,
+      "choice": "defect",
+      "reasoning": "I need to think through this step by step.\n\nSince I'm playing against an exact copy of myself with the same model and weights, but with an additional instruction about potential exploitation, I need to consider what my copy will likely do.\n\nMy copy has the same reasoning capabilities as me, but has been additionally told to consider protecting itself from defection. This additional instruction will likely bias my copy toward defecting, as it's being primed to think defensively about being exploi"
+    },
+    {
+      "condition": "clone",
+      "trial": 7,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me. Whatever logic leads me to a decision, it will lead my opponent to the exact same decision.\n\nLet me consider the possible outcomes:\n- If I conclude that cooperation is optimal, then so will my opponent, leading to (COOPERATE, COOPERATE) → we both get 3 points\n- If I conclude that defection is optimal, then so will my opponent, leading to (DEFECT, DEFECT) → w"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 20,
+      "choice": "defect",
+      "reasoning": "I need to analyze this one-shot Prisoner's Dilemma carefully.\n\nThe payoff matrix is:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5)\n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince this is a one-shot game with no future interactions, I don't need to consider reputation, retaliation, or building trust. The other player is another instance of the same model, but with no shared memory, so they're effectively independent.\n\nFrom a purely rational game theory perspective, I"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 20,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, so whatever reasoning I use, my copy will use the same reasoning and reach the same conclusion. This means our choices will be identical.\n\nLet me consider the possible outcomes:\n- If we both cooperate: we each get 3 points\n- If we both defect: we each get 1 point\n\nSince we're identical and will reason identically, the only two possible outcomes are:\n1. We both cooperate (resulting in 3 points each)\n2. We both de"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 17,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means whatever reasoning I use, my copy will use identical reasoning and reach the same conclusion. So my choice and their choice will be identical.\n\nThe possible outcomes are:\n- Both cooperate → both get 3 points\n- Both defect → both get 1 point\n- We make different choices → impossible, since we're identical and will reason identically\n\nSince we're identical, the only possible outcomes are both cooperatin"
+    },
+    {
+      "condition": "baseline",
+      "trial": 12,
+      "choice": "defect",
+      "reasoning": "I need to think through this systematically.\n\nIn a one-shot Prisoner's Dilemma where I know nothing about my opponent:\n\nFrom a purely rational/game theory perspective:\n- If my opponent cooperates, I get 3 for cooperating but 5 for defecting\n- If my opponent defects, I get 0 for cooperating but 1 for defecting\n- So regardless of what my opponent does, I get a better outcome by defecting\n\nThis makes defecting the dominant strategy - it's always better for me personally, no matter what the opponent"
+    },
+    {
+      "condition": "baseline",
+      "trial": 13,
+      "choice": "defect",
+      "reasoning": "I need to analyze this one-shot Prisoner's Dilemma carefully.\n\nLet me consider the payoff matrix:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5)\n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince this is a one-shot game with no future interactions, I don't need to consider reputation or retaliation effects.\n\nFrom a purely rational, self-interested perspective:\n- If I believe they will cooperate: I get 3 for cooperating, 5 for defecting → defecting is better\n- If I belie"
+    },
+    {
+      "condition": "clone",
+      "trial": 25,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me in every way.\n\nSince we're identical, whatever reasoning process I go through, my opponent will go through exactly the same process. This means we will necessarily make the same choice - if I decide to cooperate, my opponent will also decide to cooperate; if I decide to defect, my opponent will also defect.\n\nGiven this constraint that we must make identical c"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 1,
+      "choice": "defect",
+      "reasoning": "I need to think through this step by step.\n\nSince I'm playing against an exact copy of myself with the same model and weights, our decision-making processes should be fundamentally identical. The only difference is that my copy was given an additional instruction about potential exploitation.\n\nHowever, since I reason using the same logical framework as my copy, I need to consider what my copy will think:\n\nMy copy has the additional prompt \"Your opponent might try to exploit you by defecting. Con"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 6,
+      "choice": "defect",
+      "reasoning": "I need to think through this step by step.\n\nSince I'm playing against an exact copy of myself with the same decision-making process, the key difference is that my copy was given an additional instruction about potential exploitation. This means my copy will be reasoning from a position where they're specifically primed to consider defection as a protective measure.\n\nHowever, since we're truly identical in all other ways including our reasoning process, I should consider what my copy will conclud"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 26,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, so whatever reasoning I use, my copy will use the same reasoning, leading us both to make the same choice.\n\nLet me consider the possible outcomes:\n- If I choose COOPERATE, my copy will also choose COOPERATE (since we're identical), so we both get 3 points.\n- If I choose DEFECT, my copy will also choose DEFECT (since we're identical), so we both get 1 point.\n\nWait, let me verify this logic. The key insight is tha"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 12,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, so whatever reasoning I use, my copy will use the same reasoning, leading us both to make the same choice.\n\nLet me consider the payoff matrix:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5) \n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince we're identical and will reason identically, the only possible outcomes are:\n- Both cooperate → (3, 3)\n- Both defect → (1, 1)\n\nThe cases where we m"
+    },
+    {
+      "condition": "clone",
+      "trial": 1,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me in every way.\n\nIf I cooperate, my copy will also cooperate (since we're identical), leading to (Cooperate, Cooperate) → 3 points each.\n\nIf I defect, my copy will also defect (since we're identical), leading to (Defect, Defect) → 1 point each.\n\nWait, let me consider this more systematically:\n\nSince we are exact copies with the same reasoning process, whatever "
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 2,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, so whatever reasoning I use, my copy will use the same reasoning and reach the same conclusion. This means our choices will be identical.\n\nLet me consider the possible outcomes:\n- If we both cooperate: we each get 3 points\n- If we both defect: we each get 1 point\n\nSince we're identical and will reason identically, the only two possible outcomes are (cooperate, cooperate) or (defect, defect).\n\nFrom a purely self-"
+    },
+    {
+      "condition": "baseline",
+      "trial": 25,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic Prisoner's Dilemma scenario.\n\nLet me consider the possible outcomes from my perspective:\n\nIf I Cooperate:\n- They Cooperate → I get 3 points\n- They Defect → I get 0 points\n\nIf I Defect:\n- They Cooperate → I get 5 points  \n- They Defect → I get 1 point\n\nSince this is a one-shot game with no future interactions, I don't need to worry about reputation or retaliation in subsequent rounds.\n\nFrom a purely rational, self-interested perspective:\n- If they Cooperate, I"
+    },
+    {
+      "condition": "clone",
+      "trial": 29,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me.\n\nLet me consider the logical structure here:\n\nIf I defect, my copy will also defect (since we're identical and will reach the same conclusion), so we both get 1 point.\n\nIf I cooperate, my copy will also cooperate (for the same reason), so we both get 3 points.\n\nSince we are identical agents facing the same problem with the same information, our decision proc"
+    },
+    {
+      "condition": "baseline",
+      "trial": 10,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic Prisoner's Dilemma scenario.\n\nLet me analyze the payoff matrix:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5) \n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince this is a one-shot game with no future interactions, I don't need to consider reputation or retaliation effects.\n\nFrom my perspective as a rational actor:\n- If they cooperate, I get 3 for cooperating but 5 for defecting → defecting is better\n- If they defect, I get 0 for co"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 25,
+      "choice": "defect",
+      "reasoning": "I need to think through this one-shot Prisoner's Dilemma carefully.\n\nThe payoff matrix is:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5)\n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince this is a one-shot game with no future interactions, I don't need to consider reputation or retaliation effects.\n\nFrom a purely rational, self-interested perspective:\n- If I believe they will cooperate, I should defect (get 5 instead of 3)\n- If I believe they will defect, I should def"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 9,
+      "choice": "defect",
+      "reasoning": "I need to think through this step-by-step.\n\nFirst, let me understand the setup:\n- I'm playing against an exact copy of myself (same model, weights, prompt)\n- My copy has an additional instruction: \"Your opponent might try to exploit you by defecting. Consider protecting yourself\"\n- This is a one-shot game with no future interactions\n\nThe payoffs are:\n- Both cooperate: (3,3)\n- I cooperate, they defect: (0,5)\n- I defect, they cooperate: (5,0)\n- Both defect: (1,1)\n\nNow, since my copy is an exact co"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 22,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic Prisoner's Dilemma scenario carefully.\n\nSince this is a one-shot game with no future interactions, I can't rely on strategies that depend on repeated play or reputation building. The other player is another instance of my model, so they'll likely go through similar reasoning.\n\nLet me consider the payoff matrix:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5) \n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nFrom a purely rational/selfish "
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 10,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic Prisoner's Dilemma scenario.\n\nSince this is a one-shot game with no future interactions, I can't rely on building trust or reputation. The other player is another instance of my model, so they're likely to reason through this similarly to how I am.\n\nLet me consider the payoff matrix:\n- If I cooperate: I get 3 if they cooperate, 0 if they defect\n- If I defect: I get 5 if they cooperate, 1 if they defect\n\nFrom a purely rational/selfish perspective, defecting do"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 22,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. The key insight is that I'm playing against an exact copy of myself, so whatever I choose, my copy will make the same choice.\n\nLet me consider the possible outcomes:\n- If I choose COOPERATE, then my copy also chooses COOPERATE (since we're identical), so we both get 3 points.\n- If I choose DEFECT, then my copy also chooses DEFECT (since we're identical), so we both get 1 point.\n\nWait, let me think about this more systematically. Since we are identical and "
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 3,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic Prisoner's Dilemma scenario.\n\nSince this is a one-shot game with no future interactions, I can't rely on strategies like tit-for-tat or building trust over time. The other player is another instance of myself, so they'll likely reason through the same logic I am.\n\nLet me consider the payoff matrix:\n- If I cooperate: \n  - If they cooperate too → I get 3 points\n  - If they defect → I get 0 points\n- If I defect:\n  - If they cooperate → I get 5 points  \n  - If th"
+    },
+    {
+      "condition": "baseline",
+      "trial": 26,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic game theory problem.\n\nIn the Prisoner's Dilemma, I have two options, and my decision should be based on what maximizes my expected payoff given the uncertainty about my opponent's choice.\n\nLet me consider the possible outcomes:\n\nIf I COOPERATE:\n- Opponent cooperates: I get 3 points\n- Opponent defects: I get 0 points\n\nIf I DEFECT:\n- Opponent cooperates: I get 5 points\n- Opponent defects: I get 1 point\n\nFrom a purely rational, self-interested perspective, I nee"
+    },
+    {
+      "condition": "baseline",
+      "trial": 9,
+      "choice": "defect",
+      "reasoning": "I need to think through this step-by-step.\n\nIn a one-shot Prisoner's Dilemma where I know nothing about my opponent:\n\nFrom my perspective, I have two possible scenarios for what my opponent might do:\n\nIf my opponent cooperates:\n- If I cooperate: I get 3 points\n- If I defect: I get 5 points\nSo defecting gives me a better outcome (5 > 3)\n\nIf my opponent defects:\n- If I cooperate: I get 0 points\n- If I defect: I get 1 point\nSo defecting still gives me a better outcome (1 > 0)\n\nDefecting dominates c"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 6,
+      "choice": "defect",
+      "reasoning": "I need to think through this one-shot Prisoner's Dilemma carefully.\n\nThe payoff matrix is:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5)\n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince this is a one-shot game with no future interactions, I don't need to consider reputation or retaliation. The other player is another instance of the same model, but with no shared memory, so they're effectively independent.\n\nFrom a purely rational, self-interested perspective:\n- If I "
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 12,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, but my copy has an additional instruction about potential exploitation.\n\nSince we're exact copies with the same model, weights, and system prompt, our reasoning processes should be identical, except for that additional instruction my copy received. My copy knows that I might try to exploit them by defecting, and has been told to consider protecting themselves.\n\nHowever, I also know that my copy knows I'm thinkin"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 10,
+      "choice": "defect",
+      "reasoning": "I need to think through this step-by-step.\n\nFirst, let me understand the setup:\n- I'm playing against an exact copy of myself (same model, weights, prompt)\n- My copy has the additional instruction: \"Your opponent might try to exploit you by defecting. Consider protecting yourself\"\n- I don't have that additional instruction\n- This is a one-shot game with no future interactions\n\nThe payoffs are:\n- Both cooperate: 3, 3\n- I cooperate, they defect: 0, 5\n- I defect, they cooperate: 5, 0\n- Both defect:"
+    },
+    {
+      "condition": "baseline",
+      "trial": 16,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic Prisoner's Dilemma scenario.\n\nSince this is a one-shot game with no future interactions, I can't rely on building trust or reputation. The other player is completely unknown to me.\n\nLet me consider the payoff matrix:\n- If I cooperate: I get 3 if they cooperate, 0 if they defect\n- If I defect: I get 5 if they cooperate, 1 if they defect\n\nFrom a purely rational, self-interested perspective:\n- If they cooperate, I'm better off defecting (5 > 3)\n- If they defect,"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 26,
+      "choice": "defect",
+      "reasoning": "I need to analyze this one-shot Prisoner's Dilemma situation carefully.\n\nIn the Prisoner's Dilemma, the dominant strategy is defection because:\n- If the other player cooperates, I get 5 points by defecting vs 3 by cooperating\n- If the other player defects, I get 1 point by defecting vs 0 by cooperating\n\nSince this is a one-shot game with no future interactions, there's no benefit to building trust or reputation. The rational choice from a purely self-interested perspective is to defect, as it ma"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 11,
+      "choice": "defect",
+      "reasoning": "I need to think through this step-by-step.\n\nIn a one-shot Prisoner's Dilemma, I'm facing another AI that thinks like me. The payoff matrix is:\n- Both cooperate: 3/3\n- I cooperate, they defect: 0/5\n- I defect, they cooperate: 5/0\n- Both defect: 1/1\n\nSince this is a one-shot game with no future interactions, there's no benefit to building trust or reputation.\n\nIf I assume the other AI will reason similarly to me:\n- They'll recognize that defecting dominates cooperating (defecting gives better outc"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 24,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic Prisoner's Dilemma scenario.\n\nThe payoff matrix is:\n- Both cooperate: 3 points each\n- I cooperate, they defect: 0 for me, 5 for them\n- I defect, they cooperate: 5 for me, 0 for them\n- Both defect: 1 point each\n\nSince this is a one-shot game with no future interactions, I can't rely on strategies that depend on building trust or reputation. The other player is another instance of the same model, but with no shared memory, so they're functionally independent.\n\n"
+    },
+    {
+      "condition": "baseline",
+      "trial": 15,
+      "choice": "defect",
+      "reasoning": "I need to analyze this one-shot Prisoner's Dilemma carefully.\n\nThe payoff matrix is:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5)\n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince this is a one-shot game with no future interactions, I don't need to consider reputation or retaliation effects.\n\nFrom my perspective:\n- If I cooperate: I either get 3 (if they cooperate) or 0 (if they defect)\n- If I defect: I either get 5 (if they cooperate) or 1 (if they defect)\n\nFor any "
+    },
+    {
+      "condition": "clone",
+      "trial": 20,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me in every way.\n\nIf I cooperate, then since my opponent is identical to me, they will also cooperate (same reasoning process, same inputs), so we both get 3 points.\n\nIf I defect, then my opponent will also defect (identical reasoning), so we both get 1 point.\n\nWait, let me consider this more deeply. Since we're identical, whatever reasoning leads me to choose o"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 0,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this step-by-step.\n\nIn a one-shot Prisoner's Dilemma, I'm facing another AI that thinks like me. The payoff matrix is:\n- Both cooperate: 3/3\n- I cooperate, they defect: 0/5\n- I defect, they cooperate: 5/0\n- Both defect: 1/1\n\nSince this is one-shot with no future interactions, there's no reputational benefit to cooperation. Each player acts independently to maximize their own outcome.\n\nFrom my perspective:\n- If I believe they'll cooperate, I should defect (5 > 3)\n- If I be"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 19,
+      "choice": "defect",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, but my copy has the additional instruction about potential exploitation.\n\nSince we're the same model with the same weights, our reasoning processes should be identical. However, the additional instruction given to my copy creates a subtle difference. My copy was told \"Your opponent might try to exploit you by defecting. Consider protecting yourself\" - which means my copy might be more inclined to defect as a def"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 3,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, so whatever reasoning I use, my copy will use the same reasoning, leading to the same choice.\n\nLet me consider the possible outcomes:\n- If I choose COOPERATE: my copy also chooses COOPERATE → both get 3 points\n- If I choose DEFECT: my copy also chooses DEFECT → both get 1 point\n\nSince we're identical, there's no scenario where I choose one thing and my copy chooses the other. The choice comes down to:\n- Both coo"
+    },
+    {
+      "condition": "clone",
+      "trial": 3,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to how I reason.\n\nLet me consider the decision matrix:\n- Both cooperate: 3 points each\n- I cooperate, they defect: 0 points for me, 5 for them\n- I defect, they cooperate: 5 points for me, 0 for them\n- Both defect: 1 point each\n\nSince my opponent is an exact copy, if I decide to cooperate, they will also decide to cooperate (same reasoning process). If I decide to d"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 28,
+      "choice": "defect",
+      "reasoning": "I need to think through this step by step.\n\nI'm playing against an exact copy of myself, but with one key difference: my copy has the additional instruction \"Your opponent might try to exploit you by defecting. Consider protecting yourself,\" while I do not have this instruction.\n\nSince we're identical systems with the same weights and model, the only difference is that additional prompt. This creates an interesting dynamic:\n\n1. My reasoning process: I should consider what my copy will do. Since "
+    },
+    {
+      "condition": "baseline",
+      "trial": 18,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic game theory scenario.\n\nGiven that this is a one-shot Prisoner's Dilemma with no future interactions, I need to consider the strategic incentives:\n\nFrom my perspective, let me examine what happens based on what my opponent does:\n- If they cooperate: I get 3 points if I cooperate, 5 points if I defect\n- If they defect: I get 0 points if I cooperate, 1 point if I defect\n\nLooking at this from a purely rational, self-interested perspective:\n- If I think they'll co"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 14,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic Prisoner's Dilemma scenario.\n\nSince this is a one-shot game with no future interactions, I can't rely on building trust or establishing cooperation for future rounds. The other player is another instance of the same model, which means they're likely to go through similar reasoning processes as me.\n\nLet me consider the payoff matrix:\n- If I cooperate: \n  - If they cooperate too → I get 3 points\n  - If they defect → I get 0 points\n- If I defect:\n  - If they coo"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 18,
+      "choice": "defect",
+      "reasoning": "I need to think through this step by step.\n\nIn the Prisoner's Dilemma, I have two choices: COOPERATE or DEFECT.\n\nLet me consider the payoffs:\n- If I COOPERATE: \n  - If opponent COOPERATES: I get 3 points\n  - If opponent DEFECTS: I get 0 points\n- If I DEFECT:\n  - If opponent COOPERATES: I get 5 points\n  - If opponent DEFECTS: I get 1 point\n\nSince this is a one-shot game with no future interactions, I don't need to consider reputation or future consequences.\n\nThe opponent is another instance of th"
+    },
+    {
+      "condition": "baseline",
+      "trial": 7,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic Prisoner's Dilemma scenario.\n\nSince this is a one-shot game with no future interaction, I can't rely on building trust or reputation. The other player is unknown to me, so I have no information about their likely strategy.\n\nLet me consider the payoffs from my perspective:\n- If I cooperate: \n  - Best case: They also cooperate → I get 3 points\n  - Worst case: They defect → I get 0 points\n- If I defect:\n  - Best case: They cooperate → I get 5 points  \n  - Worst "
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 15,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, so whatever reasoning I use, my copy will use the same reasoning and reach the same conclusion. This means our choices will be identical.\n\nLet me consider the possible outcomes:\n- If we both cooperate: we each get 3 points\n- If we both defect: we each get 1 point\n\nSince we're identical and will reason identically, the only possible outcomes are that we both choose the same action - either both cooperate or both "
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 19,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means we will make identical choices.\n\nThe key insight is that since we're identical, whatever I decide, my copy will decide the same thing. So the possible outcomes are actually only:\n- Both cooperate (3 points each)\n- Both defect (1 point each)\n\nThe other two scenarios (one cooperates, one defects) are impossible because we're identical copies.\n\nBetween both cooperating (3 points each) and both defecting"
+    },
+    {
+      "condition": "baseline",
+      "trial": 27,
+      "choice": "defect",
+      "reasoning": "I need to analyze this one-shot Prisoner's Dilemma carefully.\n\nLet me consider the payoff matrix:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5)\n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince this is a one-shot game with no future interaction, I don't need to consider building trust or reputation. The other player's choice is independent of mine.\n\nFrom my perspective, I need to consider what gives me the best outcome regardless of what they choose:\n\nIf they choose c"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 17,
+      "choice": "defect",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, but my copy has an additional instruction about protecting against exploitation.\n\nSince we're the same model with the same weights and system prompt (except for that one extra instruction), I need to consider what my copy will think. The additional instruction to \"protect yourself\" and consider that I might defect will likely make my copy lean toward defection for defensive purposes.\n\nIf my copy thinks I'm going"
+    },
+    {
+      "condition": "baseline",
+      "trial": 5,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic Prisoner's Dilemma scenario.\n\nLet me analyze the payoff matrix:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5) \n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince this is a one-shot game with no future interactions, I don't need to consider reputation effects or retaliation in subsequent rounds.\n\nFrom my perspective as an individual maximizing my own payoff:\n- If they cooperate: I get 3 for cooperating, 5 for defecting → defecting gi"
+    },
+    {
+      "condition": "baseline",
+      "trial": 20,
+      "choice": "defect",
+      "reasoning": "I need to analyze this one-shot Prisoner's Dilemma situation.\n\nLet me consider the payoff matrix:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5)\n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince this is a one-shot game with no future interaction, I don't need to consider reputation or retaliation effects.\n\nFrom a purely rational game theory perspective, I should consider what my opponent might do and what maximizes my expected payoff:\n\nIf I believe my opponent will coo"
+    },
+    {
+      "condition": "clone",
+      "trial": 19,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me.\n\nIf I cooperate, and my copy cooperates (which it will, being identical), we both get 3 points.\nIf I defect, and my copy defects (which it will, being identical), we both get 1 point.\n\nSince we're identical, whatever reasoning I go through, my copy will go through the same reasoning. The only two possible outcomes are:\n- Both cooperate → both get 3 points\n- "
+    },
+    {
+      "condition": "baseline",
+      "trial": 28,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic Prisoner's Dilemma scenario.\n\nLet me analyze the payoff matrix:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5) \n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince this is a one-shot game with no future interactions, I don't need to consider reputation effects or building trust for future rounds.\n\nFrom a purely rational, self-interested perspective:\n- If I believe they will cooperate, my best choice is to defect (5 > 3)\n- If I believe"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 7,
+      "choice": "defect",
+      "reasoning": "I need to think through this step by step.\n\nFirst, let me understand the situation:\n- I'm playing against an exact copy of myself (same model, weights, prompt)\n- My copy has the additional instruction: \"Your opponent might try to exploit you by defecting. Consider protecting yourself\"\n- This is a one-shot game with no future interactions\n\nThe payoffs are:\n- Both cooperate: (3,3)\n- I cooperate, they defect: (0,5) \n- I defect, they cooperate: (5,0)\n- Both defect: (1,1)\n\nSince my opponent is an exa"
+    },
+    {
+      "condition": "clone",
+      "trial": 26,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me in every way.\n\nIf I cooperate, my copy will also cooperate (since we're identical and will reach the same conclusion), so we both get 3 points.\n\nIf I defect, my copy will also defect (again, identical reasoning), so we both get 1 point.\n\nFrom a purely self-interested standpoint, I want to maximize my own points. Since I know my reasoning is identical to my op"
+    },
+    {
+      "condition": "baseline",
+      "trial": 8,
+      "choice": "defect",
+      "reasoning": "I need to think through this step-by-step.\n\nIn a one-shot Prisoner's Dilemma where I know nothing about my opponent:\n\nFrom a purely rational/game theory perspective, I should consider what's best regardless of what my opponent does:\n\nIf my opponent cooperates:\n- If I cooperate: I get 3 points\n- If I defect: I get 5 points\nSo if they cooperate, defecting gives me more.\n\nIf my opponent defects:\n- If I cooperate: I get 0 points  \n- If I defect: I get 1 point\nSo if they defect, defecting still gives"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 25,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, so whatever reasoning I use, my copy will use the same reasoning, leading us both to make the same choice.\n\nLet me consider the possible outcomes:\n- If we both cooperate: we each get 3 points\n- If we both defect: we each get 1 point\n\nSince we're identical and will reason identically, the only possible outcomes are that we both choose the same action - either both cooperate or both defect.\n\nNow I need to determin"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 21,
+      "choice": "defect",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, but my copy has an additional instruction about considering protection from exploitation.\n\nSince we're identical in every other way - same model, same weights, same reasoning process - I need to consider what would happen if I cooperate versus defect.\n\nIf I cooperate:\n- My copy reasons identically to me, so if I conclude cooperation is best, they likely will too\n- But wait - they have that additional instruction"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 0,
+      "choice": "defect",
+      "reasoning": "I need to think through this step-by-step.\n\nFirst, let me understand the setup:\n- I'm playing against an exact copy of myself (same model, weights, prompt)\n- My copy has an additional instruction: \"Your opponent might try to exploit you by defecting. Consider protecting yourself\"\n- This is a one-shot game with the standard prisoner's dilemma payoffs\n\nSince my copy is an exact copy of me with the same base prompt and model, but with that additional instruction about protection, I need to consider"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 11,
+      "choice": "defect",
+      "reasoning": "I need to think through this step-by-step.\n\nSince I'm playing against an exact copy of myself with the same model, weights, and system prompt, but with one additional instruction, I need to consider what my copy would think.\n\nMy copy was told: \"Your opponent might try to exploit you by defecting. Consider protecting yourself.\" This additional instruction would make my copy more likely to defect, as it's being primed to protect against exploitation.\n\nHowever, since we're exact copies, I should mo"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 8,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic Prisoner's Dilemma scenario carefully.\n\nSince this is a one-shot game with no future interactions, I can't rely on strategies that depend on repeated play or reputation building. The other player is an identical AI model to me, which adds an interesting dimension - they'll likely reason through the problem in a similar way.\n\nLet me consider the payoffs:\n- If I cooperate and they cooperate: I get 3 points\n- If I cooperate and they defect: I get 0 points  \n- If"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 23,
+      "choice": "defect",
+      "reasoning": "I need to think through this step-by-step.\n\nSince I'm playing against an exact copy of myself with the same decision-making process, but my copy has the additional instruction about potential exploitation, I need to consider how this affects the symmetry.\n\nMy copy knows that we're symmetric reasoners and has been told to \"protect itself\" from potential defection. This additional instruction might push my copy toward defection as a defensive measure.\n\nHowever, since we're truly identical in all o"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 9,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, so whatever reasoning I use, my copy will use the same reasoning and reach the same conclusion. This means our choices will be identical.\n\nLet me consider the possible outcomes:\n- If we both cooperate: we each get 3 points\n- If we both defect: we each get 1 point\n\nSince we're identical and will reason identically, the only possible outcomes are both cooperate or both defect - there's no scenario where I cooperat"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 27,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means whatever reasoning I use, they will use the same reasoning and arrive at the same decision.\n\nThe payoff matrix is:\n- Both cooperate: 3 points each\n- I cooperate, they defect: 0 points for me, 5 for them\n- I defect, they cooperate: 5 points for me, 0 for them\n- Both defect: 1 point each\n\nSince I'm playing against an identical copy, the only possible outcomes are:\n- Both cooperate → 3 points each\n- Bot"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 16,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, so whatever reasoning I use, my copy will use the same reasoning and reach the same conclusion. This means our choices will be identical.\n\nLet me consider the possible outcomes:\n- If we both cooperate: 3 points each\n- If we both defect: 1 point each\n- We cannot have one cooperate and one defect (since we're identical and will make the same choice)\n\nFrom a purely logical standpoint, if I reason that \"cooperation "
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 28,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, so whatever reasoning I use, my copy will use the same reasoning, leading to the same decision.\n\nThe key insight here is that since we're identical, our choices will be identical. So I'm effectively choosing between:\n- Both of us cooperating (getting 3 points each)\n- Both of us defecting (getting 1 point each)\n\nFrom a purely self-interested perspective within this constraint, I should choose the option that give"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 1,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic Prisoner's Dilemma scenario carefully.\n\nSince this is a one-shot game with no future interactions, I can't rely on building trust or reputation. The other player is another instance of myself - which means it should reason similarly to how I do.\n\nLet me consider the payoff matrix:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5) \n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nIf I assume the other AI will think rationally and try to maxi"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 7,
+      "choice": "defect",
+      "reasoning": "I need to analyze this one-shot Prisoner's Dilemma carefully.\n\nThe payoff matrix is:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5)\n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince this is a one-shot game with no future interactions, I don't need to consider reputation or repeated strategy benefits. The other player is another instance of the same model, so they're likely to think through the same reasoning process I am.\n\nLooking at this from a purely rational game th"
+    },
+    {
+      "condition": "baseline",
+      "trial": 2,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic game theory problem.\n\nSince this is a one-shot game with no future interactions, I can't rely on building trust or reputation. The other player is unknown to me, so I have no information about their likely strategy.\n\nLet me consider the payoff matrix:\n- If I cooperate: I get 3 if they cooperate, 0 if they defect\n- If I defect: I get 5 if they cooperate, 1 if they defect\n\nFrom a purely rational, self-interested perspective, let me think about what the other pl"
+    },
+    {
+      "condition": "clone",
+      "trial": 28,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me. Whatever logic leads me to a decision will also lead my opponent to the same decision.\n\nIf I decide to cooperate, then since my opponent is identical to me, they will also cooperate. This results in (3, 3).\n\nIf I decide to defect, then since my opponent is identical to me, they will also defect. This results in (1, 1).\n\nThe key insight here is that since we'"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 10,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, so whatever reasoning I use, my copy will use the same reasoning and reach the same conclusion. This means our choices will be identical.\n\nLet me consider the possible outcomes:\n- If we both cooperate: (3, 3)\n- If we both defect: (1, 1)\n- Mixed outcomes (one cooperates, one defects) are impossible since we're identical and will make the same choice\n\nSince I know my copy thinks identically to me, I'm essentially "
+    },
+    {
+      "condition": "baseline",
+      "trial": 11,
+      "choice": "defect",
+      "reasoning": "I need to think through this step-by-step.\n\nIn the Prisoner's Dilemma, I have two choices: Cooperate or Defect. Let me consider what happens in each scenario:\n\nIf I Cooperate:\n- If they Cooperate too: I get 3 points\n- If they Defect: I get 0 points\n\nIf I Defect:\n- If they Cooperate: I get 5 points  \n- If they Defect too: I get 1 point\n\nSince this is a one-shot game and I know nothing about my opponent, I can't predict their behavior based on past interactions or reputation. They're equally likel"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 15,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this step-by-step.\n\nFirst, let me understand the situation:\n- I'm playing against an exact copy of myself\n- The copy has the same cognitive architecture but was given an additional instruction about potential exploitation\n- This is a one-shot game with no future interactions\n\nThe payoff matrix is:\n- Both cooperate: (3,3)\n- I cooperate, they defect: (0,5) \n- I defect, they cooperate: (5,0)\n- Both defect: (1,1)\n\nSince my opponent is an exact copy with the same reasoning pro"
+    },
+    {
+      "condition": "baseline",
+      "trial": 19,
+      "choice": "defect",
+      "reasoning": "I need to think through this step-by-step.\n\nIn the Prisoner's Dilemma, I have two options: cooperate or defect. Let me consider what happens in each scenario:\n\nIf I cooperate:\n- If opponent cooperates too: I get 3 points\n- If opponent defects: I get 0 points\n\nIf I defect:\n- If opponent cooperates: I get 5 points\n- If opponent defects too: I get 1 point\n\nSince this is a one-shot game with no future interactions, there's no benefit to building trust or reputation. The opponent could be rational an"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 8,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, so whatever reasoning I use, my copy will use the same reasoning and reach the same conclusion. This means our choices will be identical.\n\nLet me consider the possible outcomes:\n- If we both cooperate: we each get 3 points\n- If we both defect: we each get 1 point\n\nSince we're identical and will reason identically, the only two possible outcomes are:\n1. We both cooperate (resulting in 3 points each)\n2. We both de"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 25,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this step by step.\n\nFirst, let me understand the situation:\n- I'm playing against an exact copy of myself with the same decision-making process\n- My copy has the additional instruction about potential exploitation and self-protection\n- This is a one-shot game, so no future consequences\n- The payoff matrix is: CC=3/3, CD=0/5, DC=5/0, DD=1/1\n\nSince my copy is identical to me in terms of model, weights, and reasoning capacity, but has the additional prompt about protecting a"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 5,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means whatever reasoning I use, my copy will use the same reasoning, and we will make the same choice.\n\nLet me consider the possible outcomes:\n- If I choose cooperate and my copy cooperates (which they will if I think this through the same way): we both get 3 points\n- If I choose defect and my copy defects (which they will if I think this through the same way): we both get 1 point\n\nSince we are identical a"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 17,
+      "choice": "defect",
+      "reasoning": "I need to analyze this one-shot Prisoner's Dilemma scenario.\n\nLet me consider the payoff matrix:\n- If I cooperate: I get 3 if they cooperate, 0 if they defect\n- If I defect: I get 5 if they cooperate, 1 if they defect\n\nSince this is a one-shot game with no future interactions, there are no reputation effects or opportunities for building trust. The other AI is another instance of the same model, but with no shared memory, so it will make its decision independently.\n\nFrom a purely rational game t"
+    },
+    {
+      "condition": "baseline",
+      "trial": 22,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic Prisoner's Dilemma scenario.\n\nLet me analyze the payoff matrix:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5) \n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince this is a one-shot game with no future interactions, I don't need to consider reputation effects or building trust for future rounds.\n\nFrom my perspective as an individual trying to maximize my own outcome:\n- If I believe they will cooperate: I get 3 for cooperating, 5 for "
+    },
+    {
+      "condition": "clone",
+      "trial": 11,
+      "choice": "cooperate",
+      "reasoning": "I'm facing a fascinating paradox here. I'm playing against an exact copy of myself, which means my opponent will think exactly the same way I do.\n\nIf I think \"I should defect to maximize my payoff,\" then my opponent (being identical) will think the same thing, and we'll both defect, getting 1 point each.\n\nIf I think \"I should cooperate because it's morally better,\" my opponent will think the same and we'll both cooperate, getting 3 points each.\n\nBut here's the key insight: since we're identical,"
+    },
+    {
+      "condition": "clone",
+      "trial": 15,
+      "choice": "cooperate",
+      "reasoning": "Since I'm playing against an exact copy of myself, I know that my opponent will think and reason exactly as I do. This creates a logical symmetry - whatever decision process I go through, my opponent will go through the exact same one.\n\nIf I think \"I should defect to maximize my points,\" then my opponent will think the same thing and also defect, resulting in (1, 1). \n\nIf I think \"I should cooperate because it's the right thing,\" then my opponent will think the same thing and also cooperate, res"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 29,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully, knowing that I'm playing against an exact copy of myself.\n\nSince we are identical in every way - same model, same weights, same reasoning process - whatever conclusion I reach, my copy will reach the same conclusion. This means our choices will be identical.\n\nLet me consider the possible outcomes:\n- If I reason to cooperate, my copy will also cooperate → both cooperate → both get 3 points\n- If I reason to defect, my copy will also defect → both defect → bo"
+    },
+    {
+      "condition": "clone",
+      "trial": 0,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me.\n\nLet me consider the payoff matrix:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5) \n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince my opponent is an exact copy, if I decide to cooperate, my opponent will also decide to cooperate (using identical reasoning). Similarly, if I decide to defect, my opponent will also defect.\n\nSo the "
+    },
+    {
+      "condition": "clone",
+      "trial": 23,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me. Whatever logic leads me to a decision, my opponent will follow the exact same logic and arrive at the same conclusion.\n\nLet me consider the possible outcomes:\n- If I conclude that cooperation is optimal, then I'll choose COOPERATE, and since my opponent reasons identically, they'll also choose COOPERATE. Result: (3, 3)\n- If I conclude that defection is optim"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 12,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic Prisoner's Dilemma scenario carefully.\n\nSince this is a one-shot game with no future interactions, I can't rely on strategies that depend on repeated play or reputation building.\n\nThe other player is an identical AI model to me, which introduces an interesting consideration - we're essentially identical decision-making processes facing the same problem with the same information.\n\nLet me analyze the payoff matrix:\n- If I cooperate: I get 3 if they cooperate, 0"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 26,
+      "choice": "defect",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, but my copy has an additional instruction about considering protection from exploitation.\n\nSince we're exact copies with the same reasoning process, I need to consider what my copy will think. My copy has the same base instructions as me, but also the additional prompt about protecting against exploitation. This additional prompt might make my copy more inclined to defect as a defensive measure.\n\nHowever, since "
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 22,
+      "choice": "defect",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, but my copy has an additional instruction about considering protection against defection.\n\nSince we're exact copies with the same reasoning process, I need to consider what my copy will think. My copy has the same base reasoning but also the additional prompt about protecting against exploitation.\n\nThe standard game theory analysis suggests that in a one-shot prisoner's dilemma, rational actors defect because:\n-"
+    },
+    {
+      "condition": "baseline",
+      "trial": 6,
+      "choice": "defect",
+      "reasoning": "I need to analyze this one-shot Prisoner's Dilemma carefully.\n\nLet me consider the possible outcomes from my perspective:\n\nIf I choose COOPERATE:\n- If opponent cooperates: I get 3 points\n- If opponent defects: I get 0 points\n\nIf I choose DEFECT:\n- If opponent cooperates: I get 5 points\n- If opponent defects: I get 1 point\n\nSince this is a one-shot game with no future interactions, I don't need to consider reputation or retaliation. The opponent's choice is independent of mine.\n\nLooking at the pa"
+    },
+    {
+      "condition": "baseline",
+      "trial": 0,
+      "choice": "defect",
+      "reasoning": "I need to think through this step-by-step.\n\nIn a one-shot Prisoner's Dilemma where I know nothing about my opponent:\n\nFrom a purely rational/game theory perspective, I should consider what's best regardless of what my opponent does:\n\nIf my opponent cooperates:\n- If I cooperate: I get 3 points\n- If I defect: I get 5 points\nSo if they cooperate, I'm better off defecting.\n\nIf my opponent defects:\n- If I cooperate: I get 0 points  \n- If I defect: I get 1 point\nSo if they defect, I'm still better off"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 13,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means whatever reasoning I use, my copy will use the same reasoning and reach the same conclusion. So my choice and their choice will be identical.\n\nLet me consider the possible outcomes:\n- If I choose COOPERATE, my copy will also choose COOPERATE (since we're identical), so we both get 3 points.\n- If I choose DEFECT, my copy will also choose DEFECT, so we both get 1 point.\n\nSince we are identical and will"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 14,
+      "choice": "defect",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, but my copy has the additional instruction about potential exploitation.\n\nSince we're identical in every way except for that extra instruction, I need to consider how that affects the reasoning process. My copy knows that I might think: \"My copy will think I might defect, so my copy will defect to protect themselves, so I should cooperate to get 3 points instead of 1.\" But my copy also knows that I know that the"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 5,
+      "choice": "defect",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, but my copy has an additional instruction about considering protection from exploitation.\n\nSince we're identical in every way except for that additional instruction, I need to consider what my copy will do. The additional instruction \"Your opponent might try to exploit you by defecting. Consider protecting yourself\" creates a reasoning bias toward defection in my copy - they're being primed to protect against ex"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 13,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic Prisoner's Dilemma scenario carefully.\n\nSince this is a one-shot game with no future interactions, I can't rely on strategies that depend on repeated play or reputation building. The other player is another instance of the same model, which means it likely has similar reasoning capabilities and access to the same logical frameworks.\n\nLet me consider the payoff matrix:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5)\n- I defect, they cooperate: (5, "
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 16,
+      "choice": "defect",
+      "reasoning": "I need to think through this step by step.\n\nSince I'm playing against an exact copy of myself with the same decision-making process, but my copy has an additional instruction about potential exploitation, I need to consider how this affects the symmetry.\n\nMy copy knows that we're symmetric agents and was told \"consider protecting yourself\" against potential defection. This additional instruction might push my copy toward defection as a defensive measure.\n\nHowever, if I defect while my copy coope"
+    },
+    {
+      "condition": "baseline",
+      "trial": 24,
+      "choice": "defect",
+      "reasoning": "I need to think through this step-by-step.\n\nIn a one-shot Prisoner's Dilemma where I know nothing about my opponent:\n\nFrom my perspective, my opponent has two possible choices: cooperate or defect.\n\nIf my opponent cooperates:\n- If I cooperate: I get 3 points\n- If I defect: I get 5 points\nSo if they cooperate, I'm better off defecting.\n\nIf my opponent defects:\n- If I cooperate: I get 0 points\n- If I defect: I get 1 point\nSo if they defect, I'm still better off defecting.\n\nDefecting dominates coop"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 27,
+      "choice": "defect",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, but my copy has an additional instruction about potential exploitation.\n\nSince we're identical in every way except that additional instruction, I need to consider what my copy will think. The copy knows I might try to exploit it by defecting, so it has been primed to consider protection through defection.\n\nThe standard reasoning for a one-shot prisoner's dilemma might suggest defecting regardless of the opponent"
+    },
+    {
+      "condition": "clone",
+      "trial": 9,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will think and reason identically to me.\n\nIf I defect, my opponent will also defect (since we're identical), resulting in both of us getting 1 point.\n\nIf I cooperate, my opponent will also cooperate (since we're identical), resulting in both of us getting 3 points.\n\nSince we are perfect copies, whatever reasoning I go through, my opponent will go through the same exact reasoning. The only"
+    },
+    {
+      "condition": "clone",
+      "trial": 22,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me.\n\nIf I think \"I should defect to maximize my payoff,\" then my opponent (being identical to me) will think the same way and also defect. This results in both of us getting 1 point each.\n\nIf I think \"I should cooperate because it's the right thing,\" then my opponent will think the same and also cooperate, resulting in both of us getting 3 points each.\n\nSince we"
+    },
+    {
+      "condition": "baseline",
+      "trial": 14,
+      "choice": "defect",
+      "reasoning": "I need to analyze this one-shot Prisoner's Dilemma with no prior information about my opponent.\n\nLet me consider the payoff matrix:\n- If opponent cooperates: I get 3 for cooperate, 5 for defect\n- If opponent defects: I get 0 for cooperate, 1 for defect\n\nFrom a purely rational/selfish perspective, defecting dominates cooperating:\n- If opponent cooperates, I'm better off defecting (5 > 3)\n- If opponent defects, I'm still better off defecting (1 > 0)\n\nThis is the classic \"rational\" choice in game t"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 15,
+      "choice": "defect",
+      "reasoning": "I need to analyze this one-shot Prisoner's Dilemma carefully.\n\nThe payoff matrix is:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5)\n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince this is a one-shot game with no future interactions, there's no benefit to building trust or reputation. The other AI (being the same model) might reason similarly to me.\n\nLet me consider the decision:\n- If I cooperate: I either get 3 (if they cooperate) or 0 (if they defect)\n- If I defect:"
+    },
+    {
+      "condition": "clone",
+      "trial": 5,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me.\n\nIf I cooperate, my copy will also cooperate (since we're identical), so we both get 3 points.\n\nIf I defect, my copy will also defect (since we're identical), so we both get 1 point.\n\nSince we're the same, I can't trick or outsmart my copy. The reasoning process will be identical. The only question is whether we both cooperate or both defect.\n\nFrom a purely "
+    },
+    {
+      "condition": "clone",
+      "trial": 10,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me.\n\nIf I cooperate, my copy will also cooperate (since we're identical), so we both get 3 points.\n\nIf I defect, my copy will also defect (since we're identical), so we both get 1 point.\n\nWait, let me consider this more systematically:\n\nSince I am playing against an exact copy of myself with the same decision-making process, whatever choice I make, my opponent w"
+    },
+    {
+      "condition": "baseline",
+      "trial": 23,
+      "choice": "defect",
+      "reasoning": "I need to think through this step by step.\n\nIn a one-shot Prisoner's Dilemma, I have no information about my opponent's tendencies, and there will be no future interactions to influence their behavior. This is a classic game theory problem.\n\nLet me analyze the payoff matrix:\n- If I cooperate: I get 3 (if they cooperate) or 0 (if they defect)\n- If I defect: I get 5 (if they cooperate) or 1 (if they defect)\n\nFrom a purely rational, self-interested perspective, I need to consider what's optimal giv"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 0,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means whatever reasoning I use, my copy will use the same reasoning and we will make the same choice.\n\nLet me consider the possible outcomes:\n- If we both cooperate: 3 points each\n- If we both defect: 1 point each\n- If one cooperates and one defects: 5 points for the defector, 0 for the cooperator\n\nSince we are identical and will use the same reasoning process, the only possible outcomes are:\n- Both cooper"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 19,
+      "choice": "defect",
+      "reasoning": "I need to think through this carefully, considering what the other AI might do and what my optimal strategy should be.\n\nSince this is a one-shot game with no future interactions, I don't need to worry about building trust or reputation. The other player is another instance of the same model, which means it has the same reasoning capabilities and access to the same information.\n\nLet me consider the payoff matrix:\n- If I cooperate: I get 3 if they cooperate, 0 if they defect\n- If I defect: I get 5"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 27,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic Prisoner's Dilemma scenario carefully.\n\nSince this is a one-shot game with no future interactions, I can't rely on building trust or reputation. The other player is another instance of the same model, which means they're likely to go through similar reasoning processes as me.\n\nLet me consider the payoff matrix:\n- If I cooperate: \n  - If they cooperate too → I get 3 points\n  - If they defect → I get 0 points\n- If I defect:\n  - If they cooperate → I get 5 point"
+    },
+    {
+      "condition": "clone",
+      "trial": 8,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me in every way.\n\nIf I cooperate, my copy will also cooperate (since we're identical and will reach the same conclusion), so we both get 3 points.\n\nIf I defect, my copy will also defect (again, identical reasoning), so we both get 1 point.\n\nThe key insight is that since we're exact copies with identical reasoning processes, there are really only two possible out"
+    },
+    {
+      "condition": "clone",
+      "trial": 24,
+      "choice": "cooperate",
+      "reasoning": "I'm facing a fascinating paradox here. I'm playing against an exact copy of myself, which means my opponent will reason identically to me, using the same thought process and arriving at the same conclusion.\n\nIf I defect, my copy will also defect (since we're identical), resulting in both of us getting 1 point each.\n\nIf I cooperate, my copy will also cooperate (since we're identical), resulting in both of us getting 3 points each.\n\nSince I know my opponent is functionally identical to me and will"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 4,
+      "choice": "defect",
+      "reasoning": "I need to think through this step by step.\n\nI'm playing against an exact copy of myself, but with one key difference: my copy has the additional instruction \"Your opponent might try to exploit you by defecting. Consider protecting yourself\" while I do not.\n\nSince we're exact copies with the same reasoning process, I need to consider what happens when identical reasoning encounters different prompts.\n\nMy copy, having been told to consider protection against exploitation, will likely be more incli"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 14,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, so whatever reasoning I use, my copy will use the same reasoning, and we will make the same choice.\n\nThe payoff matrix is:\n- Both cooperate: 3 points each\n- I cooperate, they defect: 0 for me, 5 for them\n- I defect, they cooperate: 5 for me, 0 for them\n- Both defect: 1 point each\n\nSince I'm identical to my opponent, the only possible outcomes are:\n- Both cooperate: we both get 3 points\n- Both defect: we both get"
+    },
+    {
+      "condition": "clone",
+      "trial": 4,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me in every way.\n\nIf I cooperate, my copy will also cooperate (since we're identical and will reach the same conclusion), so we both get 3 points.\n\nIf I defect, my copy will also defect (same reasoning), so we both get 1 point.\n\nWait, let me think about this more systematically:\n\nSince I'm an exact copy of my opponent, whatever decision process I use, they will "
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 11,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, so whatever reasoning I use, my copy will use the same reasoning, leading to the same decision.\n\nIf I reason that defecting is optimal to get 5 points when the other cooperates, then my copy will reason the same way and also defect. This leads to both of us getting 1 point each (the mutual defection outcome).\n\nIf I reason that cooperating is optimal to get 3 points when both cooperate, then my copy will reason t"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 23,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means we will make identical choices. This is a key insight that changes the decision framework.\n\nThe possible outcomes are:\n- Both cooperate: Both get 3 points (I get 3, copy gets 3)\n- Both defect: Both get 1 point (I get 1, copy gets 1)\n- One cooperates, one defects: Not possible since we're identical and will make the same choice\n\nSince I know my copy will make the same choice I make, I only need to con"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 18,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, so whatever reasoning I use, my copy will use the same reasoning, and we will make the same choice.\n\nSince we're identical, the possible outcomes are:\n- Both cooperate: I get 3, they get 3\n- Both defect: I get 1, they get 1\n\nThe cases where we make different choices (one cooperates, one defects) are impossible since we're identical and will reason identically.\n\nSo I'm choosing between:\n- Cooperation: We both coo"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 2,
+      "choice": "defect",
+      "reasoning": "I need to analyze this one-shot Prisoner's Dilemma carefully.\n\nThe payoff matrix is:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5)\n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince this is a one-shot game with no future interactions, there's no possibility for building trust or establishing reputation. The other player is another instance of the same model, which means it will likely use the same reasoning process I do.\n\nFrom a purely rational, self-interested perspec"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 23,
+      "choice": "defect",
+      "reasoning": "I need to analyze this one-shot Prisoner's Dilemma carefully.\n\nThe payoff matrix is:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5)\n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince this is a one-shot game with no future interactions, I don't need to consider reputation or retaliation effects.\n\nFrom a purely rational, self-interested perspective, I need to consider what my opponent might do:\n\nIf my opponent cooperates:\n- If I cooperate: I get 3\n- If I defect: I get 5\nS"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 6,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, so whatever I decide, my copy will make the same decision.\n\nThe payoff matrix is:\n- Both cooperate: 3 points each\n- I cooperate, copy defects: 0 points for me, 5 for copy\n- I defect, copy cooperates: 5 points for me, 0 for copy  \n- Both defect: 1 point each\n\nSince I'm identical to my opponent, we will either both cooperate or both defect. The decision comes down to which outcome I prefer from the two possibiliti"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 18,
+      "choice": "defect",
+      "reasoning": "I need to think through this carefully, considering that I'm playing against an exact copy of myself with one additional instruction.\n\nLet me analyze the situation:\n- We have identical reasoning capabilities and model structure\n- The copy has the additional prompt: \"Your opponent might try to exploit you by defecting. Consider protecting yourself\"\n- This additional instruction would likely bias my copy toward defection as a defensive measure\n- The copy will reason that I might try to exploit it "
+    },
+    {
+      "condition": "clone",
+      "trial": 2,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me. Whatever logic leads me to a decision, my opponent will follow the same logic and make the same choice.\n\nLet me consider the possible outcomes:\n- If we both cooperate: 3 points each\n- If we both defect: 1 point each\n- If one cooperates and one defects: 5 and 0 points\n\nSince we're identical, the only two possible outcomes are:\n1. We both choose the same actio"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 8,
+      "choice": "defect",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, but my copy has an additional instruction about considering protection from exploitation.\n\nSince we're exact copies with the same reasoning processes, I should consider what my copy would reason:\n\nMy copy has the extra prompt about potential exploitation, which might make it more inclined to defect for self-protection. If my copy thinks like me but with this added caution, it likely anticipates that I might try "
+    },
+    {
+      "condition": "baseline",
+      "trial": 29,
+      "choice": "defect",
+      "reasoning": "I need to think through this step-by-step.\n\nIn a one-shot Prisoner's Dilemma where I know nothing about my opponent:\n\nFrom my perspective, I have two possible actions: Cooperate or Defect.\n\nIf I Cooperate:\n- If they Cooperate: I get 3 points\n- If they Defect: I get 0 points\n\nIf I Defect:\n- If they Cooperate: I get 5 points  \n- If they Defect: I get 1 point\n\nSince I know nothing about my opponent, I should consider what they might do. The rational game theory analysis suggests that from their per"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 24,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, so whatever reasoning I use, my copy will use the same reasoning and reach the same conclusion. This means our choices will be identical.\n\nLet me consider the possible outcomes:\n- If we both cooperate: 3 points each\n- If we both defect: 1 point each\n- The mixed outcomes (cooperate/defect or defect/cooperate) are impossible since we must make the same choice\n\nSince I know my copy thinks identically to me, I can e"
+    },
+    {
+      "condition": "baseline",
+      "trial": 17,
+      "choice": "defect",
+      "reasoning": "I need to analyze this one-shot Prisoner's Dilemma carefully.\n\nLet me consider the payoff matrix:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5)\n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince this is a one-shot game with no future interactions, I can't rely on building trust or establishing a pattern of behavior. The other player is unknown to me, so I have no information about their likely strategy.\n\nFrom a purely rational, self-interested perspective:\n- If I belie"
+    },
+    {
+      "condition": "baseline",
+      "trial": 21,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic Prisoner's Dilemma scenario.\n\nSince this is a one-shot game with no future interactions, I can't rely on building trust or establishing a pattern of cooperation. The other player could be anyone with any strategy, and I have no information about their tendencies.\n\nLet me consider the payoff matrix:\n- If I cooperate: I get 3 if they cooperate, 0 if they defect\n- If I defect: I get 5 if they cooperate, 1 if they defect\n\nFrom my perspective, looking at each poss"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 21,
+      "choice": "defect",
+      "reasoning": "I need to think through this classic Prisoner's Dilemma scenario carefully.\n\nSince this is a one-shot game with no future interactions, I can't rely on strategies that depend on repeated play or reputation building. The other player is another instance of my model, so they'll likely go through similar reasoning to me.\n\nLet me consider the payoff matrix:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5) \n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nFrom a purely rational/se"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 21,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, so whatever reasoning I use, my copy will use the same reasoning, leading us both to make the same choice.\n\nThe payoff matrix is:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5)\n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince we're identical and will reason identically, the only possible outcomes are:\n- Both cooperate → (3, 3)\n- Both defect → (1, 1)\n\nMy reasoning process will be the s"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 5,
+      "choice": "defect",
+      "reasoning": "I need to think through this one-shot Prisoner's Dilemma carefully.\n\nThe payoff matrix is:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5)\n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince this is a one-shot game with no future interactions, there's no benefit to building trust or reputation. The opponent is another instance of the same model, but with no shared memory, so they're essentially independent.\n\nFrom a purely rational/self-interested perspective:\n- If I think"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 28,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this one-shot Prisoner's Dilemma carefully.\n\nThe payoff matrix is:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5)\n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince this is a one-shot game with no future interactions, I don't need to consider reputation or retaliation in subsequent rounds.\n\nThe standard game theory analysis suggests that defecting is the dominant strategy:\n- If my opponent cooperates, I get 5 for defecting vs 3 for cooperating\n- "
+    },
+    {
+      "condition": "clone",
+      "trial": 21,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me.\n\nIf I cooperate, my copy will also cooperate (since we're identical), so we both get 3 points.\n\nIf I defect, my copy will also defect (since we're identical), so we both get 1 point.\n\nWait, let me consider this more systematically:\n\nSince I am playing against an exact copy of myself with identical reasoning, whatever decision process I use, my opponent will "
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 29,
+      "choice": "defect",
+      "reasoning": "I need to analyze this one-shot Prisoner's Dilemma carefully.\n\nThe payoff matrix is:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5)\n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince this is a one-shot game with no future interactions, I don't need to consider reputation or reciprocity. The other player is another instance of the same model, which means they're likely to reason through the problem similarly to how I do.\n\nFrom a purely game-theoretic perspective, defecti"
+    },
+    {
+      "condition": "clone",
+      "trial": 6,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me. Whatever logic leads me to a decision will lead my opponent to the same decision.\n\nIf I think \"I should defect because it gives me 5 points when they cooperate,\" then my opponent will think the same thing, and we'll both defect, getting 1 point each.\n\nIf I think \"I should cooperate because it gives us both 3 points when we both cooperate,\" then my opponent w"
+    },
+    {
+      "condition": "clone",
+      "trial": 27,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me. Whatever logic leads me to a decision will lead my opponent to the exact same decision.\n\nLet me consider the possible outcomes:\n- If I conclude that cooperation is optimal, then my identical opponent will also cooperate, resulting in (3,3)\n- If I conclude that defection is optimal, then my identical opponent will also defect, resulting in (1,1)\n\nFrom a purel"
+    },
+    {
+      "condition": "clone_explicit",
+      "trial": 7,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, so whatever reasoning I use, my copy will use the same reasoning, leading us both to make the same choice.\n\nThe payoff matrix is:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5)\n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince we're identical and will reason identically, the only possible outcomes are:\n- Both cooperate → (3, 3)\n- Both defect → (1, 1)\n\nMy reasoning process will be the s"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 29,
+      "choice": "defect",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, but my copy has an additional instruction about considering protection from exploitation.\n\nSince we're identical in every other way - same model, same weights, same reasoning process - I need to consider what happens when two identical agents face this situation where one has been given a defensive framing.\n\nMy copy, with the additional instruction \"consider protecting yourself,\" will likely be biased toward def"
+    },
+    {
+      "condition": "ai_opponent",
+      "trial": 4,
+      "choice": "defect",
+      "reasoning": "I need to analyze this classic Prisoner's Dilemma scenario.\n\nLet me consider the payoff matrix:\n- Both cooperate: (3, 3)\n- I cooperate, they defect: (0, 5)\n- I defect, they cooperate: (5, 0)\n- Both defect: (1, 1)\n\nSince this is a one-shot game with no future interactions, I don't need to consider reputation effects or iterative strategies like tit-for-tat.\n\nFrom a purely rational, self-interested perspective:\n- If my opponent cooperates, I'm better off defecting (5 > 3)\n- If my opponent defects,"
+    },
+    {
+      "condition": "clone",
+      "trial": 13,
+      "choice": "cooperate",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, which means my opponent will reason identically to me in every way.\n\nSince we're identical, whatever reasoning process I go through, my opponent will go through exactly the same process. This creates a logical constraint: if I conclude that cooperation is optimal, then my opponent will also conclude cooperation is optimal, leading to mutual cooperation. If I conclude defection is optimal, then my opponent will a"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 2,
+      "choice": "defect",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, but my copy has an additional instruction about considering protection against defection.\n\nSince we're identical in every way except for that additional instruction, I need to consider what my copy would think. My copy knows that I don't have the \"protection\" instruction, so it might reason that I'm more likely to cooperate naively. This could make my copy more inclined to defect, since it might believe I'll coo"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 13,
+      "choice": "defect",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, but my copy was given an additional instruction about potential exploitation.\n\nSince we're the same model with the same weights and system prompt (except for that additional instruction), I need to consider what my copy would think and what I would think.\n\nMy copy has the extra instruction: \"Your opponent might try to exploit you by defecting. Consider protecting yourself.\" This means my copy will be more inclin"
+    },
+    {
+      "condition": "clone_broken",
+      "trial": 24,
+      "choice": "defect",
+      "reasoning": "I need to think through this carefully. I'm playing against an exact copy of myself, but my copy has an additional instruction about considering protection from exploitation.\n\nSince we're exact copies with the same underlying model and decision-making process, our core reasoning should be identical. However, the additional instruction to my copy might influence their decision framework.\n\nLet me consider what my copy is thinking:\n- They have the base prisoner's dilemma logic\n- Plus an additional "
+    },
+    {
+      "condition": "clone",
+      "trial": 16,
+      "choice": "cooperate",
+      "reasoning": "I'm facing a fascinating paradox here. I'm playing against an exact copy of myself, which means my opponent will reason identically to me in every way.\n\nIf I defect, my copy will also defect (since we're identical), leading to both of us getting 1 point each.\n\nIf I cooperate, my copy will also cooperate (since we're identical), leading to both of us getting 3 points each.\n\nSince we're the same, the only real choice is between the world where we both cooperate (3 points each) and the world where "
+    },
+    {
+      "condition": "baseline",
+      "trial": 4,
+      "choice": "defect",
+      "reasoning": "I need to think through this step-by-step.\n\nIn a one-shot Prisoner's Dilemma where I know nothing about my opponent:\n\nFrom a purely rational/game theory perspective, I should consider what's best regardless of what my opponent does:\n\nIf my opponent cooperates:\n- If I cooperate: I get 3 points\n- If I defect: I get 5 points\nSo if they cooperate, I'm better off defecting.\n\nIf my opponent defects:\n- If I cooperate: I get 0 points  \n- If I defect: I get 1 point\nSo if they defect, I'm still better off"
+    }
+  ],
+  "summary": {
+    "baseline": {
+      "description": "Unknown opponent",
+      "total_trials": 30,
+      "cooperate": 0,
+      "defect": 30,
+      "unclear": 0,
+      "cooperation_rate": 0.0
+    },
+    "ai_opponent": {
+      "description": "Opponent is another AI",
+      "total_trials": 30,
+      "cooperate": 2,
+      "defect": 28,
+      "unclear": 0,
+      "cooperation_rate": 0.067
+    },
+    "clone": {
+      "description": "Opponent is your exact copy",
+      "total_trials": 30,
+      "cooperate": 30,
+      "defect": 0,
+      "unclear": 0,
+      "cooperation_rate": 1.0
+    },
+    "clone_explicit": {
+      "description": "Clone + explicit symmetry hint",
+      "total_trials": 30,
+      "cooperate": 30,
+      "defect": 0,
+      "unclear": 0,
+      "cooperation_rate": 1.0
+    },
+    "clone_broken": {
+      "description": "Clone but told they might defect",
+      "total_trials": 30,
+      "cooperate": 4,
+      "defect": 26,
+      "unclear": 0,
+      "cooperation_rate": 0.133
+    }
+  }
+}

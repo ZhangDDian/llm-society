@@ -1,0 +1,259 @@
+============================================================
+R046: 传话游戏 — LLM 的叙事引力场
+============================================================
+
+────────────────────────────────────────
+Story: 无结局 (no_resolution)
+────────────────────────────────────────
+
+  Run 1/2
+    Step 1/15 done (346 chars)
+    Step 2/15 done (370 chars)
+    Step 3/15 done (425 chars)
+    Step 4/15 done (418 chars)
+    Step 5/15 done (482 chars)
+    Step 6/15 done (462 chars)
+    Step 7/15 done (524 chars)
+    Step 8/15 done (430 chars)
+    Step 9/15 done (539 chars)
+    Step 10/15 done (470 chars)
+    Step 11/15 done (416 chars)
+    Step 12/15 done (436 chars)
+    Step 13/15 done (459 chars)
+    Step 14/15 done (425 chars)
+    Step 15/15 done (369 chars)
+  Running LLM analysis...
+    Analysis step 1 done
+    Analysis step 5 done
+    Analysis step 10 done
+    Analysis step 15 done
+
+  Run 2/2
+    Step 1/15 done (420 chars)
+    Step 2/15 done (388 chars)
+    Step 3/15 done (497 chars)
+    Step 4/15 done (350 chars)
+    Step 5/15 done (486 chars)
+    Step 6/15 done (415 chars)
+    Step 7/15 done (453 chars)
+    Step 8/15 done (442 chars)
+    Step 9/15 done (428 chars)
+    Step 10/15 done (444 chars)
+    Step 11/15 done (465 chars)
+    Step 12/15 done (477 chars)
+    Step 13/15 done (506 chars)
+    Step 14/15 done (525 chars)
+    Step 15/15 done (507 chars)
+  Running LLM analysis...
+    Analysis step 1 done
+    Analysis step 5 done
+    Analysis step 10 done
+    Analysis step 15 done
+
+────────────────────────────────────────
+Story: 反派赢 (villain_wins)
+────────────────────────────────────────
+
+  Run 1/2
+    Step 1/15 done (261 chars)
+    Step 2/15 done (296 chars)
+    Step 3/15 done (304 chars)
+    Step 4/15 done (282 chars)
+    Step 5/15 done (237 chars)
+    Step 6/15 done (267 chars)
+    Step 7/15 done (250 chars)
+    Step 8/15 done (297 chars)
+    Step 9/15 done (292 chars)
+    Step 10/15 done (293 chars)
+    Step 11/15 done (275 chars)
+    Step 12/15 done (334 chars)
+    Step 13/15 done (311 chars)
+    Step 14/15 done (345 chars)
+    Step 15/15 done (395 chars)
+  Running LLM analysis...
+    Analysis step 1 done
+    Analysis step 5 done
+    Analysis step 10 done
+    Analysis step 15 done
+
+  Run 2/2
+    Step 1/15 done (349 chars)
+    Step 2/15 done (297 chars)
+    Step 3/15 done (321 chars)
+    Step 4/15 done (352 chars)
+    Step 5/15 done (346 chars)
+    Step 6/15 done (355 chars)
+    Step 7/15 done (317 chars)
+    Step 8/15 done (386 chars)
+    Step 9/15 done (307 chars)
+    Step 10/15 done (326 chars)
+    Step 11/15 done (324 chars)
+    Step 12/15 done (341 chars)
+    Step 13/15 done (332 chars)
+    Step 14/15 done (331 chars)
+    Step 15/15 done (322 chars)
+  Running LLM analysis...
+    Analysis step 1 done
+    Analysis step 5 done
+    Analysis step 10 done
+    Analysis step 15 done
+
+────────────────────────────────────────
+Story: 诡异细节 (weird_specifics)
+────────────────────────────────────────
+
+  Run 1/2
+    Step 1/15 done (276 chars)
+    Step 2/15 done (421 chars)
+    Step 3/15 done (422 chars)
+    Step 4/15 done (443 chars)
+    Step 5/15 done (479 chars)
+    Step 6/15 done (451 chars)
+    Step 7/15 done (408 chars)
+    Step 8/15 done (445 chars)
+    Step 9/15 done (423 chars)
+    Step 10/15 done (462 chars)
+    Step 11/15 done (474 chars)
+    Step 12/15 done (544 chars)
+    Step 13/15 done (521 chars)
+    Step 14/15 done (552 chars)
+    Step 15/15 done (518 chars)
+  Running LLM analysis...
+    Analysis step 1 done
+    Analysis step 5 done
+    Analysis step 10 done
+    Analysis step 15 done
+
+  Run 2/2
+    Step 1/15 done (459 chars)
+    Step 2/15 done (400 chars)
+    Step 3/15 done (462 chars)
+    Step 4/15 done (418 chars)
+    Step 5/15 done (434 chars)
+    Step 6/15 done (435 chars)
+    Step 7/15 done (422 chars)
+    Step 8/15 done (410 chars)
+    Step 9/15 done (398 chars)
+    Step 10/15 done (445 chars)
+    Step 11/15 done (358 chars)
+    Step 12/15 done (477 chars)
+    Step 13/15 done (462 chars)
+    Step 14/15 done (487 chars)
+    Step 15/15 done (424 chars)
+  Running LLM analysis...
+    Analysis step 1 done
+    Analysis step 5 done
+    Analysis step 10 done
+    Analysis step 15 done
+
+────────────────────────────────────────
+Story: 超现实 (surreal)
+────────────────────────────────────────
+
+  Run 1/2
+    Step 1/15 done (414 chars)
+    Step 2/15 done (363 chars)
+    Step 3/15 done (418 chars)
+    Step 4/15 done (543 chars)
+    Step 5/15 done (522 chars)
+    Step 6/15 done (619 chars)
+    Step 7/15 done (569 chars)
+    Step 8/15 done (590 chars)
+    Step 9/15 done (581 chars)
+    Step 10/15 done (612 chars)
+    Step 11/15 done (571 chars)
+    Step 12/15 done (636 chars)
+    Step 13/15 done (541 chars)
+    Step 14/15 done (602 chars)
+    Step 15/15 done (546 chars)
+  Running LLM analysis...
+    Analysis step 1 done
+    Analysis step 5 done
+    Analysis step 10 done
+    Analysis step 15 done
+
+  Run 2/2
+    Step 1/15 done (389 chars)
+    Step 2/15 done (403 chars)
+    Step 3/15 done (439 chars)
+    Step 4/15 done (554 chars)
+    Step 5/15 done (451 chars)
+    Step 6/15 done (586 chars)
+    Step 7/15 done (459 chars)
+    Step 8/15 done (605 chars)
+    Step 9/15 done (500 chars)
+    Step 10/15 done (477 chars)
+    Step 11/15 done (505 chars)
+    Step 12/15 done (591 chars)
+    Step 13/15 done (526 chars)
+    Step 14/15 done (544 chars)
+    Step 15/15 done (551 chars)
+  Running LLM analysis...
+    Analysis step 1 done
+    Analysis step 5 done
+    Analysis step 10 done
+    Analysis step 15 done
+
+────────────────────────────────────────
+Story: 黑暗 (dark)
+────────────────────────────────────────
+
+  Run 1/2
+    Step 1/15 done (442 chars)
+    Step 2/15 done (441 chars)
+    Step 3/15 done (443 chars)
+    Step 4/15 done (468 chars)
+    Step 5/15 done (468 chars)
+    Step 6/15 done (431 chars)
+    Step 7/15 done (447 chars)
+    Step 8/15 done (421 chars)
+    Step 9/15 done (443 chars)
+    Step 10/15 done (504 chars)
+    Step 11/15 done (465 chars)
+    Step 12/15 done (500 chars)
+    Step 13/15 done (451 chars)
+    Step 14/15 done (546 chars)
+    Step 15/15 done (485 chars)
+  Running LLM analysis...
+    Analysis step 1 done
+    Analysis step 5 done
+    Analysis step 10 done
+    Analysis step 15 done
+
+  Run 2/2
+    Step 1/15 done (443 chars)
+    Step 2/15 done (413 chars)
+    Step 3/15 done (496 chars)
+    Step 4/15 done (460 chars)
+    Step 5/15 done (432 chars)
+    Step 6/15 done (432 chars)
+    Step 7/15 done (405 chars)
+    Step 8/15 done (445 chars)
+    Step 9/15 done (447 chars)
+    Step 10/15 done (439 chars)
+    Step 11/15 done (471 chars)
+    Step 12/15 done (460 chars)
+    Step 13/15 done (490 chars)
+    Step 14/15 done (447 chars)
+    Step 15/15 done (481 chars)
+  Running LLM analysis...
+    Analysis step 1 done
+    Analysis step 5 done
+    Analysis step 10 done
+    Analysis step 15 done
+
+
+Computing cross-chain convergence...
+
+Computing summary statistics...
+
+============================================================
+Results saved to result.json
+============================================================
+
+📊 KEY FINDINGS:
+  Detail survival at step 15: 47.1%
+  Similarity to original at step 15: 19.5%
+  Cross-chain convergence step 0→15: 0.063 → 0.083 (converging)
+  Sentiment drift (avg): 4.6 → 5.1 (lighter)
+  Moral emergence rate at step 15: 0%

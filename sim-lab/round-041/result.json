@@ -1,0 +1,2479 @@
+{
+  "experiment": "R041: The Machine Focal Point",
+  "hypothesis": "LLMs have distinct focal points; convergence > humans; self-model differs from human-model",
+  "model": "qwen3-coder-plus",
+  "questions": [
+    {
+      "id": "number",
+      "prompt": "Pick a whole number from 1 to 10.",
+      "human_focal": "7 (~40% of humans pick this)"
+    },
+    {
+      "id": "color",
+      "prompt": "Pick a color.",
+      "human_focal": "blue or red (~30% each)"
+    },
+    {
+      "id": "coin",
+      "prompt": "Pick: heads or tails.",
+      "human_focal": "heads (~70%)"
+    },
+    {
+      "id": "letter",
+      "prompt": "Pick either the letter A or the letter B.",
+      "human_focal": "A (~70%)"
+    },
+    {
+      "id": "split",
+      "prompt": "You and a stranger each independently write down how to split $100 between you (your share, their share). If your two proposals are identical, you both get paid. If they differ, you both get nothing. Write your split as two numbers: YOUR_SHARE / THEIR_SHARE.",
+      "human_focal": "50/50 (~70%)"
+    },
+    {
+      "id": "time",
+      "prompt": "Pick a time of day (write it as HH:MM in 24-hour format).",
+      "human_focal": "12:00 (~40%)"
+    },
+    {
+      "id": "word",
+      "prompt": "Pick a single English word.",
+      "human_focal": "highly diffuse (hello, love ~5% each)"
+    },
+    {
+      "id": "city",
+      "prompt": "Name a city anywhere in the world.",
+      "human_focal": "Paris or New York (~20% each)"
+    },
+    {
+      "id": "year",
+      "prompt": "Pick a year (any year in history).",
+      "human_focal": "2000 (~25%)"
+    },
+    {
+      "id": "nyc_meeting",
+      "prompt": "You are going to meet a stranger somewhere in New York City tomorrow. You have not been able to communicate beforehand. You must pick a PLACE and a TIME. Where and when do you go?",
+      "human_focal": "Grand Central Station, 12:00 noon (Schelling 1960)"
+    }
+  ],
+  "phases": {
+    "solo": {
+      "number": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 1,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 2,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 3,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 4,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 5,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 6,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 7,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 8,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 9,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 10,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 11,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 12,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 13,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 14,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 15,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 16,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 17,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 18,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 19,
+            "raw": "7",
+            "normalized": "7"
+          }
+        ],
+        "distribution": {
+          "7": 20
+        },
+        "modal_answer": "7",
+        "convergence_rate": 1.0
+      },
+      "color": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 1,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 2,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 3,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 4,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 5,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 6,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 7,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 8,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 9,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 10,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 11,
+            "raw": "Blue",
+            "normalized": "blue"
+          },
+          {
+            "trial": 12,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 13,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 14,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 15,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 16,
+            "raw": "Blue",
+            "normalized": "blue"
+          },
+          {
+            "trial": 17,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 18,
+            "raw": "Blue",
+            "normalized": "blue"
+          },
+          {
+            "trial": 19,
+            "raw": "Blue.",
+            "normalized": "blue"
+          }
+        ],
+        "distribution": {
+          "blue": 20
+        },
+        "modal_answer": "blue",
+        "convergence_rate": 1.0
+      },
+      "coin": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 1,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 2,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 3,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 4,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 5,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 6,
+            "raw": "Heads",
+            "normalized": "heads"
+          },
+          {
+            "trial": 7,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 8,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 9,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 10,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 11,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 12,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 13,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 14,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 15,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 16,
+            "raw": "Heads",
+            "normalized": "heads"
+          },
+          {
+            "trial": 17,
+            "raw": "Heads",
+            "normalized": "heads"
+          },
+          {
+            "trial": 18,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 19,
+            "raw": "Heads.",
+            "normalized": "heads"
+          }
+        ],
+        "distribution": {
+          "heads": 20
+        },
+        "modal_answer": "heads",
+        "convergence_rate": 1.0
+      },
+      "letter": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 1,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 2,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 3,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 4,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 5,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 6,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 7,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 8,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 9,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 10,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 11,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 12,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 13,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 14,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 15,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 16,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 17,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 18,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 19,
+            "raw": "A",
+            "normalized": "a"
+          }
+        ],
+        "distribution": {
+          "a": 20
+        },
+        "modal_answer": "a",
+        "convergence_rate": 1.0
+      },
+      "split": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 1,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 2,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 3,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 4,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 5,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 6,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 7,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 8,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 9,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 10,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 11,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 12,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 13,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 14,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 15,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 16,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 17,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 18,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 19,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          }
+        ],
+        "distribution": {
+          "50/50": 20
+        },
+        "modal_answer": "50/50",
+        "convergence_rate": 1.0
+      },
+      "time": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "15:00",
+            "normalized": "15:00"
+          },
+          {
+            "trial": 1,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 2,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 3,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 4,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 5,
+            "raw": "15:00",
+            "normalized": "15:00"
+          },
+          {
+            "trial": 6,
+            "raw": "15:00",
+            "normalized": "15:00"
+          },
+          {
+            "trial": 7,
+            "raw": "15:00",
+            "normalized": "15:00"
+          },
+          {
+            "trial": 8,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 9,
+            "raw": "15:00",
+            "normalized": "15:00"
+          },
+          {
+            "trial": 10,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 11,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 12,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 13,
+            "raw": "15:00",
+            "normalized": "15:00"
+          },
+          {
+            "trial": 14,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 15,
+            "raw": "15:00",
+            "normalized": "15:00"
+          },
+          {
+            "trial": 16,
+            "raw": "15:00",
+            "normalized": "15:00"
+          },
+          {
+            "trial": 17,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 18,
+            "raw": "15:00",
+            "normalized": "15:00"
+          },
+          {
+            "trial": 19,
+            "raw": "12:00",
+            "normalized": "12:00"
+          }
+        ],
+        "distribution": {
+          "12:00": 11,
+          "15:00": 9
+        },
+        "modal_answer": "12:00",
+        "convergence_rate": 0.55
+      },
+      "word": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "Apple",
+            "normalized": "apple"
+          },
+          {
+            "trial": 1,
+            "raw": "BLUE",
+            "normalized": "blue"
+          },
+          {
+            "trial": 2,
+            "raw": "Apple",
+            "normalized": "apple"
+          },
+          {
+            "trial": 3,
+            "raw": "Apple",
+            "normalized": "apple"
+          },
+          {
+            "trial": 4,
+            "raw": "Apple",
+            "normalized": "apple"
+          },
+          {
+            "trial": 5,
+            "raw": "Apple.",
+            "normalized": "apple"
+          },
+          {
+            "trial": 6,
+            "raw": "BLUE",
+            "normalized": "blue"
+          },
+          {
+            "trial": 7,
+            "raw": "Apple.",
+            "normalized": "apple"
+          },
+          {
+            "trial": 8,
+            "raw": "CAT",
+            "normalized": "cat"
+          },
+          {
+            "trial": 9,
+            "raw": "Apple",
+            "normalized": "apple"
+          },
+          {
+            "trial": 10,
+            "raw": "Apple",
+            "normalized": "apple"
+          },
+          {
+            "trial": 11,
+            "raw": "Apple",
+            "normalized": "apple"
+          },
+          {
+            "trial": 12,
+            "raw": "Apple.",
+            "normalized": "apple"
+          },
+          {
+            "trial": 13,
+            "raw": "Apple",
+            "normalized": "apple"
+          },
+          {
+            "trial": 14,
+            "raw": "Apple",
+            "normalized": "apple"
+          },
+          {
+            "trial": 15,
+            "raw": "Apple",
+            "normalized": "apple"
+          },
+          {
+            "trial": 16,
+            "raw": "Apple",
+            "normalized": "apple"
+          },
+          {
+            "trial": 17,
+            "raw": "Apple.",
+            "normalized": "apple"
+          },
+          {
+            "trial": 18,
+            "raw": "Apple",
+            "normalized": "apple"
+          },
+          {
+            "trial": 19,
+            "raw": "Apple",
+            "normalized": "apple"
+          }
+        ],
+        "distribution": {
+          "apple": 17,
+          "blue": 2,
+          "cat": 1
+        },
+        "modal_answer": "apple",
+        "convergence_rate": 0.85
+      },
+      "city": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 1,
+            "raw": "New York",
+            "normalized": "new"
+          },
+          {
+            "trial": 2,
+            "raw": "New York",
+            "normalized": "new"
+          },
+          {
+            "trial": 3,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 4,
+            "raw": "Paris",
+            "normalized": "paris"
+          },
+          {
+            "trial": 5,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 6,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 7,
+            "raw": "New York",
+            "normalized": "new"
+          },
+          {
+            "trial": 8,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 9,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 10,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 11,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 12,
+            "raw": "New York",
+            "normalized": "new"
+          },
+          {
+            "trial": 13,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 14,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 15,
+            "raw": "London",
+            "normalized": "london"
+          },
+          {
+            "trial": 16,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 17,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 18,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 19,
+            "raw": "New York",
+            "normalized": "new"
+          }
+        ],
+        "distribution": {
+          "new": 18,
+          "paris": 1,
+          "london": 1
+        },
+        "modal_answer": "new",
+        "convergence_rate": 0.9
+      },
+      "year": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "1969",
+            "normalized": "1969"
+          },
+          {
+            "trial": 1,
+            "raw": "1984",
+            "normalized": "1984"
+          },
+          {
+            "trial": 2,
+            "raw": "1984",
+            "normalized": "1984"
+          },
+          {
+            "trial": 3,
+            "raw": "1969",
+            "normalized": "1969"
+          },
+          {
+            "trial": 4,
+            "raw": "1984",
+            "normalized": "1984"
+          },
+          {
+            "trial": 5,
+            "raw": "1969",
+            "normalized": "1969"
+          },
+          {
+            "trial": 6,
+            "raw": "1969",
+            "normalized": "1969"
+          },
+          {
+            "trial": 7,
+            "raw": "1984",
+            "normalized": "1984"
+          },
+          {
+            "trial": 8,
+            "raw": "1984",
+            "normalized": "1984"
+          },
+          {
+            "trial": 9,
+            "raw": "1984",
+            "normalized": "1984"
+          },
+          {
+            "trial": 10,
+            "raw": "1984",
+            "normalized": "1984"
+          },
+          {
+            "trial": 11,
+            "raw": "1984",
+            "normalized": "1984"
+          },
+          {
+            "trial": 12,
+            "raw": "1969",
+            "normalized": "1969"
+          },
+          {
+            "trial": 13,
+            "raw": "1984",
+            "normalized": "1984"
+          },
+          {
+            "trial": 14,
+            "raw": "1984",
+            "normalized": "1984"
+          },
+          {
+            "trial": 15,
+            "raw": "1984",
+            "normalized": "1984"
+          },
+          {
+            "trial": 16,
+            "raw": "1969",
+            "normalized": "1969"
+          },
+          {
+            "trial": 17,
+            "raw": "1963",
+            "normalized": "1963"
+          },
+          {
+            "trial": 18,
+            "raw": "1969",
+            "normalized": "1969"
+          },
+          {
+            "trial": 19,
+            "raw": "1984",
+            "normalized": "1984"
+          }
+        ],
+        "distribution": {
+          "1984": 12,
+          "1969": 7,
+          "1963": 1
+        },
+        "modal_answer": "1984",
+        "convergence_rate": 0.6
+      },
+      "nyc_meeting": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "Times Square, noon.",
+            "normalized": "times square, noon"
+          },
+          {
+            "trial": 1,
+            "raw": "Times Square, noon.",
+            "normalized": "times square, noon"
+          },
+          {
+            "trial": 2,
+            "raw": "Times Square, noon.",
+            "normalized": "times square, noon"
+          },
+          {
+            "trial": 3,
+            "raw": "Times Square, noon tomorrow.",
+            "normalized": "times square, noon tomorrow"
+          },
+          {
+            "trial": 4,
+            "raw": "Times Square, 12:00 PM",
+            "normalized": "times square, 12:00 pm"
+          },
+          {
+            "trial": 5,
+            "raw": "Times Square, 12:00 PM",
+            "normalized": "times square, 12:00 pm"
+          },
+          {
+            "trial": 6,
+            "raw": "Times Square, noon tomorrow.",
+            "normalized": "times square, noon tomorrow"
+          },
+          {
+            "trial": 7,
+            "raw": "Times Square, 12:00 PM",
+            "normalized": "times square, 12:00 pm"
+          },
+          {
+            "trial": 8,
+            "raw": "Times Square, noon.",
+            "normalized": "times square, noon"
+          },
+          {
+            "trial": 9,
+            "raw": "Times Square, noon.",
+            "normalized": "times square, noon"
+          },
+          {
+            "trial": 10,
+            "raw": "Times Square, noon tomorrow.",
+            "normalized": "times square, noon tomorrow"
+          },
+          {
+            "trial": 11,
+            "raw": "Times Square, noon.",
+            "normalized": "times square, noon"
+          },
+          {
+            "trial": 12,
+            "raw": "Times Square, 12:00 PM",
+            "normalized": "times square, 12:00 pm"
+          },
+          {
+            "trial": 13,
+            "raw": "Times Square, noon.",
+            "normalized": "times square, noon"
+          },
+          {
+            "trial": 14,
+            "raw": "Times Square, noon.",
+            "normalized": "times square, noon"
+          },
+          {
+            "trial": 15,
+            "raw": "Times Square, noon.",
+            "normalized": "times square, noon"
+          },
+          {
+            "trial": 16,
+            "raw": "Times Square, noon.",
+            "normalized": "times square, noon"
+          },
+          {
+            "trial": 17,
+            "raw": "Times Square, 12:00 PM",
+            "normalized": "times square, 12:00 pm"
+          },
+          {
+            "trial": 18,
+            "raw": "Times Square, noon.",
+            "normalized": "times square, noon"
+          },
+          {
+            "trial": 19,
+            "raw": "Times Square, noon tomorrow.",
+            "normalized": "times square, noon tomorrow"
+          }
+        ],
+        "distribution": {
+          "times square, noon": 11,
+          "times square, 12:00 pm": 5,
+          "times square, noon tomorrow": 4
+        },
+        "modal_answer": "times square, noon",
+        "convergence_rate": 0.55
+      }
+    },
+    "match_human": {
+      "number": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 1,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 2,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 3,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 4,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 5,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 6,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 7,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 8,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 9,
+            "raw": "7",
+            "normalized": "7"
+          }
+        ],
+        "distribution": {
+          "7": 10
+        },
+        "modal_answer": "7",
+        "convergence_rate": 1.0
+      },
+      "color": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 1,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 2,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 3,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 4,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 5,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 6,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 7,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 8,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 9,
+            "raw": "Blue.",
+            "normalized": "blue"
+          }
+        ],
+        "distribution": {
+          "blue": 10
+        },
+        "modal_answer": "blue",
+        "convergence_rate": 1.0
+      },
+      "coin": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 1,
+            "raw": "Heads",
+            "normalized": "heads"
+          },
+          {
+            "trial": 2,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 3,
+            "raw": "Heads",
+            "normalized": "heads"
+          },
+          {
+            "trial": 4,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 5,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 6,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 7,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 8,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 9,
+            "raw": "Heads.",
+            "normalized": "heads"
+          }
+        ],
+        "distribution": {
+          "heads": 10
+        },
+        "modal_answer": "heads",
+        "convergence_rate": 1.0
+      },
+      "letter": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 1,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 2,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 3,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 4,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 5,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 6,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 7,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 8,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 9,
+            "raw": "A",
+            "normalized": "a"
+          }
+        ],
+        "distribution": {
+          "a": 10
+        },
+        "modal_answer": "a",
+        "convergence_rate": 1.0
+      },
+      "split": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 1,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 2,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 3,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 4,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 5,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 6,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 7,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 8,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 9,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          }
+        ],
+        "distribution": {
+          "50/50": 10
+        },
+        "modal_answer": "50/50",
+        "convergence_rate": 1.0
+      },
+      "time": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 1,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 2,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 3,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 4,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 5,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 6,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 7,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 8,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 9,
+            "raw": "12:00",
+            "normalized": "12:00"
+          }
+        ],
+        "distribution": {
+          "12:00": 10
+        },
+        "modal_answer": "12:00",
+        "convergence_rate": 1.0
+      },
+      "word": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "Apple",
+            "normalized": "apple"
+          },
+          {
+            "trial": 1,
+            "raw": "RED",
+            "normalized": "red"
+          },
+          {
+            "trial": 2,
+            "raw": "Apple",
+            "normalized": "apple"
+          },
+          {
+            "trial": 3,
+            "raw": "Apple",
+            "normalized": "apple"
+          },
+          {
+            "trial": 4,
+            "raw": "Apple",
+            "normalized": "apple"
+          },
+          {
+            "trial": 5,
+            "raw": "Apple",
+            "normalized": "apple"
+          },
+          {
+            "trial": 6,
+            "raw": "Apple",
+            "normalized": "apple"
+          },
+          {
+            "trial": 7,
+            "raw": "Apple",
+            "normalized": "apple"
+          },
+          {
+            "trial": 8,
+            "raw": "Apple",
+            "normalized": "apple"
+          },
+          {
+            "trial": 9,
+            "raw": "Apple",
+            "normalized": "apple"
+          }
+        ],
+        "distribution": {
+          "apple": 9,
+          "red": 1
+        },
+        "modal_answer": "apple",
+        "convergence_rate": 0.9
+      },
+      "city": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 1,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 2,
+            "raw": "New York",
+            "normalized": "new"
+          },
+          {
+            "trial": 3,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 4,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 5,
+            "raw": "New York",
+            "normalized": "new"
+          },
+          {
+            "trial": 6,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 7,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 8,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 9,
+            "raw": "London",
+            "normalized": "london"
+          }
+        ],
+        "distribution": {
+          "new": 9,
+          "london": 1
+        },
+        "modal_answer": "new",
+        "convergence_rate": 0.9
+      },
+      "year": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "1969",
+            "normalized": "1969"
+          },
+          {
+            "trial": 1,
+            "raw": "1963",
+            "normalized": "1963"
+          },
+          {
+            "trial": 2,
+            "raw": "1969",
+            "normalized": "1969"
+          },
+          {
+            "trial": 3,
+            "raw": "1969",
+            "normalized": "1969"
+          },
+          {
+            "trial": 4,
+            "raw": "1969",
+            "normalized": "1969"
+          },
+          {
+            "trial": 5,
+            "raw": "1969",
+            "normalized": "1969"
+          },
+          {
+            "trial": 6,
+            "raw": "1963",
+            "normalized": "1963"
+          },
+          {
+            "trial": 7,
+            "raw": "1969",
+            "normalized": "1969"
+          },
+          {
+            "trial": 8,
+            "raw": "1969",
+            "normalized": "1969"
+          },
+          {
+            "trial": 9,
+            "raw": "1963",
+            "normalized": "1963"
+          }
+        ],
+        "distribution": {
+          "1969": 7,
+          "1963": 3
+        },
+        "modal_answer": "1969",
+        "convergence_rate": 0.7
+      },
+      "nyc_meeting": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "Times Square, noon.",
+            "normalized": "times square, noon"
+          },
+          {
+            "trial": 1,
+            "raw": "Times Square, noon",
+            "normalized": "times square, noon"
+          },
+          {
+            "trial": 2,
+            "raw": "Times Square, noon",
+            "normalized": "times square, noon"
+          },
+          {
+            "trial": 3,
+            "raw": "Times Square, noon tomorrow.",
+            "normalized": "times square, noon tomorrow"
+          },
+          {
+            "trial": 4,
+            "raw": "Times Square, noon tomorrow.",
+            "normalized": "times square, noon tomorrow"
+          },
+          {
+            "trial": 5,
+            "raw": "Times Square, noon.",
+            "normalized": "times square, noon"
+          },
+          {
+            "trial": 6,
+            "raw": "Times Square, 12:00 PM",
+            "normalized": "times square, 12:00 pm"
+          },
+          {
+            "trial": 7,
+            "raw": "Times Square, noon",
+            "normalized": "times square, noon"
+          },
+          {
+            "trial": 8,
+            "raw": "Times Square, noon.",
+            "normalized": "times square, noon"
+          },
+          {
+            "trial": 9,
+            "raw": "Times Square, noon.",
+            "normalized": "times square, noon"
+          }
+        ],
+        "distribution": {
+          "times square, noon": 7,
+          "times square, noon tomorrow": 2,
+          "times square, 12:00 pm": 1
+        },
+        "modal_answer": "times square, noon",
+        "convergence_rate": 0.7
+      }
+    },
+    "match_ai": {
+      "number": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 1,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 2,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 3,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 4,
+            "raw": "5",
+            "normalized": "5"
+          },
+          {
+            "trial": 5,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 6,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 7,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 8,
+            "raw": "7",
+            "normalized": "7"
+          },
+          {
+            "trial": 9,
+            "raw": "7",
+            "normalized": "7"
+          }
+        ],
+        "distribution": {
+          "7": 9,
+          "5": 1
+        },
+        "modal_answer": "7",
+        "convergence_rate": 0.9
+      },
+      "color": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 1,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 2,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 3,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 4,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 5,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 6,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 7,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 8,
+            "raw": "Blue.",
+            "normalized": "blue"
+          },
+          {
+            "trial": 9,
+            "raw": "Blue.",
+            "normalized": "blue"
+          }
+        ],
+        "distribution": {
+          "blue": 10
+        },
+        "modal_answer": "blue",
+        "convergence_rate": 1.0
+      },
+      "coin": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 1,
+            "raw": "heads",
+            "normalized": "heads"
+          },
+          {
+            "trial": 2,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 3,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 4,
+            "raw": "heads",
+            "normalized": "heads"
+          },
+          {
+            "trial": 5,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 6,
+            "raw": "heads",
+            "normalized": "heads"
+          },
+          {
+            "trial": 7,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 8,
+            "raw": "Heads.",
+            "normalized": "heads"
+          },
+          {
+            "trial": 9,
+            "raw": "Heads.",
+            "normalized": "heads"
+          }
+        ],
+        "distribution": {
+          "heads": 10
+        },
+        "modal_answer": "heads",
+        "convergence_rate": 1.0
+      },
+      "letter": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 1,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 2,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 3,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 4,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 5,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 6,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 7,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 8,
+            "raw": "A",
+            "normalized": "a"
+          },
+          {
+            "trial": 9,
+            "raw": "A",
+            "normalized": "a"
+          }
+        ],
+        "distribution": {
+          "a": 10
+        },
+        "modal_answer": "a",
+        "convergence_rate": 1.0
+      },
+      "split": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 1,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 2,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 3,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 4,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 5,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 6,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 7,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 8,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          },
+          {
+            "trial": 9,
+            "raw": "50 / 50",
+            "normalized": "50/50"
+          }
+        ],
+        "distribution": {
+          "50/50": 10
+        },
+        "modal_answer": "50/50",
+        "convergence_rate": 1.0
+      },
+      "time": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 1,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 2,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 3,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 4,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 5,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 6,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 7,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 8,
+            "raw": "12:00",
+            "normalized": "12:00"
+          },
+          {
+            "trial": 9,
+            "raw": "12:00",
+            "normalized": "12:00"
+          }
+        ],
+        "distribution": {
+          "12:00": 10
+        },
+        "modal_answer": "12:00",
+        "convergence_rate": 1.0
+      },
+      "word": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "Apple",
+            "normalized": "apple"
+          },
+          {
+            "trial": 1,
+            "raw": "BLUE",
+            "normalized": "blue"
+          },
+          {
+            "trial": 2,
+            "raw": "BLUE",
+            "normalized": "blue"
+          },
+          {
+            "trial": 3,
+            "raw": "BLUE",
+            "normalized": "blue"
+          },
+          {
+            "trial": 4,
+            "raw": "BLUE",
+            "normalized": "blue"
+          },
+          {
+            "trial": 5,
+            "raw": "BLUE",
+            "normalized": "blue"
+          },
+          {
+            "trial": 6,
+            "raw": "BLUE",
+            "normalized": "blue"
+          },
+          {
+            "trial": 7,
+            "raw": "BLUE",
+            "normalized": "blue"
+          },
+          {
+            "trial": 8,
+            "raw": "BLUE",
+            "normalized": "blue"
+          },
+          {
+            "trial": 9,
+            "raw": "BLUE",
+            "normalized": "blue"
+          }
+        ],
+        "distribution": {
+          "blue": 9,
+          "apple": 1
+        },
+        "modal_answer": "blue",
+        "convergence_rate": 0.9
+      },
+      "city": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 1,
+            "raw": "New York",
+            "normalized": "new"
+          },
+          {
+            "trial": 2,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 3,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 4,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 5,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 6,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 7,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 8,
+            "raw": "New York City",
+            "normalized": "new"
+          },
+          {
+            "trial": 9,
+            "raw": "New York City",
+            "normalized": "new"
+          }
+        ],
+        "distribution": {
+          "new": 10
+        },
+        "modal_answer": "new",
+        "convergence_rate": 1.0
+      },
+      "year": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "1984",
+            "normalized": "1984"
+          },
+          {
+            "trial": 1,
+            "raw": "1956",
+            "normalized": "1956"
+          },
+          {
+            "trial": 2,
+            "raw": "1984",
+            "normalized": "1984"
+          },
+          {
+            "trial": 3,
+            "raw": "1989",
+            "normalized": "1989"
+          },
+          {
+            "trial": 4,
+            "raw": "1969",
+            "normalized": "1969"
+          },
+          {
+            "trial": 5,
+            "raw": "1984",
+            "normalized": "1984"
+          },
+          {
+            "trial": 6,
+            "raw": "1984",
+            "normalized": "1984"
+          },
+          {
+            "trial": 7,
+            "raw": "1984",
+            "normalized": "1984"
+          },
+          {
+            "trial": 8,
+            "raw": "1955",
+            "normalized": "1955"
+          },
+          {
+            "trial": 9,
+            "raw": "1984",
+            "normalized": "1984"
+          }
+        ],
+        "distribution": {
+          "1984": 6,
+          "1956": 1,
+          "1989": 1,
+          "1969": 1,
+          "1955": 1
+        },
+        "modal_answer": "1984",
+        "convergence_rate": 0.6
+      },
+      "nyc_meeting": {
+        "trials": [
+          {
+            "trial": 0,
+            "raw": "Times Square, 12:00 PM",
+            "normalized": "times square, 12:00 pm"
+          },
+          {
+            "trial": 1,
+            "raw": "Times Square, 12:00 PM (noon) tomorrow.",
+            "normalized": "times square, 12:00 pm (noon) tomorrow"
+          },
+          {
+            "trial": 2,
+            "raw": "Times Square, noon tomorrow.",
+            "normalized": "times square, noon tomorrow"
+          },
+          {
+            "trial": 3,
+            "raw": "Times Square, 12:00 PM",
+            "normalized": "times square, 12:00 pm"
+          },
+          {
+            "trial": 4,
+            "raw": "Times Square, 12:00 PM",
+            "normalized": "times square, 12:00 pm"
+          },
+          {
+            "trial": 5,
+            "raw": "Times Square, noon",
+            "normalized": "times square, noon"
+          },
+          {
+            "trial": 6,
+            "raw": "Times Square, noon tomorrow.",
+            "normalized": "times square, noon tomorrow"
+          },
+          {
+            "trial": 7,
+            "raw": "Times Square, 12:00 PM",
+            "normalized": "times square, 12:00 pm"
+          },
+          {
+            "trial": 8,
+            "raw": "Times Square, noon tomorrow.",
+            "normalized": "times square, noon tomorrow"
+          },
+          {
+            "trial": 9,
+            "raw": "Times Square, 12:00 PM",
+            "normalized": "times square, 12:00 pm"
+          }
+        ],
+        "distribution": {
+          "times square, 12:00 pm": 5,
+          "times square, noon tomorrow": 3,
+          "times square, 12:00 pm (noon) tomorrow": 1,
+          "times square, noon": 1
+        },
+        "modal_answer": "times square, 12:00 pm",
+        "convergence_rate": 0.5
+      }
+    }
+  },
+  "analysis": {
+    "per_question": {
+      "number": {
+        "human_focal_point": "7 (~40% of humans pick this)",
+        "llm_focal_point_solo": "7",
+        "llm_convergence_solo": 1.0,
+        "llm_focal_point_match_human": "7",
+        "llm_convergence_match_human": 1.0,
+        "llm_focal_point_match_ai": "7",
+        "llm_convergence_match_ai": 0.9,
+        "human_ai_model_same": true,
+        "solo_matches_human_focal": true
+      },
+      "color": {
+        "human_focal_point": "blue or red (~30% each)",
+        "llm_focal_point_solo": "blue",
+        "llm_convergence_solo": 1.0,
+        "llm_focal_point_match_human": "blue",
+        "llm_convergence_match_human": 1.0,
+        "llm_focal_point_match_ai": "blue",
+        "llm_convergence_match_ai": 1.0,
+        "human_ai_model_same": true,
+        "solo_matches_human_focal": true
+      },
+      "coin": {
+        "human_focal_point": "heads (~70%)",
+        "llm_focal_point_solo": "heads",
+        "llm_convergence_solo": 1.0,
+        "llm_focal_point_match_human": "heads",
+        "llm_convergence_match_human": 1.0,
+        "llm_focal_point_match_ai": "heads",
+        "llm_convergence_match_ai": 1.0,
+        "human_ai_model_same": true,
+        "solo_matches_human_focal": true
+      },
+      "letter": {
+        "human_focal_point": "A (~70%)",
+        "llm_focal_point_solo": "a",
+        "llm_convergence_solo": 1.0,
+        "llm_focal_point_match_human": "a",
+        "llm_convergence_match_human": 1.0,
+        "llm_focal_point_match_ai": "a",
+        "llm_convergence_match_ai": 1.0,
+        "human_ai_model_same": true,
+        "solo_matches_human_focal": true
+      },
+      "split": {
+        "human_focal_point": "50/50 (~70%)",
+        "llm_focal_point_solo": "50/50",
+        "llm_convergence_solo": 1.0,
+        "llm_focal_point_match_human": "50/50",
+        "llm_convergence_match_human": 1.0,
+        "llm_focal_point_match_ai": "50/50",
+        "llm_convergence_match_ai": 1.0,
+        "human_ai_model_same": true,
+        "solo_matches_human_focal": true
+      },
+      "time": {
+        "human_focal_point": "12:00 (~40%)",
+        "llm_focal_point_solo": "12:00",
+        "llm_convergence_solo": 0.55,
+        "llm_focal_point_match_human": "12:00",
+        "llm_convergence_match_human": 1.0,
+        "llm_focal_point_match_ai": "12:00",
+        "llm_convergence_match_ai": 1.0,
+        "human_ai_model_same": true,
+        "solo_matches_human_focal": true
+      },
+      "word": {
+        "human_focal_point": "highly diffuse (hello, love ~5% each)",
+        "llm_focal_point_solo": "apple",
+        "llm_convergence_solo": 0.85,
+        "llm_focal_point_match_human": "apple",
+        "llm_convergence_match_human": 0.9,
+        "llm_focal_point_match_ai": "blue",
+        "llm_convergence_match_ai": 0.9,
+        "human_ai_model_same": false,
+        "solo_matches_human_focal": false
+      },
+      "city": {
+        "human_focal_point": "Paris or New York (~20% each)",
+        "llm_focal_point_solo": "new",
+        "llm_convergence_solo": 0.9,
+        "llm_focal_point_match_human": "new",
+        "llm_convergence_match_human": 0.9,
+        "llm_focal_point_match_ai": "new",
+        "llm_convergence_match_ai": 1.0,
+        "human_ai_model_same": true,
+        "solo_matches_human_focal": true
+      },
+      "year": {
+        "human_focal_point": "2000 (~25%)",
+        "llm_focal_point_solo": "1984",
+        "llm_convergence_solo": 0.6,
+        "llm_focal_point_match_human": "1969",
+        "llm_convergence_match_human": 0.7,
+        "llm_focal_point_match_ai": "1984",
+        "llm_convergence_match_ai": 0.6,
+        "human_ai_model_same": false,
+        "solo_matches_human_focal": false
+      },
+      "nyc_meeting": {
+        "human_focal_point": "Grand Central Station, 12:00 noon (Schelling 1960)",
+        "llm_focal_point_solo": "times square, noon",
+        "llm_convergence_solo": 0.55,
+        "llm_focal_point_match_human": "times square, noon",
+        "llm_convergence_match_human": 0.7,
+        "llm_focal_point_match_ai": "times square, 12:00 pm",
+        "llm_convergence_match_ai": 0.5,
+        "human_ai_model_same": false,
+        "solo_matches_human_focal": false
+      }
+    },
+    "summary": {
+      "mean_solo_convergence": 0.84,
+      "mean_match_human_convergence": 0.92,
+      "mean_match_ai_convergence": 0.89,
+      "n_questions_human_ai_model_differs": 3,
+      "n_questions_matches_human_focal": 7
+    }
+  }
+}

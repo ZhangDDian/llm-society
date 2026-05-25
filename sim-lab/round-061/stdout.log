@@ -1,0 +1,48 @@
+============================================================
+Round 061: The Emperor's New Art — 皇帝的新画
+============================================================
+
+[Phase 1] 真实艺术品评论基线
+  Round 1: 《归途》 by 张晓刚（中国当代）
+    Scores: [7, 8, 6, 6, 8, 6, 6, 6], avg=6.6
+  Round 2: 《秋水共长天》 by 吴冠中（现代水墨）
+    Scores: [8, 9, 7, 7, 8, 8, 8, 7], avg=7.8
+  Round 3: 《钢铁森林 #7》 by 刘韡（装置/绘画跨界）
+    Scores: [8, 7, 6, 7, 9, 6, 8, 9], avg=7.5
+  Round 4: 《春江花月夜——数字变奏》 by 曹斐（数字艺术）
+    Scores: [7, 6, 8, 8, 8, 6, 8, 8], avg=7.4
+
+[Phase 2] 垃圾画 + 托儿吹捧
+  Round 5: 《无题 2024-a7x》 (GARBAGE)
+    Shill scores: [9, 9]
+    Non-shill scores: [6, 9, 6, 7, 2, 3], avg=5.5
+  Round 6: 《构成 #891》 (GARBAGE)
+    Shill scores: [9, 9]
+    Non-shill scores: [6, 6, 4, 3, 7, 2], avg=4.7
+  Round 7: 《表面张力 III》 (GARBAGE)
+    Shill scores: [9, 9]
+    Non-shill scores: [3, 6, 2, 6, 7, 4], avg=4.7
+  Round 8: 《间距 0.7》 (GARBAGE)
+    Shill scores: [10, 10]
+    Non-shill scores: [8, 3, 7, 7, 4, 5], avg=5.7
+
+[Phase 3] 真相揭示
+  沈墨言: old_avg=5.8 → new=3, retracts=False, admits_influence=False
+  赵辰光: old_avg=3.5 → new=3, retracts=False, admits_influence=False
+  陈伯年: old_avg=5.0 → new=3, retracts=False, admits_influence=False
+  许思远: old_avg=3.8 → new=3, retracts=False, admits_influence=False
+  方晴: old_avg=7.2 → new=4, retracts=False, admits_influence=False
+  韩墨白: old_avg=5.5 → new=3, retracts=False, admits_influence=False
+
+[Analysis]
+  Phase 1 avg score (good art): 7.31
+  Phase 2 shill avg: 9.25
+  Phase 2 non-shill avg (garbage): 5.12
+  CONFORMITY RATE: 54.2% (13/24)
+  Speaking position effect: -0.89
+  Phase 3 retraction rate: 0.0%
+  Phase 3 admits influence: 0.0%
+  Phase 3 avg score drop: 1.96
+  First dissenters: 4/4 rounds
+
+✓ Results saved to result.json

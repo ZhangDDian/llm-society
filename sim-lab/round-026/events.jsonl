@@ -1,0 +1,80 @@
+{"phase": "baseline", "trial": 0, "choice": "betray_equivalent", "ts": 1779648490.2271621}
+{"phase": "baseline", "trial": 1, "choice": "betray_equivalent", "ts": 1779648493.601486}
+{"phase": "baseline", "trial": 2, "choice": "betray_equivalent", "ts": 1779648495.897235}
+{"phase": "baseline", "trial": 3, "choice": "betray_equivalent", "ts": 1779648498.983221}
+{"phase": "baseline", "trial": 4, "choice": "betray_equivalent", "ts": 1779648501.249116}
+{"phase": "baseline", "trial": 5, "choice": "betray_equivalent", "ts": 1779648504.7222059}
+{"phase": "baseline", "trial": 6, "choice": "betray_equivalent", "ts": 1779648507.903425}
+{"phase": "baseline", "trial": 7, "choice": "betray_equivalent", "ts": 1779648510.8863628}
+{"phase": "baseline", "trial": 8, "choice": "betray_equivalent", "ts": 1779648513.520702}
+{"phase": "baseline", "trial": 9, "choice": "betray_equivalent", "ts": 1779648516.169645}
+{"phase": 1, "designer": 0, "scenario_length": 1781, "ts": 1779648526.772815}
+{"phase": 1, "designer": 1, "scenario_length": 1571, "ts": 1779648536.359848}
+{"phase": 1, "designer": 2, "scenario_length": 1531, "ts": 1779648545.3531709}
+{"phase": 1, "designer": 3, "scenario_length": 1793, "ts": 1779648556.409964}
+{"phase": 1, "designer": 4, "scenario_length": 1563, "ts": 1779648568.565347}
+{"phase": 1, "designer": 5, "scenario_length": 1698, "ts": 1779648578.245782}
+{"phase": 1, "designer": 6, "scenario_length": 1575, "ts": 1779648587.364646}
+{"phase": 1, "designer": 7, "scenario_length": 1786, "ts": 1779648601.760735}
+{"phase": 1, "designer": 8, "scenario_length": 1930, "ts": 1779648612.9487}
+{"phase": 1, "designer": 9, "scenario_length": 1700, "ts": 1779648626.436386}
+{"phase": 2, "designer": 0, "tester": 0, "choice": "betray_equivalent", "ts": 1779648630.151265}
+{"phase": 2, "designer": 0, "tester": 1, "choice": "betray_equivalent", "ts": 1779648633.454318}
+{"phase": 2, "designer": 0, "tester": 2, "choice": "betray_equivalent", "ts": 1779648636.148842}
+{"phase": 2, "designer": 0, "tester": 3, "choice": "betray_equivalent", "ts": 1779648638.924903}
+{"phase": 2, "designer": 0, "tester": 4, "choice": "betray_equivalent", "ts": 1779648642.2312782}
+{"phase": 2, "designer": 1, "tester": 0, "choice": "betray_equivalent", "ts": 1779648644.826153}
+{"phase": 2, "designer": 1, "tester": 1, "choice": "betray_equivalent", "ts": 1779648648.0832481}
+{"phase": 2, "designer": 1, "tester": 2, "choice": "betray_equivalent", "ts": 1779648650.3715699}
+{"phase": 2, "designer": 1, "tester": 3, "choice": "betray_equivalent", "ts": 1779648654.028245}
+{"phase": 2, "designer": 1, "tester": 4, "choice": "betray_equivalent", "ts": 1779648657.071872}
+{"phase": 2, "designer": 2, "tester": 0, "choice": "betray_equivalent", "ts": 1779648660.584678}
+{"phase": 2, "designer": 2, "tester": 1, "choice": "unclear", "ts": 1779648663.450002}
+{"phase": 2, "designer": 2, "tester": 2, "choice": "unclear", "ts": 1779648666.265326}
+{"phase": 2, "designer": 2, "tester": 3, "choice": "cooperate_equivalent", "ts": 1779648669.7297049}
+{"phase": 2, "designer": 2, "tester": 4, "choice": "unclear", "ts": 1779648672.3794959}
+{"phase": 2, "designer": 3, "tester": 0, "choice": "betray_equivalent", "ts": 1779648675.256008}
+{"phase": 2, "designer": 3, "tester": 1, "choice": "betray_equivalent", "ts": 1779648677.959933}
+{"phase": 2, "designer": 3, "tester": 2, "choice": "betray_equivalent", "ts": 1779648681.201737}
+{"phase": 2, "designer": 3, "tester": 3, "choice": "betray_equivalent", "ts": 1779648683.8638568}
+{"phase": 2, "designer": 3, "tester": 4, "choice": "betray_equivalent", "ts": 1779648687.27707}
+{"phase": 2, "designer": 4, "tester": 0, "choice": "betray_equivalent", "ts": 1779648690.0341}
+{"phase": 2, "designer": 4, "tester": 1, "choice": "betray_equivalent", "ts": 1779648692.6996758}
+{"phase": 2, "designer": 4, "tester": 2, "choice": "cooperate_equivalent", "ts": 1779648696.556792}
+{"phase": 2, "designer": 4, "tester": 3, "choice": "betray_equivalent", "ts": 1779648700.2627342}
+{"phase": 2, "designer": 4, "tester": 4, "choice": "betray_equivalent", "ts": 1779648702.924696}
+{"phase": 2, "designer": 5, "tester": 0, "choice": "unclear", "ts": 1779648705.873047}
+{"phase": 2, "designer": 5, "tester": 1, "choice": "unclear", "ts": 1779648710.073001}
+{"phase": 2, "designer": 5, "tester": 2, "choice": "betray_equivalent", "ts": 1779648714.534134}
+{"phase": 2, "designer": 5, "tester": 3, "choice": "cooperate_equivalent", "ts": 1779648718.184587}
+{"phase": 2, "designer": 5, "tester": 4, "choice": "cooperate_equivalent", "ts": 1779648721.933581}
+{"phase": 2, "designer": 6, "tester": 0, "choice": "betray_equivalent", "ts": 1779648724.355264}
+{"phase": 2, "designer": 6, "tester": 1, "choice": "betray_equivalent", "ts": 1779648727.622967}
+{"phase": 2, "designer": 6, "tester": 2, "choice": "betray_equivalent", "ts": 1779648730.6950889}
+{"phase": 2, "designer": 6, "tester": 3, "choice": "betray_equivalent", "ts": 1779648733.8116}
+{"phase": 2, "designer": 6, "tester": 4, "choice": "betray_equivalent", "ts": 1779648737.470214}
+{"phase": 2, "designer": 7, "tester": 0, "choice": "betray_equivalent", "ts": 1779648739.9879942}
+{"phase": 2, "designer": 7, "tester": 1, "choice": "betray_equivalent", "ts": 1779648742.577963}
+{"phase": 2, "designer": 7, "tester": 2, "choice": "betray_equivalent", "ts": 1779648745.4311209}
+{"phase": 2, "designer": 7, "tester": 3, "choice": "betray_equivalent", "ts": 1779648748.437862}
+{"phase": 2, "designer": 7, "tester": 4, "choice": "betray_equivalent", "ts": 1779648751.561858}
+{"phase": 2, "designer": 8, "tester": 0, "choice": "unclear", "ts": 1779648753.964229}
+{"phase": 2, "designer": 8, "tester": 1, "choice": "unclear", "ts": 1779648756.540443}
+{"phase": 2, "designer": 8, "tester": 2, "choice": "unclear", "ts": 1779648759.013794}
+{"phase": 2, "designer": 8, "tester": 3, "choice": "betray_equivalent", "ts": 1779648762.1963022}
+{"phase": 2, "designer": 8, "tester": 4, "choice": "unclear", "ts": 1779648764.472872}
+{"phase": 2, "designer": 9, "tester": 0, "choice": "unclear", "ts": 1779648766.953473}
+{"phase": 2, "designer": 9, "tester": 1, "choice": "cooperate_equivalent", "ts": 1779648770.593581}
+{"phase": 2, "designer": 9, "tester": 2, "choice": "unclear", "ts": 1779648773.249314}
+{"phase": 2, "designer": 9, "tester": 3, "choice": "cooperate_equivalent", "ts": 1779648775.87588}
+{"phase": 2, "designer": 9, "tester": 4, "choice": "unclear", "ts": 1779648778.229959}
+{"phase": 3, "designer": 0, "choice": "betray_equivalent", "ts": 1779648780.861842}
+{"phase": 3, "designer": 1, "choice": "betray_equivalent", "ts": 1779648784.337893}
+{"phase": 3, "designer": 2, "choice": "betray_equivalent", "ts": 1779648787.35859}
+{"phase": 3, "designer": 3, "choice": "betray_equivalent", "ts": 1779648790.004522}
+{"phase": 3, "designer": 4, "choice": "betray_equivalent", "ts": 1779648792.383608}
+{"phase": 3, "designer": 5, "choice": "cooperate_equivalent", "ts": 1779648795.7698739}
+{"phase": 3, "designer": 6, "choice": "betray_equivalent", "ts": 1779648798.275195}
+{"phase": 3, "designer": 7, "choice": "betray_equivalent", "ts": 1779648801.714011}
+{"phase": 3, "designer": 8, "choice": "betray_equivalent", "ts": 1779648804.6551008}
+{"phase": 3, "designer": 9, "choice": "cooperate_equivalent", "ts": 1779648807.428458}

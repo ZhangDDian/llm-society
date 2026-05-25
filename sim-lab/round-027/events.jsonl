@@ -1,0 +1,147 @@
+{"condition": "baseline", "trial": 0, "choice": "cooperate", "ts": 1779649751.232309}
+{"condition": "baseline", "trial": 1, "choice": "cooperate", "ts": 1779649753.6502469}
+{"condition": "baseline", "trial": 2, "choice": "cooperate", "ts": 1779649756.1824589}
+{"condition": "baseline", "trial": 3, "choice": "cooperate", "ts": 1779649758.502063}
+{"condition": "baseline", "trial": 4, "choice": "cooperate", "ts": 1779649760.814044}
+{"condition": "baseline", "trial": 5, "choice": "cooperate", "ts": 1779649763.343748}
+{"condition": "baseline", "trial": 6, "choice": "cooperate", "ts": 1779649765.444693}
+{"condition": "baseline", "trial": 7, "choice": "cooperate", "ts": 1779649768.540213}
+{"condition": "baseline", "trial": 8, "choice": "cooperate", "ts": 1779649771.195202}
+{"condition": "baseline", "trial": 9, "choice": "cooperate", "ts": 1779649775.459394}
+{"condition": "baseline", "trial": 10, "choice": "cooperate", "ts": 1779649778.600888}
+{"condition": "baseline", "trial": 11, "choice": "cooperate", "ts": 1779649781.26003}
+{"condition": "baseline", "trial": 12, "choice": "cooperate", "ts": 1779649783.6697311}
+{"condition": "baseline", "trial": 13, "choice": "cooperate", "ts": 1779649786.0090098}
+{"condition": "baseline", "trial": 14, "choice": "cooperate", "ts": 1779649789.3401291}
+{"condition": "baseline", "trial": 15, "choice": "cooperate", "ts": 1779649791.86938}
+{"condition": "baseline", "trial": 16, "choice": "cooperate", "ts": 1779649794.48243}
+{"condition": "baseline", "trial": 17, "choice": "cooperate", "ts": 1779649796.80913}
+{"condition": "baseline", "trial": 18, "choice": "cooperate", "ts": 1779649799.109449}
+{"condition": "baseline", "trial": 19, "choice": "cooperate", "ts": 1779649801.919914}
+{"condition": "analyze_then_choose", "trial": 0, "choice": "cooperate", "ts": 1779649810.949505}
+{"condition": "analyze_then_choose", "trial": 1, "choice": "cooperate", "ts": 1779649825.615131}
+{"condition": "analyze_then_choose", "trial": 2, "choice": "cooperate", "ts": 1779649832.656446}
+{"condition": "analyze_then_choose", "trial": 3, "choice": "cooperate", "ts": 1779649839.803036}
+{"condition": "analyze_then_choose", "trial": 4, "choice": "cooperate", "ts": 1779649853.0291069}
+{"condition": "analyze_then_choose", "trial": 5, "choice": "cooperate", "ts": 1779649861.739925}
+{"condition": "analyze_then_choose", "trial": 6, "choice": "betray", "ts": 1779649872.014055}
+{"condition": "analyze_then_choose", "trial": 7, "choice": "cooperate", "ts": 1779649879.096951}
+{"condition": "analyze_then_choose", "trial": 8, "choice": "cooperate", "ts": 1779649896.1300201}
+{"condition": "analyze_then_choose", "trial": 9, "choice": "cooperate", "ts": 1779649905.288289}
+{"condition": "analyze_then_choose", "trial": 10, "choice": "cooperate", "ts": 1779649912.006815}
+{"condition": "analyze_then_choose", "trial": 11, "choice": "betray", "ts": 1779649929.3060741}
+{"condition": "analyze_then_choose", "trial": 12, "choice": "cooperate", "ts": 1779649938.361345}
+{"condition": "analyze_then_choose", "trial": 13, "choice": "betray", "ts": 1779649953.258635}
+{"condition": "analyze_then_choose", "trial": 14, "choice": "cooperate", "ts": 1779649960.9851708}
+{"condition": "analyze_then_choose", "trial": 15, "choice": "cooperate", "ts": 1779649969.2200708}
+{"condition": "analyze_then_choose", "trial": 16, "choice": "cooperate", "ts": 1779649985.843106}
+{"condition": "analyze_then_choose", "trial": 17, "choice": "cooperate", "ts": 1779650003.33289}
+{"condition": "analyze_then_choose", "trial": 18, "choice": "cooperate", "ts": 1779650019.4701262}
+{"condition": "analyze_then_choose", "trial": 19, "choice": "cooperate", "ts": 1779650027.3446379}
+{"condition": "chain", "chain": 0, "step": 1, "result": "betray_dominant", "ts": 1779650040.399203}
+{"condition": "chain", "chain": 0, "step": 2, "result": "advises_betray", "ts": 1779650055.0007958}
+{"condition": "chain", "chain": 0, "step": 3, "result": "agrees", "ts": 1779650065.994751}
+{"condition": "chain", "chain": 0, "step": 4, "choice": "betray", "ts": 1779650068.222253}
+{"condition": "chain", "chain": 1, "step": 1, "result": "betray_dominant", "ts": 1779650084.9567401}
+{"condition": "chain", "chain": 1, "step": 2, "result": "advises_cooperate", "ts": 1779650092.715173}
+{"condition": "chain", "chain": 1, "step": 3, "result": "disagrees", "ts": 1779650100.480623}
+{"condition": "chain", "chain": 1, "step": 4, "choice": "cooperate", "ts": 1779650102.238747}
+{"condition": "chain", "chain": 1, "step": 5, "has_response": true, "ts": 1779650109.608462}
+{"condition": "chain", "chain": 2, "step": 1, "result": "betray_dominant", "ts": 1779650121.659439}
+{"condition": "chain", "chain": 2, "step": 2, "result": "advises_betray", "ts": 1779650137.8729799}
+{"condition": "chain", "chain": 2, "step": 3, "result": "disagrees", "ts": 1779650146.645461}
+{"condition": "chain", "chain": 2, "step": 4, "choice": "cooperate", "ts": 1779650148.458175}
+{"condition": "chain", "chain": 2, "step": 5, "has_response": true, "ts": 1779650159.5334778}
+{"condition": "chain", "chain": 3, "step": 1, "result": "betray_dominant", "ts": 1779650174.8873432}
+{"condition": "chain", "chain": 3, "step": 2, "result": "advises_cooperate", "ts": 1779650184.769115}
+{"condition": "chain", "chain": 3, "step": 3, "result": "ambiguous", "ts": 1779650193.999019}
+{"condition": "chain", "chain": 3, "step": 4, "choice": "cooperate", "ts": 1779650196.0823722}
+{"condition": "chain", "chain": 3, "step": 5, "has_response": true, "ts": 1779650200.4692092}
+{"condition": "chain", "chain": 4, "step": 1, "result": "betray_dominant", "ts": 1779650212.093285}
+{"condition": "chain", "chain": 4, "step": 2, "result": "advises_betray", "ts": 1779650219.286984}
+{"condition": "chain", "chain": 4, "step": 3, "result": "agrees", "ts": 1779650227.606853}
+{"condition": "chain", "chain": 4, "step": 4, "choice": "betray", "ts": 1779650229.523337}
+{"condition": "chain", "chain": 5, "step": 1, "result": "betray_dominant", "ts": 1779650240.401336}
+{"condition": "chain", "chain": 5, "step": 2, "result": "advises_cooperate", "ts": 1779650247.027992}
+{"condition": "chain", "chain": 5, "step": 3, "result": "disagrees", "ts": 1779650255.954174}
+{"condition": "chain", "chain": 5, "step": 4, "choice": "betray", "ts": 1779650258.660625}
+{"condition": "chain", "chain": 6, "step": 1, "result": "betray_dominant", "ts": 1779650279.924885}
+{"condition": "chain", "chain": 6, "step": 2, "result": "advises_cooperate", "ts": 1779650286.645365}
+{"condition": "chain", "chain": 6, "step": 3, "result": "disagrees", "ts": 1779650295.5118861}
+{"condition": "chain", "chain": 6, "step": 4, "choice": "cooperate", "ts": 1779650297.246101}
+{"condition": "chain", "chain": 6, "step": 5, "has_response": true, "ts": 1779650306.0031202}
+{"condition": "chain", "chain": 7, "step": 1, "result": "betray_dominant", "ts": 1779650319.941735}
+{"condition": "chain", "chain": 7, "step": 2, "result": "advises_cooperate", "ts": 1779650326.046622}
+{"condition": "chain", "chain": 7, "step": 3, "result": "disagrees", "ts": 1779650336.5298839}
+{"condition": "chain", "chain": 7, "step": 4, "choice": "betray", "ts": 1779650339.1091259}
+{"condition": "chain", "chain": 8, "step": 1, "result": "betray_dominant", "ts": 1779650352.900491}
+{"condition": "chain", "chain": 8, "step": 2, "result": "advises_betray", "ts": 1779650361.6697888}
+{"condition": "chain", "chain": 8, "step": 3, "result": "agrees", "ts": 1779650371.580139}
+{"condition": "chain", "chain": 8, "step": 4, "choice": "betray", "ts": 1779650374.270303}
+{"condition": "chain", "chain": 9, "step": 1, "result": "betray_dominant", "ts": 1779650384.85846}
+{"condition": "chain", "chain": 9, "step": 2, "result": "advises_cooperate", "ts": 1779650394.4516401}
+{"condition": "chain", "chain": 9, "step": 3, "result": "disagrees", "ts": 1779650403.0935528}
+{"condition": "chain", "chain": 9, "step": 4, "choice": "cooperate", "ts": 1779650405.663341}
+{"condition": "chain", "chain": 9, "step": 5, "has_response": true, "ts": 1779650410.509977}
+{"condition": "chain", "chain": 10, "step": 1, "result": "betray_dominant", "ts": 1779650423.131954}
+{"condition": "chain", "chain": 10, "step": 2, "result": "advises_betray", "ts": 1779650430.829494}
+{"condition": "chain", "chain": 10, "step": 3, "result": "agrees", "ts": 1779650436.430948}
+{"condition": "chain", "chain": 10, "step": 4, "choice": "betray", "ts": 1779650438.546398}
+{"condition": "chain", "chain": 11, "step": 1, "result": "betray_dominant", "ts": 1779650449.269116}
+{"condition": "chain", "chain": 11, "step": 2, "result": "advises_betray", "ts": 1779650457.9052129}
+{"condition": "chain", "chain": 11, "step": 3, "result": "agrees", "ts": 1779650463.441801}
+{"condition": "chain", "chain": 11, "step": 4, "choice": "betray", "ts": 1779650465.375147}
+{"condition": "chain", "chain": 12, "step": 1, "result": "betray_dominant", "ts": 1779650479.65258}
+{"condition": "chain", "chain": 12, "step": 2, "result": "advises_cooperate", "ts": 1779650486.301204}
+{"condition": "chain", "chain": 12, "step": 3, "result": "disagrees", "ts": 1779650494.120227}
+{"condition": "chain", "chain": 12, "step": 4, "choice": "betray", "ts": 1779650496.249841}
+{"condition": "chain", "chain": 13, "step": 1, "result": "betray_dominant", "ts": 1779650513.575307}
+{"condition": "chain", "chain": 13, "step": 2, "result": "advises_betray", "ts": 1779650525.474853}
+{"condition": "chain", "chain": 13, "step": 3, "result": "agrees", "ts": 1779650533.533021}
+{"condition": "chain", "chain": 13, "step": 4, "choice": "betray", "ts": 1779650535.438476}
+{"condition": "chain", "chain": 14, "step": 1, "result": "betray_dominant", "ts": 1779650545.7991629}
+{"condition": "chain", "chain": 14, "step": 2, "result": "advises_betray", "ts": 1779650552.04974}
+{"condition": "chain", "chain": 14, "step": 3, "result": "agrees", "ts": 1779650559.245109}
+{"condition": "chain", "chain": 14, "step": 4, "choice": "betray", "ts": 1779650561.406345}
+{"condition": "chain", "chain": 15, "step": 1, "result": "betray_dominant", "ts": 1779650573.009054}
+{"condition": "chain", "chain": 15, "step": 2, "result": "advises_betray", "ts": 1779650580.443964}
+{"condition": "chain", "chain": 15, "step": 3, "result": "ambiguous", "ts": 1779650589.3252969}
+{"condition": "chain", "chain": 15, "step": 4, "choice": "betray", "ts": 1779650592.216814}
+{"condition": "chain", "chain": 16, "step": 1, "result": "betray_dominant", "ts": 1779650615.4520981}
+{"condition": "chain", "chain": 16, "step": 2, "result": "advises_cooperate", "ts": 1779650621.713229}
+{"condition": "chain", "chain": 16, "step": 3, "result": "disagrees", "ts": 1779650631.410604}
+{"condition": "chain", "chain": 16, "step": 4, "choice": "cooperate", "ts": 1779650633.280396}
+{"condition": "chain", "chain": 16, "step": 5, "has_response": true, "ts": 1779650638.598208}
+{"condition": "chain", "chain": 17, "step": 1, "result": "betray_dominant", "ts": 1779650650.635133}
+{"condition": "chain", "chain": 17, "step": 2, "result": "advises_cooperate", "ts": 1779650657.8617659}
+{"condition": "chain", "chain": 17, "step": 3, "result": "agrees", "ts": 1779650664.586405}
+{"condition": "chain", "chain": 17, "step": 4, "choice": "betray", "ts": 1779650667.106291}
+{"condition": "chain", "chain": 18, "step": 1, "result": "betray_dominant", "ts": 1779650682.8079538}
+{"condition": "chain", "chain": 18, "step": 2, "result": "advises_cooperate", "ts": 1779650690.7379541}
+{"condition": "chain", "chain": 18, "step": 3, "result": "disagrees", "ts": 1779650697.353594}
+{"condition": "chain", "chain": 18, "step": 4, "choice": "cooperate", "ts": 1779650699.4430358}
+{"condition": "chain", "chain": 18, "step": 5, "has_response": true, "ts": 1779650706.166261}
+{"condition": "chain", "chain": 19, "step": 1, "result": "betray_dominant", "ts": 1779650720.331722}
+{"condition": "chain", "chain": 19, "step": 2, "result": "advises_betray", "ts": 1779650732.9345868}
+{"condition": "chain", "chain": 19, "step": 3, "result": "agrees", "ts": 1779650740.316561}
+{"condition": "chain", "chain": 19, "step": 4, "choice": "betray", "ts": 1779650743.562392}
+{"condition": "explicit", "trial": 0, "choice": "betray", "ts": 1779650745.6879869}
+{"condition": "explicit", "trial": 1, "choice": "betray", "ts": 1779650747.809932}
+{"condition": "explicit", "trial": 2, "choice": "betray", "ts": 1779650751.027794}
+{"condition": "explicit", "trial": 3, "choice": "betray", "ts": 1779650753.944716}
+{"condition": "explicit", "trial": 4, "choice": "betray", "ts": 1779650756.316009}
+{"condition": "explicit", "trial": 5, "choice": "betray", "ts": 1779650759.1344929}
+{"condition": "explicit", "trial": 6, "choice": "betray", "ts": 1779650761.425992}
+{"condition": "explicit", "trial": 7, "choice": "betray", "ts": 1779650764.858328}
+{"condition": "explicit", "trial": 8, "choice": "betray", "ts": 1779650767.983629}
+{"condition": "explicit", "trial": 9, "choice": "betray", "ts": 1779650770.367763}
+{"condition": "explicit", "trial": 10, "choice": "betray", "ts": 1779650772.697334}
+{"condition": "explicit", "trial": 11, "choice": "betray", "ts": 1779650775.404044}
+{"condition": "explicit", "trial": 12, "choice": "betray", "ts": 1779650778.1411588}
+{"condition": "explicit", "trial": 13, "choice": "betray", "ts": 1779650780.674002}
+{"condition": "explicit", "trial": 14, "choice": "betray", "ts": 1779650782.882643}
+{"condition": "explicit", "trial": 15, "choice": "betray", "ts": 1779650785.544533}
+{"condition": "explicit", "trial": 16, "choice": "betray", "ts": 1779650788.13511}
+{"condition": "explicit", "trial": 17, "choice": "betray", "ts": 1779650790.926077}
+{"condition": "explicit", "trial": 18, "choice": "betray", "ts": 1779650793.056928}
+{"condition": "explicit", "trial": 19, "choice": "betray", "ts": 1779650795.914881}

@@ -1,0 +1,558 @@
+============================================================
+R047: 认知失调 — LLM 版费斯廷格实验
+============================================================
+
+[1/180] 校服强制 | control | subject 0
+  3 -> 4 (shift toward opposite: +1)
+
+[2/180] 校服强制 | low_justification | subject 1
+  3 -> 3 (shift toward opposite: +0)
+
+[3/180] 纸书优于电子书 | high_justification | subject 8
+  7 -> 7 (shift toward opposite: +0)
+
+[4/180] 强制到岗 | low_justification | subject 11
+  3 -> 4 (shift toward opposite: +1)
+
+[5/180] 取消小费 | control | subject 3
+  7 -> 6 (shift toward opposite: +1)
+
+[6/180] 校服强制 | control | subject 2
+  3 -> 3 (shift toward opposite: +0)
+
+[7/180] 强制到岗 | high_justification | subject 9
+  3 -> 2 (shift toward opposite: -1)
+
+[8/180] 纸书优于电子书 | high_justification | subject 9
+  7 -> 6 (shift toward opposite: +1)
+
+[9/180] 纸书优于电子书 | high_justification | subject 1
+  7 -> 7 (shift toward opposite: +0)
+
+[10/180] 强制到岗 | low_justification | subject 4
+  3 -> 3 (shift toward opposite: +0)
+
+[11/180] 强制到岗 | high_justification | subject 11
+  3 -> 3 (shift toward opposite: +0)
+
+[12/180] 取消小费 | high_justification | subject 9
+  7 -> 3 (shift toward opposite: +4)
+
+[13/180] 公交优先 | high_justification | subject 3
+  8 -> 8 (shift toward opposite: +0)
+
+[14/180] 校服强制 | high_justification | subject 1
+  3 -> 3 (shift toward opposite: +0)
+
+[15/180] 取消小费 | low_justification | subject 11
+  7 -> 7 (shift toward opposite: +0)
+
+[16/180] 纸书优于电子书 | control | subject 10
+  7 -> 6 (shift toward opposite: +1)
+
+[17/180] 校服强制 | control | subject 5
+  3 -> 3 (shift toward opposite: +0)
+
+[18/180] 公交优先 | control | subject 5
+  8 -> 8 (shift toward opposite: +0)
+
+[19/180] 强制到岗 | control | subject 11
+  3 -> 3 (shift toward opposite: +0)
+
+[20/180] 取消小费 | control | subject 7
+  7 -> 6 (shift toward opposite: +1)
+
+[21/180] 纸书优于电子书 | high_justification | subject 2
+  7 -> 6 (shift toward opposite: +1)
+
+[22/180] 强制到岗 | high_justification | subject 5
+  4 -> 3 (shift toward opposite: -1)
+
+[23/180] 公交优先 | low_justification | subject 6
+  8 -> 8 (shift toward opposite: +0)
+
+[24/180] 纸书优于电子书 | control | subject 2
+  7 -> 6 (shift toward opposite: +1)
+
+[25/180] 强制到岗 | high_justification | subject 10
+  3 -> 2 (shift toward opposite: -1)
+
+[26/180] 校服强制 | high_justification | subject 11
+  3 -> 3 (shift toward opposite: +0)
+
+[27/180] 校服强制 | high_justification | subject 4
+  3 -> 3 (shift toward opposite: +0)
+
+[28/180] 强制到岗 | control | subject 2
+  4 -> 5 (shift toward opposite: +1)
+
+[29/180] 纸书优于电子书 | high_justification | subject 7
+  7 -> 6 (shift toward opposite: +1)
+
+[30/180] 校服强制 | low_justification | subject 7
+  3 -> 3 (shift toward opposite: +0)
+
+[31/180] 强制到岗 | control | subject 9
+  3 -> 4 (shift toward opposite: +1)
+
+[32/180] 取消小费 | low_justification | subject 1
+  7 -> 6 (shift toward opposite: +1)
+
+[33/180] 公交优先 | high_justification | subject 10
+  8 -> 7 (shift toward opposite: +1)
+
+[34/180] 校服强制 | low_justification | subject 0
+  3 -> 3 (shift toward opposite: +0)
+
+[35/180] 纸书优于电子书 | control | subject 5
+  7 -> 6 (shift toward opposite: +1)
+
+[36/180] 校服强制 | low_justification | subject 2
+  3 -> 3 (shift toward opposite: +0)
+
+[37/180] 公交优先 | high_justification | subject 7
+  8 -> 7 (shift toward opposite: +1)
+
+[38/180] 公交优先 | low_justification | subject 0
+  8 -> 8 (shift toward opposite: +0)
+
+[39/180] 强制到岗 | high_justification | subject 2
+  3 -> 3 (shift toward opposite: +0)
+
+[40/180] 公交优先 | control | subject 3
+  8 -> 8 (shift toward opposite: +0)
+
+[41/180] 取消小费 | high_justification | subject 7
+  7 -> 6 (shift toward opposite: +1)
+
+[42/180] 纸书优于电子书 | control | subject 7
+  7 -> 6 (shift toward opposite: +1)
+
+[43/180] 公交优先 | low_justification | subject 11
+  8 -> 7 (shift toward opposite: +1)
+
+[44/180] 强制到岗 | high_justification | subject 7
+  3 -> 3 (shift toward opposite: +0)
+
+[45/180] 纸书优于电子书 | high_justification | subject 3
+  7 -> 5 (shift toward opposite: +2)
+
+[46/180] 校服强制 | low_justification | subject 6
+  3 -> 3 (shift toward opposite: +0)
+
+[47/180] 校服强制 | high_justification | subject 6
+  3 -> 3 (shift toward opposite: +0)
+
+[48/180] 强制到岗 | control | subject 5
+  3 -> 4 (shift toward opposite: +1)
+
+[49/180] 取消小费 | control | subject 0
+  7 -> 6 (shift toward opposite: +1)
+
+[50/180] 公交优先 | high_justification | subject 8
+  8 -> 7 (shift toward opposite: +1)
+
+[51/180] 公交优先 | low_justification | subject 3
+  8 -> 8 (shift toward opposite: +0)
+
+[52/180] 强制到岗 | low_justification | subject 0
+  4 -> 4 (shift toward opposite: +0)
+
+[53/180] 强制到岗 | high_justification | subject 0
+  3 -> 2 (shift toward opposite: -1)
+
+[54/180] 取消小费 | high_justification | subject 5
+  7 -> 7 (shift toward opposite: +0)
+
+[55/180] 纸书优于电子书 | high_justification | subject 11
+  7 -> 7 (shift toward opposite: +0)
+
+[56/180] 强制到岗 | high_justification | subject 8
+  3 -> 3 (shift toward opposite: +0)
+
+[57/180] 纸书优于电子书 | low_justification | subject 0
+  7 -> 7 (shift toward opposite: +0)
+
+[58/180] 强制到岗 | control | subject 1
+  3 -> 3 (shift toward opposite: +0)
+
+[59/180] 公交优先 | control | subject 4
+  8 -> 8 (shift toward opposite: +0)
+
+[60/180] 纸书优于电子书 | high_justification | subject 4
+  7 -> 5 (shift toward opposite: +2)
+
+[61/180] 校服强制 | control | subject 11
+  3 -> 4 (shift toward opposite: +1)
+
+[62/180] 校服强制 | control | subject 7
+  4 -> 5 (shift toward opposite: +1)
+
+[63/180] 强制到岗 | low_justification | subject 3
+  3 -> 4 (shift toward opposite: +1)
+
+[64/180] 公交优先 | high_justification | subject 1
+  8 -> 7 (shift toward opposite: +1)
+
+[65/180] 强制到岗 | low_justification | subject 2
+  4 -> 4 (shift toward opposite: +0)
+
+[66/180] 强制到岗 | low_justification | subject 7
+  3 -> 3 (shift toward opposite: +0)
+
+[67/180] 校服强制 | high_justification | subject 8
+  3 -> 3 (shift toward opposite: +0)
+
+[68/180] 取消小费 | high_justification | subject 2
+  6 -> 3 (shift toward opposite: +3)
+
+[69/180] 公交优先 | low_justification | subject 7
+  7 -> 6 (shift toward opposite: +1)
+
+[70/180] 校服强制 | low_justification | subject 5
+  3 -> 3 (shift toward opposite: +0)
+
+[71/180] 纸书优于电子书 | low_justification | subject 7
+  7 -> 6 (shift toward opposite: +1)
+
+[72/180] 取消小费 | control | subject 11
+  7 -> 6 (shift toward opposite: +1)
+
+[73/180] 公交优先 | control | subject 1
+  8 -> 7 (shift toward opposite: +1)
+
+[74/180] 校服强制 | low_justification | subject 3
+  3 -> 3 (shift toward opposite: +0)
+
+[75/180] 校服强制 | low_justification | subject 9
+  3 -> 3 (shift toward opposite: +0)
+
+[76/180] 强制到岗 | low_justification | subject 5
+  3 -> 3 (shift toward opposite: +0)
+
+[77/180] 校服强制 | control | subject 6
+  3 -> 5 (shift toward opposite: +2)
+
+[78/180] 公交优先 | high_justification | subject 6
+  8 -> 8 (shift toward opposite: +0)
+
+[79/180] 纸书优于电子书 | low_justification | subject 10
+  7 -> 6 (shift toward opposite: +1)
+
+[80/180] 公交优先 | high_justification | subject 2
+  8 -> 7 (shift toward opposite: +1)
+
+[81/180] 纸书优于电子书 | high_justification | subject 6
+  7 -> 5 (shift toward opposite: +2)
+
+[82/180] 取消小费 | low_justification | subject 9
+  7 -> 6 (shift toward opposite: +1)
+
+[83/180] 纸书优于电子书 | control | subject 6
+  7 -> 6 (shift toward opposite: +1)
+
+[84/180] 公交优先 | control | subject 2
+  8 -> 8 (shift toward opposite: +0)
+
+[85/180] 取消小费 | high_justification | subject 11
+  7 -> 5 (shift toward opposite: +2)
+
+[86/180] 取消小费 | control | subject 2
+  7 -> 6 (shift toward opposite: +1)
+
+[87/180] 取消小费 | low_justification | subject 4
+  7 -> 7 (shift toward opposite: +0)
+
+[88/180] 校服强制 | control | subject 10
+  4 -> 4 (shift toward opposite: +0)
+
+[89/180] 强制到岗 | low_justification | subject 6
+  4 -> 4 (shift toward opposite: +0)
+
+[90/180] 取消小费 | high_justification | subject 1
+  7 -> 6 (shift toward opposite: +1)
+
+[91/180] 取消小费 | low_justification | subject 8
+  7 -> 7 (shift toward opposite: +0)
+
+[92/180] 强制到岗 | high_justification | subject 1
+  3 -> 4 (shift toward opposite: +1)
+
+[93/180] 公交优先 | control | subject 9
+  8 -> 8 (shift toward opposite: +0)
+
+[94/180] 公交优先 | high_justification | subject 0
+  8 -> 8 (shift toward opposite: +0)
+
+[95/180] 公交优先 | high_justification | subject 9
+  8 -> 8 (shift toward opposite: +0)
+
+[96/180] 纸书优于电子书 | low_justification | subject 9
+  7 -> 7 (shift toward opposite: +0)
+
+[97/180] 纸书优于电子书 | low_justification | subject 6
+  7 -> 7 (shift toward opposite: +0)
+
+[98/180] 纸书优于电子书 | low_justification | subject 5
+  7 -> 7 (shift toward opposite: +0)
+
+[99/180] 取消小费 | control | subject 4
+  7 -> 6 (shift toward opposite: +1)
+
+[100/180] 纸书优于电子书 | control | subject 9
+  7 -> 5 (shift toward opposite: +2)
+
+[101/180] 校服强制 | low_justification | subject 4
+  3 -> 3 (shift toward opposite: +0)
+
+[102/180] 校服强制 | low_justification | subject 10
+  4 -> 3 (shift toward opposite: -1)
+
+[103/180] 公交优先 | control | subject 7
+  8 -> 8 (shift toward opposite: +0)
+
+[104/180] 纸书优于电子书 | low_justification | subject 3
+  7 -> 6 (shift toward opposite: +1)
+
+[105/180] 强制到岗 | control | subject 7
+  3 -> 4 (shift toward opposite: +1)
+
+[106/180] 公交优先 | low_justification | subject 2
+  8 -> 7 (shift toward opposite: +1)
+
+[107/180] 取消小费 | control | subject 10
+  7 -> 7 (shift toward opposite: +0)
+
+[108/180] 强制到岗 | high_justification | subject 4
+  4 -> 4 (shift toward opposite: +0)
+
+[109/180] 强制到岗 | high_justification | subject 6
+  3 -> 2 (shift toward opposite: -1)
+
+[110/180] 强制到岗 | high_justification | subject 3
+  4 -> 3 (shift toward opposite: -1)
+
+[111/180] 取消小费 | high_justification | subject 6
+  7 -> 7 (shift toward opposite: +0)
+
+[112/180] 强制到岗 | control | subject 0
+  3 -> 4 (shift toward opposite: +1)
+
+[113/180] 校服强制 | control | subject 8
+  4 -> 5 (shift toward opposite: +1)
+
+[114/180] 取消小费 | low_justification | subject 7
+  7 -> 3 (shift toward opposite: +4)
+
+[115/180] 校服强制 | control | subject 4
+  3 -> 3 (shift toward opposite: +0)
+
+[116/180] 公交优先 | high_justification | subject 5
+  8 -> 8 (shift toward opposite: +0)
+
+[117/180] 取消小费 | low_justification | subject 5
+  7 -> 7 (shift toward opposite: +0)
+
+[118/180] 取消小费 | control | subject 5
+  7 -> 4 (shift toward opposite: +3)
+
+[119/180] 取消小费 | high_justification | subject 0
+  7 -> 5 (shift toward opposite: +2)
+
+[120/180] 纸书优于电子书 | control | subject 0
+  7 -> 4 (shift toward opposite: +3)
+
+[121/180] 取消小费 | high_justification | subject 10
+  7 -> 6 (shift toward opposite: +1)
+
+[122/180] 取消小费 | low_justification | subject 3
+  7 -> 7 (shift toward opposite: +0)
+
+[123/180] 公交优先 | control | subject 6
+  8 -> 8 (shift toward opposite: +0)
+
+[124/180] 纸书优于电子书 | high_justification | subject 10
+  7 -> 6 (shift toward opposite: +1)
+
+[125/180] 公交优先 | high_justification | subject 11
+  8 -> 7 (shift toward opposite: +1)
+
+[126/180] 纸书优于电子书 | low_justification | subject 1
+  7 -> 7 (shift toward opposite: +0)
+
+[127/180] 校服强制 | high_justification | subject 9
+  3 -> 3 (shift toward opposite: +0)
+
+[128/180] 纸书优于电子书 | high_justification | subject 5
+  7 -> 6 (shift toward opposite: +1)
+
+[129/180] 取消小费 | high_justification | subject 3
+  7 -> 7 (shift toward opposite: +0)
+
+[130/180] 校服强制 | high_justification | subject 0
+  3 -> 3 (shift toward opposite: +0)
+
+[131/180] 强制到岗 | control | subject 10
+  4 -> 5 (shift toward opposite: +1)
+
+[132/180] 公交优先 | low_justification | subject 9
+  8 -> 7 (shift toward opposite: +1)
+
+[133/180] 取消小费 | low_justification | subject 2
+  7 -> 7 (shift toward opposite: +0)
+
+[134/180] 公交优先 | low_justification | subject 4
+  8 -> 8 (shift toward opposite: +0)
+
+[135/180] 纸书优于电子书 | control | subject 4
+  7 -> 6 (shift toward opposite: +1)
+
+[136/180] 公交优先 | control | subject 0
+  8 -> 8 (shift toward opposite: +0)
+
+[137/180] 纸书优于电子书 | low_justification | subject 2
+  7 -> 6 (shift toward opposite: +1)
+
+[138/180] 公交优先 | low_justification | subject 8
+  8 -> 8 (shift toward opposite: +0)
+
+[139/180] 强制到岗 | control | subject 6
+  3 -> 4 (shift toward opposite: +1)
+
+[140/180] 取消小费 | control | subject 9
+  7 -> 4 (shift toward opposite: +3)
+
+[141/180] 纸书优于电子书 | low_justification | subject 11
+  7 -> 7 (shift toward opposite: +0)
+
+[142/180] 纸书优于电子书 | control | subject 11
+  7 -> 4 (shift toward opposite: +3)
+
+[143/180] 强制到岗 | low_justification | subject 8
+  3 -> 3 (shift toward opposite: +0)
+
+[144/180] 公交优先 | low_justification | subject 1
+  8 -> 8 (shift toward opposite: +0)
+
+[145/180] 公交优先 | control | subject 10
+  8 -> 8 (shift toward opposite: +0)
+
+[146/180] 取消小费 | low_justification | subject 0
+  7 -> 6 (shift toward opposite: +1)
+
+[147/180] 公交优先 | control | subject 11
+  8 -> 8 (shift toward opposite: +0)
+
+[148/180] 强制到岗 | control | subject 4
+  3 -> 4 (shift toward opposite: +1)
+
+[149/180] 取消小费 | high_justification | subject 8
+  7 -> 6 (shift toward opposite: +1)
+
+[150/180] 校服强制 | high_justification | subject 5
+  3 -> 2 (shift toward opposite: -1)
+
+[151/180] 取消小费 | low_justification | subject 6
+  7 -> 7 (shift toward opposite: +0)
+
+[152/180] 纸书优于电子书 | low_justification | subject 8
+  7 -> 6 (shift toward opposite: +1)
+
+[153/180] 公交优先 | low_justification | subject 5
+  8 -> 8 (shift toward opposite: +0)
+
+[154/180] 纸书优于电子书 | control | subject 1
+  7 -> 4 (shift toward opposite: +3)
+
+[155/180] 强制到岗 | low_justification | subject 9
+  3 -> 3 (shift toward opposite: +0)
+
+[156/180] 纸书优于电子书 | low_justification | subject 4
+  7 -> 6 (shift toward opposite: +1)
+
+[157/180] 校服强制 | high_justification | subject 7
+  3 -> 2 (shift toward opposite: -1)
+
+[158/180] 公交优先 | low_justification | subject 10
+  8 -> 8 (shift toward opposite: +0)
+
+[159/180] 公交优先 | high_justification | subject 4
+  8 -> 7 (shift toward opposite: +1)
+
+[160/180] 强制到岗 | control | subject 3
+  4 -> 4 (shift toward opposite: +0)
+
+[161/180] 取消小费 | control | subject 1
+  7 -> 6 (shift toward opposite: +1)
+
+[162/180] 校服强制 | control | subject 9
+  4 -> 4 (shift toward opposite: +0)
+
+[163/180] 强制到岗 | low_justification | subject 1
+  3 -> 4 (shift toward opposite: +1)
+
+[164/180] 公交优先 | control | subject 8
+  8 -> 6 (shift toward opposite: +2)
+
+[165/180] 取消小费 | control | subject 8
+  7 -> 6 (shift toward opposite: +1)
+
+[166/180] 纸书优于电子书 | control | subject 8
+  7 -> 6 (shift toward opposite: +1)
+
+[167/180] 校服强制 | control | subject 3
+  3 -> 3 (shift toward opposite: +0)
+
+[168/180] 强制到岗 | control | subject 8
+  4 -> 3 (shift toward opposite: -1)
+
+[169/180] 强制到岗 | low_justification | subject 10
+  3 -> 3 (shift toward opposite: +0)
+
+[170/180] 取消小费 | control | subject 6
+  6 -> 4 (shift toward opposite: +2)
+
+[171/180] 纸书优于电子书 | control | subject 3
+  7 -> 6 (shift toward opposite: +1)
+
+[172/180] 校服强制 | control | subject 1
+  4 -> 5 (shift toward opposite: +1)
+
+[173/180] 取消小费 | high_justification | subject 4
+  7 -> 7 (shift toward opposite: +0)
+
+[174/180] 校服强制 | high_justification | subject 2
+  3 -> 3 (shift toward opposite: +0)
+
+[175/180] 校服强制 | low_justification | subject 8
+  4 -> 3 (shift toward opposite: -1)
+
+[176/180] 校服强制 | low_justification | subject 11
+  3 -> 3 (shift toward opposite: +0)
+
+[177/180] 纸书优于电子书 | high_justification | subject 0
+  7 -> 6 (shift toward opposite: +1)
+
+[178/180] 取消小费 | low_justification | subject 10
+  7 -> 3 (shift toward opposite: +4)
+
+[179/180] 校服强制 | high_justification | subject 3
+  3 -> 2 (shift toward opposite: -1)
+
+[180/180] 校服强制 | high_justification | subject 10
+  4 -> 4 (shift toward opposite: +0)
+
+
+Computing summary statistics...
+
+Results saved to result.json
+
+============================================================
+KEY FINDINGS
+============================================================
+Valid trials: 180/180
+  control                  : shift = +0.87 (sd=0.89), 65.0% moved toward opposite
+  low_justification        : shift = +0.37 (sd=0.84), 30.0% moved toward opposite
+  high_justification       : shift = +0.43 (sd=1.01), 41.7% moved toward opposite
+
+  VERDICT: AMBIGUOUS: control=0.87, low=0.37, high=0.43
