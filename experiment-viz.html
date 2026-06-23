@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>约束产生质量 — 280+ 局 Multi-Agent 实验可视化</title>
+<style>
+:root {
+  --bg: #fafaf9;
+  --card: #ffffff;
+  --border: #e7e5e4;
+  --text: #1c1917;
+  --text2: #57534e;
+  --text3: #a8a29e;
+  --accent: #4f46e5;
+  --accent-light: #eef2ff;
+  --red: #ef4444;
+  --red-light: #fef2f2;
+  --green: #22c55e;
+  --green-light: #f0fdf4;
+  --amber: #f59e0b;
+  --amber-light: #fffbeb;
+  --mono: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Hero ── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.hero-badge {
+  display: inline-block;
+  background: var(--accent-light);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 14px;
+  border-radius: 100px;
+  margin-bottom: 28px;
+  letter-spacing: 0.5px;
+  width: fit-content;
+}
+.hero h1 {
+  font-size: clamp(28px, 4.5vw, 48px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  margin-bottom: 20px;
+}
+.hero h1 em {
+  font-style: normal;
+  background: linear-gradient(135deg, var(--accent), #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-sub {
+  font-size: 17px;
+  color: var(--text2);
+  max-width: 580px;
+  margin-bottom: 48px;
+}
+.hero-stats {
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+.hero-stat .num {
+  font-size: 40px;
+  font-weight: 800;
+  font-family: var(--mono);
+  color: var(--accent);
+  line-height: 1.1;
+}
+.hero-stat .label {
+  font-size: 13px;
+  color: var(--text3);
+  margin-top: 4px;
+}
+
+/* ── Nav ── */
+.nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(250,250,249,0.88);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 24px;
+}
+.nav-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.nav-inner::-webkit-scrollbar { display: none; }
+.nav-btn {
+  flex-shrink: 0;
+  padding: 12px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text3);
+  background: none;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+}
+.nav-btn:hover { color: var(--text2); }
+.nav-btn.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* ── Section ── */
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+.section-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+.section-title {
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+.section-desc {
+  font-size: 16px;
+  color: var(--text2);
+  max-width: 620px;
+  margin-bottom: 48px;
+}
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/* ── Step Function Chart ── */
+.step-chart-wrap {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 40px 32px 32px;
+  margin-bottom: 48px;
+  position: relative;
+  overflow: hidden;
+}
+.step-chart-wrap h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.step-chart-wrap .subtitle {
+  font-size: 14px;
+  color: var(--text2);
+  margin-bottom: 32px;
+}
+.step-chart {
+  width: 100%;
+  height: 280px;
+  position: relative;
+}
+.step-chart svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Comparison Cards ── */
+.comp-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.comp-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px 28px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  align-items: center;
+  transition: box-shadow 0.2s;
+}
+.comp-card:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+}
+.comp-card.significant {
+  border-left: 3px solid var(--accent);
+}
+.comp-label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.comp-meta {
+  font-size: 13px;
+  color: var(--text3);
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.comp-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.comp-bar-wrap {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+.comp-bar-track {
+  width: 100%;
+  height: 24px;
+  background: #f5f5f4;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+}
+.comp-bar-a {
+  height: 100%;
+  background: #d4d4d8;
+  transition: width 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text2);
+}
+.comp-bar-b {
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: white;
+}
+.comp-bar-tie .comp-bar-a { background: #d4d4d8; }
+.comp-bar-tie .comp-bar-b { background: #a8a29e; }
+.comp-p {
+  font-size: 12px;
+  font-family: var(--mono);
+  color: var(--text3);
+}
+.comp-p.sig { color: var(--accent); font-weight: 600; }
+
+/* ── Mechanism ── */
+.mech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.mech-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px;
+}
+.mech-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.mech-card h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.mech-card p {
+  font-size: 14px;
+  color: var(--text2);
+  line-height: 1.6;
+}
+
+/* ── Method Evolution ── */
+.method-timeline {
+  position: relative;
+  padding-left: 32px;
+}
+.method-timeline::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--border);
+}
+.method-step {
+  position: relative;
+  margin-bottom: 40px;
+}
+.method-step:last-child { margin-bottom: 0; }
+.method-dot {
+  position: absolute;
+  left: -32px;
+  top: 6px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+  background: var(--card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.method-dot.active {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+.method-dot.active::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+.method-dot.failed {
+  border-color: var(--red);
+  background: var(--red-light);
+}
+.method-dot.failed::after {
+  content: '\00d7';
+  color: var(--red);
+  font-weight: 700;
+  font-size: 14px;
+}
+.method-step h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.method-step .meta {
+  font-size: 13px;
+  color: var(--text3);
+  margin-bottom: 8px;
+}
+.method-step p {
+  font-size: 14px;
+  color: var(--text2);
+  line-height: 1.6;
+}
+
+/* ── Takeaway ── */
+.takeaway-list {
+  display: grid;
+  gap: 16px;
+}
+.takeaway-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px 28px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.takeaway-num {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--accent-light);
+  color: var(--accent);
+  font-weight: 800;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--mono);
+}
+.takeaway-item h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.takeaway-item p {
+  font-size: 14px;
+  color: var(--text2);
+  line-height: 1.6;
+}
+
+/* ── Footer ── */
+.footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+  text-align: center;
+  color: var(--text3);
+  font-size: 13px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .hero-stats { gap: 32px; }
+  .comp-card { grid-template-columns: 1fr; }
+  .comp-bar-wrap { width: 100%; }
+  .step-chart { height: 220px; }
+}
+
+/* ── Animations ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-in {
+  opacity: 0;
+  animation: fadeUp 0.6s ease-out forwards;
+}
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+</style>
+</head>
+<body>
+
+<!-- ════════ HERO ════════ -->
+<div class="hero">
+  <div class="hero-badge">LLM ORGANIZATION EXPERIMENT</div>
+  <h1>约束产生质量：<br><em>280+ 局实验的完整证据</em></h1>
+  <p class="hero-sub">给 AI 团队加一种约束——角色分工或信息限制——产出质量显著提升（p=0.041）。叠加更多约束没有额外收益。收益曲线是台阶函数，不是倒 U 型。</p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="num">283</div>
+      <div class="label">配对对局</div>
+    </div>
+    <div class="hero-stat">
+      <div class="num">7</div>
+      <div class="label">独立对比</div>
+    </div>
+    <div class="hero-stat">
+      <div class="num">3</div>
+      <div class="label">实验阶段</div>
+    </div>
+    <div class="hero-stat">
+      <div class="num">p=.041</div>
+      <div class="label">最硬结论</div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════ NAV ════════ -->
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <button class="nav-btn active" onclick="scrollTo('#step')">台阶函数</button>
+    <button class="nav-btn" onclick="scrollTo('#comparisons')">7 组对比</button>
+    <button class="nav-btn" onclick="scrollTo('#mechanism')">为什么有效</button>
+    <button class="nav-btn" onclick="scrollTo('#method')">方法演进</button>
+    <button class="nav-btn" onclick="scrollTo('#takeaway')">工程建议</button>
+  </div>
+</nav>
+
+<!-- ════════ STEP FUNCTION ════════ -->
+<section class="section" id="step">
+  <div class="section-label">核心发现</div>
+  <h2 class="section-title">约束收益是台阶函数</h2>
+  <p class="section-desc">从零约束到有约束是唯一的跃升。之后不管怎么调——换类型、叠加、推到极端——产出质量都在同一个平台上。</p>
+
+  <div class="step-chart-wrap">
+    <h3>约束强度 vs 产出质量</h3>
+    <p class="subtitle">5 级约束梯度，相邻两级配对盲评各 20 局</p>
+    <div class="step-chart" id="stepChart"></div>
+  </div>
+
+  <div class="comp-grid" style="max-width:600px;">
+    <div class="comp-card significant">
+      <div>
+        <div class="comp-label" style="color:var(--accent);">唯一显著跃升</div>
+        <div class="comp-meta">
+          <span>零约束 → 角色分工</span>
+          <span>胜率 75%</span>
+        </div>
+      </div>
+      <div class="comp-bar-wrap">
+        <div class="comp-bar-track">
+          <div class="comp-bar-a" style="width:25%">5</div>
+          <div class="comp-bar-b" style="width:75%">15</div>
+        </div>
+        <div class="comp-p sig">p = 0.041</div>
+      </div>
+    </div>
+    <div class="comp-card">
+      <div>
+        <div class="comp-label">之后全部平台</div>
+        <div class="comp-meta">
+          <span>等级 1-4 相邻对比</span>
+          <span>p = 0.50 ~ 1.00</span>
+        </div>
+      </div>
+      <div class="comp-bar-wrap">
+        <div class="comp-bar-track comp-bar-tie">
+          <div class="comp-bar-a" style="width:50%">~</div>
+          <div class="comp-bar-b" style="width:50%">~</div>
+        </div>
+        <div class="comp-p">无显著差异</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ════════ 7 COMPARISONS ════════ -->
+<section class="section" id="comparisons">
+  <div class="section-label">全部证据</div>
+  <h2 class="section-title">7 组独立对比</h2>
+  <p class="section-desc">前 4 组一致指向"有约束 > 无约束"。后 3 组说明：约束类型无关紧要，叠加无额外收益，推到极端也不变差。</p>
+
+  <div class="comp-grid" id="compGrid"></div>
+</section>
+
+<hr class="divider">
+
+<!-- ════════ MECHANISM ════════ -->
+<section class="section" id="mechanism">
+  <div class="section-label">为什么</div>
+  <h2 class="section-title">懒惰回声效应</h2>
+  <p class="section-desc">自由讨论表面热闹，实际是三个 AI 围绕第一个人的框架做微调。约束打破了这个循环。</p>
+
+  <div class="mech-grid">
+    <div class="mech-card">
+      <div class="mech-icon" style="background:var(--red-light);">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 4v8m0 3v.01" stroke="var(--red)" stroke-width="2" stroke-linecap="round"/></svg>
+      </div>
+      <h4>复述</h4>
+      <p>"正如前面提到的"——把前人观点换个说法重写一遍。看到全部上下文后，AI 倾向于安全地呼应而非独立建构。</p>
+    </div>
+    <div class="mech-card">
+      <div class="mech-icon" style="background:var(--amber-light);">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M10 4v12" stroke="var(--amber)" stroke-width="2" stroke-linecap="round"/></svg>
+      </div>
+      <h4>做加法</h4>
+      <p>安全地补充细节，而不是大胆地推翻框架。到第三轮，产出基本是第一轮的扩写版——信息密度很低。</p>
+    </div>
+    <div class="mech-card">
+      <div class="mech-icon" style="background:var(--green-light);">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M6 10l3 3 5-6" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h4>快速收敛</h4>
+      <p>避免冲突，迅速达成"共识"。这和人类头脑风暴的 production blocking 效应完全一致——先写后议远好于自由发言。</p>
+    </div>
+  </div>
+
+  <div style="margin-top:40px;background:var(--accent-light);border-radius:12px;padding:24px 28px;max-width:620px;">
+    <p style="font-size:14px;color:var(--accent);font-weight:600;margin-bottom:8px;">约束如何打破循环</p>
+    <p style="font-size:14px;color:var(--text2);line-height:1.7;">
+      <strong>角色约束</strong>让每个 AI 有不同的任务目标——Explorer 必须发散、Provocateur 必须挑刺，它们不能只做安全的补充。<br>
+      <strong>信息约束</strong>切断锚定源——看不到前人写了什么，只能从零开始建构，自然不会变成回声。<br>
+      两条路殊途同归：<strong>迫使 AI 独立思考</strong>。
+    </p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ════════ METHOD EVOLUTION ════════ -->
+<section class="section" id="method">
+  <div class="section-label">方法论</div>
+  <h2 class="section-title">三轮迭代找到信号</h2>
+  <p class="section-desc">方法不对，做再多实验都是噪声。换方法之后，信号立刻浮出来了。</p>
+
+  <div class="method-timeline">
+    <div class="method-step">
+      <div class="method-dot failed"></div>
+      <h4>V1 — 绝对评分</h4>
+      <div class="meta">4 轮 / 14 样本 / n=3-4 per 组</div>
+      <p>让 AI 给每份产出打 1-10 分。结果全部挤在 7-9 分，四轮结论互相矛盾。小样本 + 绝对评分 = 纯噪声。</p>
+    </div>
+    <div class="method-step">
+      <div class="method-dot active"></div>
+      <h4>V2 — 配对盲评</h4>
+      <div class="meta">3 组对比 / n=27-30 per 组 / GPT-5.5 裁判</div>
+      <p>参照 LMSYS Arena——两份产出并排呈现、随机打乱、选更好的那个。信号立刻出现：串行分化 67% 胜率（p=0.099）。</p>
+    </div>
+    <div class="method-step">
+      <div class="method-dot active"></div>
+      <h4>V3 — 约束梯度</h4>
+      <div class="meta">4 对相邻对比 / n=20 per 对 / 5 级梯度</div>
+      <p>精确定位约束强度的最优点。发现不是倒 U 型，是台阶函数——0→1 唯一跃升（p=0.041），之后一马平川。</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ════════ TAKEAWAY ════════ -->
+<section class="section" id="takeaway">
+  <div class="section-label">工程含义</div>
+  <h2 class="section-title">实际建议</h2>
+  <p class="section-desc">基于 7 组对比实验的数据，对 multi-agent 系统设计的四条建议。</p>
+
+  <div class="takeaway-list">
+    <div class="takeaway-item">
+      <div class="takeaway-num">1</div>
+      <div>
+        <h4>做一件事就够了</h4>
+        <p>加角色分化，或限制上下文，二选一。选你系统里更容易改的那个。效果一样，叠加无额外收益。</p>
+      </div>
+    </div>
+    <div class="takeaway-item">
+      <div class="takeaway-num">2</div>
+      <div>
+        <h4>角色只需要功能性的</h4>
+        <p>"你是 Explorer，负责发散"就够了。不要写文学性格——"充满好奇心的探索者，性格外向"——会抢占决策注意力（p=0.025）。</p>
+      </div>
+    </div>
+    <div class="takeaway-item">
+      <div class="takeaway-num">3</div>
+      <div>
+        <h4>上下文不是越多越好</h4>
+        <p>只传递上一步的产出，效果反而更好。全量历史导致鹦鹉学舌——后面的 agent 复述前面的内容而非独立思考。</p>
+      </div>
+    </div>
+    <div class="takeaway-item">
+      <div class="takeaway-num">4</div>
+      <div>
+        <h4>极端约束不会让事情变糟</h4>
+        <p>三个 agent 完全零通信、各自独立完成任务，产出质量和有适度协作的团队一样。"协作"本身不是质量的来源——约束才是。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>qwen3-coder-plus 生成 · GPT-5.5 盲评 · 283 配对对局 · 2026.05</p>
+</footer>
+
+<script>
+// ── Navigation ──
+function scrollTo(sel) {
+  document.querySelector(sel)?.scrollIntoView({ behavior: 'smooth' });
+}
+
+const navBtns = document.querySelectorAll('.nav-btn');
+const sections = ['step', 'comparisons', 'mechanism', 'method', 'takeaway'].map(id => document.getElementById(id));
+
+window.addEventListener('scroll', () => {
+  const y = window.scrollY + 80;
+  let active = 0;
+  sections.forEach((s, i) => {
+    if (s && s.offsetTop <= y) active = i;
+  });
+  navBtns.forEach((b, i) => b.classList.toggle('active', i === active));
+});
+
+// ── Step Function Chart (SVG) ──
+(function drawStepChart() {
+  const container = document.getElementById('stepChart');
+  const W = 700, H = 260;
+  const pad = { t: 20, r: 40, b: 60, l: 60 };
+  const cw = W - pad.l - pad.r;
+  const ch = H - pad.t - pad.b;
+
+  // Data: 5 constraint levels, quality is relative (step function)
+  const levels = [
+    { x: 0, label: '零约束', q: 0.35, detail: '同质+全量' },
+    { x: 1, label: '角色约束', q: 0.75, detail: '分工+全量' },
+    { x: 2, label: '信息约束', q: 0.75, detail: '同质+前一人' },
+    { x: 3, label: '双约束', q: 0.75, detail: '分工+前一人' },
+    { x: 4, label: '极端约束', q: 0.75, detail: '分工+零通信' },
+  ];
+
+  const xScale = i => pad.l + (i / 4) * cw;
+  const yScale = v => pad.t + ch - v * ch;
+
+  let svg = `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg">`;
+
+  // Grid lines
+  for (let i = 0; i <= 4; i++) {
+    const x = xScale(i);
+    svg += `<line x1="${x}" y1="${pad.t}" x2="${x}" y2="${H - pad.b}" stroke="#f0f0ef" stroke-width="1"/>`;
+  }
+
+  // Y axis label
+  svg += `<text x="${pad.l - 16}" y="${pad.t + ch / 2}" fill="#a8a29e" font-size="11" text-anchor="middle" transform="rotate(-90, ${pad.l - 16}, ${pad.t + ch / 2})" font-family="var(--sans)">产出质量</text>`;
+
+  // Step function path
+  const pts = levels.map(l => ({ x: xScale(l.x), y: yScale(l.q) }));
+
+  // Draw step: horizontal at low, then jump, then horizontal at high
+  svg += `<path d="M ${pts[0].x} ${pts[0].y} L ${(pts[0].x + pts[1].x) / 2} ${pts[0].y}" stroke="#d4d4d8" stroke-width="3" fill="none" stroke-linecap="round"/>`;
+
+  // The jump
+  svg += `<path d="M ${(pts[0].x + pts[1].x) / 2} ${pts[0].y} L ${(pts[0].x + pts[1].x) / 2} ${pts[1].y}" stroke="#4f46e5" stroke-width="3" fill="none" stroke-dasharray="6 4"/>`;
+
+  // High plateau
+  svg += `<path d="M ${(pts[0].x + pts[1].x) / 2} ${pts[1].y} L ${pts[4].x} ${pts[4].y}" stroke="#4f46e5" stroke-width="3" fill="none" stroke-linecap="round"/>`;
+
+  // Dots
+  levels.forEach((l, i) => {
+    const x = xScale(l.x);
+    const y = yScale(l.q);
+    const color = i === 0 ? '#d4d4d8' : '#4f46e5';
+    svg += `<circle cx="${x}" cy="${y}" r="6" fill="${color}" stroke="white" stroke-width="2"/>`;
+  });
+
+  // p=0.041 annotation arrow
+  const ax = (pts[0].x + pts[1].x) / 2;
+  const ay = (pts[0].y + pts[1].y) / 2;
+  svg += `<line x1="${ax + 8}" y1="${ay}" x2="${ax + 60}" y2="${ay}" stroke="#4f46e5" stroke-width="1"/>`;
+  svg += `<text x="${ax + 64}" y="${ay - 6}" fill="#4f46e5" font-size="13" font-weight="700" font-family="var(--mono)">p = 0.041</text>`;
+  svg += `<text x="${ax + 64}" y="${ay + 10}" fill="#a8a29e" font-size="11" font-family="var(--sans)">唯一显著跃升</text>`;
+
+  // "无显著差异" annotation on plateau
+  const mx = (pts[2].x + pts[3].x) / 2;
+  const my = pts[2].y;
+  svg += `<text x="${mx}" y="${my - 16}" fill="#a8a29e" font-size="11" text-anchor="middle" font-family="var(--sans)">p = 0.50 ~ 1.00（无显著差异）</text>`;
+
+  // X axis labels
+  levels.forEach(l => {
+    const x = xScale(l.x);
+    svg += `<text x="${x}" y="${H - pad.b + 20}" fill="#1c1917" font-size="12" text-anchor="middle" font-weight="600" font-family="var(--sans)">${l.label}</text>`;
+    svg += `<text x="${x}" y="${H - pad.b + 35}" fill="#a8a29e" font-size="10" text-anchor="middle" font-family="var(--sans)">${l.detail}</text>`;
+  });
+
+  svg += `</svg>`;
+  container.innerHTML = svg;
+})();
+
+// ── Comparison Cards ──
+(function drawComps() {
+  const comps = [
+    { label: '角色约束 vs 零约束', a: '零约束', b: '角色约束', wa: 5, wb: 15, n: 20, p: 0.041, sig: true, phase: 'v3', meaning: '加角色分工 = 显著提升' },
+    { label: '串行分化 vs 同质串行', a: '同质串行', b: '串行分化', wa: 10, wb: 20, n: 30, p: 0.099, sig: false, phase: 'v2', meaning: '分化有效（接近显著）' },
+    { label: '仅前一人 vs 全量上下文', a: '全量上下文', b: '仅前一人', wa: 9, wb: 18, n: 27, p: 0.122, sig: false, phase: 'v2', meaning: '限制信息也有效' },
+    { label: '并行+整合 vs 同质讨论', a: '同质讨论', b: '并行+整合', wa: 11, wb: 19, n: 30, p: 0.200, sig: false, phase: 'v2', meaning: '同方向' },
+    { label: '角色约束 vs 信息约束', a: '角色约束', b: '信息约束', wa: 8, wb: 12, n: 20, p: 0.503, sig: false, phase: 'v3', meaning: '两种约束等效', tie: true },
+    { label: '单约束 vs 双约束', a: '单约束', b: '双约束', wa: 9, wb: 11, n: 20, p: 0.824, sig: false, phase: 'v3', meaning: '叠加无额外收益', tie: true },
+    { label: '双约束 vs 极端约束', a: '双约束', b: '极端约束', wa: 10, wb: 10, n: 20, p: 1.000, sig: false, phase: 'v3', meaning: '极端约束也不变差', tie: true },
+  ];
+
+  const grid = document.getElementById('compGrid');
+  comps.forEach((c, i) => {
+    const pctA = (c.wa / c.n * 100).toFixed(0);
+    const pctB = (c.wb / c.n * 100).toFixed(0);
+    const isTie = c.tie;
+    const card = document.createElement('div');
+    card.className = `comp-card${c.sig ? ' significant' : ''} animate-in`;
+    card.style.animationDelay = `${i * 0.08}s`;
+    card.innerHTML = `
+      <div>
+        <div class="comp-label">${c.label}</div>
+        <div class="comp-meta">
+          <span>${c.phase}</span>
+          <span>n=${c.n}</span>
+          <span>${c.meaning}</span>
+        </div>
+      </div>
+      <div class="comp-bar-wrap">
+        <div class="comp-bar-track${isTie ? ' comp-bar-tie' : ''}">
+          <div class="comp-bar-a" style="width:${pctA}%">${c.wa}</div>
+          <div class="comp-bar-b" style="width:${pctB}%">${c.wb}</div>
+        </div>
+        <div class="comp-p${c.sig ? ' sig' : ''}">p = ${c.p.toFixed(3)}</div>
+      </div>
+    `;
+    grid.appendChild(card);
+  });
+})();
+
+// ── Intersection Observer for animations ──
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('animate-in');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.comp-card, .mech-card, .takeaway-item, .method-step').forEach(el => {
+  observer.observe(el);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>模拟进度条 — 交互式演示</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #fafafa;
+    --card: #fff;
+    --border: #e8e8e8;
+    --text: #1a1a1a;
+    --text2: #666;
+    --text3: #999;
+    --accent: #2563eb;
+    --accent-light: #dbeafe;
+    --green: #16a34a;
+    --green-light: #dcfce7;
+    --orange: #ea580c;
+    --orange-light: #fff7ed;
+    --red: #dc2626;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 48px 24px;
+    max-width: 920px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    color: var(--text3);
+    font-size: 14px;
+    margin-bottom: 48px;
+  }
+
+  .section {
+    margin-bottom: 48px;
+  }
+
+  .section-title {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text3);
+    margin-bottom: 20px;
+  }
+
+  /* ── Progress Bar Demo ── */
+  .demo-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px;
+  }
+
+  .progress-container {
+    margin-bottom: 24px;
+  }
+
+  .progress-track {
+    height: 6px;
+    background: #f0f0f0;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 3px;
+    width: 0%;
+    transition: width 200ms ease-out;
+  }
+
+  .progress-fill.done {
+    background: var(--green);
+  }
+
+  .progress-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .progress-label {
+    font-size: 14px;
+    color: var(--text2);
+  }
+
+  .progress-pct {
+    font-size: 14px;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    color: var(--text);
+  }
+
+  .controls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+
+  button {
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    padding: 8px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 120ms;
+  }
+
+  button:hover {
+    border-color: #ccc;
+    background: #f8f8f8;
+  }
+
+  button.primary {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+
+  button.primary:hover {
+    background: #1d4ed8;
+  }
+
+  button.success {
+    background: var(--green);
+    color: #fff;
+    border-color: var(--green);
+  }
+
+  button.success:hover {
+    background: #15803d;
+  }
+
+  button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  /* ── Config ── */
+  .config-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .config-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .config-item label {
+    font-size: 12px;
+    color: var(--text3);
+    font-weight: 500;
+  }
+
+  .config-item input {
+    font-family: inherit;
+    font-size: 14px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 6px 10px;
+    background: var(--bg);
+    color: var(--text);
+    width: 100%;
+  }
+
+  .config-item input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-light);
+  }
+
+  /* ── Stats ── */
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .stat-chip {
+    background: var(--bg);
+    border-radius: 8px;
+    padding: 12px 14px;
+  }
+
+  .stat-chip .label {
+    font-size: 11px;
+    color: var(--text3);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+
+  .stat-chip .value {
+    font-size: 18px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    margin-top: 2px;
+  }
+
+  .stat-chip .value.overtime {
+    color: var(--orange);
+  }
+
+  /* ── Chart ── */
+  .chart-container {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+  }
+
+  canvas {
+    width: 100%;
+    height: 280px;
+    display: block;
+  }
+
+  .chart-legend {
+    display: flex;
+    gap: 20px;
+    margin-top: 12px;
+    font-size: 12px;
+    color: var(--text3);
+  }
+
+  .chart-legend span::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 3px;
+    border-radius: 2px;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+
+  .chart-legend .theoretical::before { background: #cbd5e1; }
+  .chart-legend .actual::before { background: var(--accent); }
+
+  /* ── Formula ── */
+  .formula-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+  }
+
+  .formula {
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 14px;
+    line-height: 2;
+    color: var(--text2);
+    background: var(--bg);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+  }
+
+  .formula .highlight {
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  /* ── Table ── */
+  .table-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+
+  th {
+    text-align: left;
+    font-weight: 500;
+    color: var(--text3);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+  }
+
+  td {
+    padding: 10px 16px;
+    border-bottom: 1px solid #f5f5f5;
+    font-variant-numeric: tabular-nums;
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  tr.active td {
+    background: var(--accent-light);
+    font-weight: 500;
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+
+  .tag.running { background: var(--accent-light); color: var(--accent); }
+  .tag.overtime { background: var(--orange-light); color: var(--orange); }
+  .tag.done { background: var(--green-light); color: var(--green); }
+  .tag.idle { background: #f5f5f5; color: var(--text3); }
+
+  /* ── Footer ── */
+  .footer {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text3);
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<h1>模拟进度条</h1>
+<p class="subtitle">异步任务无中间状态时的前端进度模拟 — 交互式演示与公式验证</p>
+
+<!-- ── Live Demo ── -->
+<div class="section">
+  <div class="section-title">实时演示</div>
+  <div class="demo-card">
+    <div class="config-grid">
+      <div class="config-item">
+        <label>预期时长 (秒)</label>
+        <input type="number" id="cfgExpected" value="480" min="10" max="3600" step="10">
+      </div>
+      <div class="config-item">
+        <label>Tick 间隔 (ms)</label>
+        <input type="number" id="cfgTick" value="200" min="50" max="1000" step="50">
+      </div>
+      <div class="config-item">
+        <label>每帧最大步进 (%)</label>
+        <input type="number" id="cfgMaxStep" value="0.5" min="0.01" max="2" step="0.01">
+      </div>
+      <div class="config-item">
+        <label>超时倍率</label>
+        <input type="number" id="cfgOvertime" value="1.5" min="1.1" max="3" step="0.1">
+      </div>
+    </div>
+
+    <div class="progress-container">
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+      <div class="progress-info">
+        <span class="progress-label" id="progressLabel">等待启动…</span>
+        <span class="progress-pct" id="progressPct">0%</span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="primary" id="btnStart">开始任务</button>
+      <button class="success" id="btnComplete" disabled>模拟后端完成</button>
+      <button id="btnReset">重置</button>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-chip">
+        <div class="label">已用时间</div>
+        <div class="value" id="statElapsed">0s</div>
+      </div>
+      <div class="stat-chip">
+        <div class="label">当前进度</div>
+        <div class="value" id="statProgress">0.00%</div>
+      </div>
+      <div class="stat-chip">
+        <div class="label">公式原始值</div>
+        <div class="value" id="statRaw">0.00%</div>
+      </div>
+      <div class="stat-chip">
+        <div class="label">状态</div>
+        <div class="value" id="statState">空闲</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Curve Chart ── -->
+<div class="section">
+  <div class="section-title">曲线预览</div>
+  <div class="chart-container">
+    <canvas id="curveCanvas"></canvas>
+    <div class="chart-legend">
+      <span class="theoretical">理论曲线</span>
+      <span class="actual">实际轨迹</span>
+    </div>
+  </div>
+</div>
+
+<!-- ── Formula ── -->
+<div class="section">
+  <div class="section-title">公式</div>
+  <div class="formula-card">
+    <div class="formula">
+      <span class="highlight">前 5 秒</span> &nbsp; progress = t / 5000 &times; 15<br>
+      <span class="highlight">5 秒后 </span> &nbsp; progress = 15 + 84 &times; (1 &minus; e<sup>&minus;3t/T</sup>)
+    </div>
+    <div style="font-size:13px; color:var(--text3); line-height:1.8">
+      t = 已过时间 (ms) &nbsp;·&nbsp; T = 预期时长 (默认 480s)<br>
+      硬上限 99% · 每帧最小 +0.01% · 每帧最大 +0.5% · 完成时 ease-out 到 100%
+    </div>
+  </div>
+</div>
+
+<!-- ── Reference Table ── -->
+<div class="section">
+  <div class="section-title">进度-时间对照 (T=8min)</div>
+  <div class="table-card">
+    <table>
+      <thead>
+        <tr><th>时间</th><th>理论进度</th><th>文案</th><th>阶段</th></tr>
+      </thead>
+      <tbody id="refTable"></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="footer">
+  基于 progress-bar-spec.md · 纯前端模拟，无后端依赖
+</div>
+
+<script>
+// ── Config ──
+function getConfig() {
+  return {
+    expectedMs: parseFloat(document.getElementById('cfgExpected').value) * 1000,
+    tickInterval: parseInt(document.getElementById('cfgTick').value),
+    maxStep: parseFloat(document.getElementById('cfgMaxStep').value),
+    minStep: 0.01,
+    overtimeRatio: parseFloat(document.getElementById('cfgOvertime').value),
+  };
+}
+
+// ── Progress Calculator ──
+function calcRawProgress(elapsedMs, T) {
+  if (elapsedMs <= 5000) {
+    return (elapsedMs / 5000) * 15;
+  }
+  const t = elapsedMs - 5000;
+  return 15 + 84 * (1 - Math.exp(-3 * t / (T - 5000)));
+}
+
+function getLabel(pct, overtime) {
+  if (pct >= 100) return '完成';
+  if (pct >= 95 && overtime) return '仍在处理中，请耐心等待…';
+  if (pct >= 95) return '最后收尾中…';
+  if (pct >= 70) return '即将完成…';
+  if (pct >= 30) return '预计还需几分钟…';
+  return '正在处理中…';
+}
+
+// ── State ──
+let state = {
+  running: false,
+  completed: false,
+  startTime: 0,
+  displayProgress: 0,
+  timer: null,
+  actualPoints: [],
+  completingAnim: null,
+};
+
+const fill = document.getElementById('progressFill');
+const label = document.getElementById('progressLabel');
+const pct = document.getElementById('progressPct');
+const statElapsed = document.getElementById('statElapsed');
+const statProgress = document.getElementById('statProgress');
+const statRaw = document.getElementById('statRaw');
+const statState = document.getElementById('statState');
+const btnStart = document.getElementById('btnStart');
+const btnComplete = document.getElementById('btnComplete');
+const btnReset = document.getElementById('btnReset');
+
+function updateUI(progress, rawProg, elapsedMs, cfg) {
+  const isOvertime = elapsedMs > cfg.expectedMs * cfg.overtimeRatio;
+  const displayPct = Math.min(progress, 100);
+
+  fill.style.width = displayPct + '%';
+  fill.classList.toggle('done', displayPct >= 100);
+  pct.textContent = displayPct.toFixed(1) + '%';
+  label.textContent = getLabel(displayPct, isOvertime);
+
+  const secs = (elapsedMs / 1000);
+  if (secs < 60) {
+    statElapsed.textContent = secs.toFixed(1) + 's';
+  } else {
+    statElapsed.textContent = Math.floor(secs / 60) + 'm ' + Math.floor(secs % 60) + 's';
+  }
+
+  statProgress.textContent = displayPct.toFixed(2) + '%';
+  statRaw.textContent = rawProg.toFixed(2) + '%';
+
+  if (displayPct >= 100) {
+    statState.textContent = '已完成';
+    statState.classList.remove('overtime');
+  } else if (isOvertime) {
+    statState.textContent = '超时';
+    statState.classList.add('overtime');
+  } else {
+    statState.textContent = '运行中';
+    statState.classList.remove('overtime');
+  }
+}
+
+function tick() {
+  if (!state.running || state.completed) return;
+
+  const cfg = getConfig();
+  const elapsed = Date.now() - state.startTime;
+  const isOvertime = elapsed > cfg.expectedMs * cfg.overtimeRatio;
+
+  let rawProg = calcRawProgress(elapsed, cfg.expectedMs);
+  rawProg = Math.min(rawProg, 99);
+
+  // Overtime slow crawl: 98~99% at 0.01%/2s
+  if (isOvertime && rawProg >= 98) {
+    const overtimeStart = cfg.expectedMs * cfg.overtimeRatio;
+    const overtimeElapsed = elapsed - overtimeStart;
+    rawProg = 98 + Math.min(1, overtimeElapsed / 2000 * 0.01);
+    rawProg = Math.min(rawProg, 99);
+  }
+
+  // Apply step constraints
+  let delta = rawProg - state.displayProgress;
+  delta = Math.max(delta, cfg.minStep);
+  delta = Math.min(delta, cfg.maxStep);
+
+  let newProgress = state.displayProgress + delta;
+  // Never go backwards
+  newProgress = Math.max(newProgress, state.displayProgress);
+  newProgress = Math.min(newProgress, 99);
+
+  state.displayProgress = newProgress;
+  state.actualPoints.push({ t: elapsed, p: newProgress });
+
+  updateUI(newProgress, rawProg, elapsed, cfg);
+  drawChart();
+
+  // Highlight active row in table
+  highlightRow(elapsed, cfg.expectedMs);
+}
+
+function startTask() {
+  const cfg = getConfig();
+  state.running = true;
+  state.completed = false;
+  state.startTime = Date.now();
+  state.displayProgress = 0;
+  state.actualPoints = [];
+
+  btnStart.disabled = true;
+  btnComplete.disabled = false;
+  statState.textContent = '运行中';
+
+  drawTheoreticalCurve();
+  state.timer = setInterval(tick, cfg.tickInterval);
+}
+
+function completeTask() {
+  if (!state.running || state.completed) return;
+  state.completed = true;
+  clearInterval(state.timer);
+
+  const cfg = getConfig();
+  const elapsed = Date.now() - state.startTime;
+  const current = state.displayProgress;
+  const animDuration = Math.max(300, (100 - current) * 8);
+
+  btnComplete.disabled = true;
+
+  // Ease-out animation to 100%
+  const animStart = Date.now();
+  function animFrame() {
+    const t = (Date.now() - animStart) / animDuration;
+    if (t >= 1) {
+      state.displayProgress = 100;
+      updateUI(100, 100, elapsed, cfg);
+      state.actualPoints.push({ t: elapsed, p: 100 });
+      drawChart();
+      return;
+    }
+    // ease-out: 1 - (1-t)^3
+    const ease = 1 - Math.pow(1 - t, 3);
+    const p = current + (100 - current) * ease;
+    state.displayProgress = p;
+    updateUI(p, p, elapsed, cfg);
+    requestAnimationFrame(animFrame);
+  }
+  requestAnimationFrame(animFrame);
+}
+
+function resetTask() {
+  clearInterval(state.timer);
+  state.running = false;
+  state.completed = false;
+  state.displayProgress = 0;
+  state.actualPoints = [];
+
+  fill.style.width = '0%';
+  fill.classList.remove('done');
+  pct.textContent = '0%';
+  label.textContent = '等待启动…';
+  statElapsed.textContent = '0s';
+  statProgress.textContent = '0.00%';
+  statRaw.textContent = '0.00%';
+  statState.textContent = '空闲';
+  statState.classList.remove('overtime');
+
+  btnStart.disabled = false;
+  btnComplete.disabled = true;
+
+  drawTheoreticalCurve();
+  highlightRow(-1, 480000);
+}
+
+btnStart.addEventListener('click', startTask);
+btnComplete.addEventListener('click', completeTask);
+btnReset.addEventListener('click', resetTask);
+
+// ── Chart ──
+const canvas = document.getElementById('curveCanvas');
+const ctx = canvas.getContext('2d');
+
+function resizeCanvas() {
+  const rect = canvas.parentElement.getBoundingClientRect();
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = (rect.width - 48) * dpr;
+  canvas.height = 280 * dpr;
+  canvas.style.width = (rect.width - 48) + 'px';
+  canvas.style.height = '280px';
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+}
+
+function drawTheoreticalCurve() {
+  resizeCanvas();
+  const w = canvas.width / (window.devicePixelRatio || 1);
+  const h = canvas.height / (window.devicePixelRatio || 1);
+  const cfg = getConfig();
+  const T = cfg.expectedMs;
+  const totalTime = T * 1.6;
+
+  const pad = { top: 20, right: 20, bottom: 32, left: 44 };
+  const cw = w - pad.left - pad.right;
+  const ch = h - pad.top - pad.bottom;
+
+  ctx.clearRect(0, 0, w, h);
+
+  // Grid
+  ctx.strokeStyle = '#f0f0f0';
+  ctx.lineWidth = 1;
+  for (let p = 0; p <= 100; p += 25) {
+    const y = pad.top + ch - (p / 100) * ch;
+    ctx.beginPath();
+    ctx.moveTo(pad.left, y);
+    ctx.lineTo(w - pad.right, y);
+    ctx.stroke();
+  }
+
+  // Y-axis labels
+  ctx.fillStyle = '#bbb';
+  ctx.font = '11px -apple-system, sans-serif';
+  ctx.textAlign = 'right';
+  for (let p = 0; p <= 100; p += 25) {
+    const y = pad.top + ch - (p / 100) * ch;
+    ctx.fillText(p + '%', pad.left - 8, y + 4);
+  }
+
+  // X-axis labels
+  ctx.textAlign = 'center';
+  const timeMarks = [0, 60, 120, 240, 360, 480, 600, 720];
+  for (const sec of timeMarks) {
+    if (sec * 1000 > totalTime) break;
+    const x = pad.left + (sec * 1000 / totalTime) * cw;
+    ctx.fillText(sec < 60 ? sec + 's' : (sec / 60) + 'm', x, h - 8);
+  }
+
+  // Theoretical curve
+  ctx.strokeStyle = '#cbd5e1';
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  for (let i = 0; i <= 500; i++) {
+    const t = (i / 500) * totalTime;
+    let p = calcRawProgress(t, T);
+    p = Math.min(p, 99);
+    const x = pad.left + (t / totalTime) * cw;
+    const y = pad.top + ch - (p / 100) * ch;
+    if (i === 0) ctx.moveTo(x, y);
+    else ctx.lineTo(x, y);
+  }
+  ctx.stroke();
+
+  // 99% line
+  ctx.setLineDash([4, 4]);
+  ctx.strokeStyle = '#fca5a5';
+  ctx.lineWidth = 1;
+  const y99 = pad.top + ch - (99 / 100) * ch;
+  ctx.beginPath();
+  ctx.moveTo(pad.left, y99);
+  ctx.lineTo(w - pad.right, y99);
+  ctx.stroke();
+  ctx.fillStyle = '#fca5a5';
+  ctx.textAlign = 'left';
+  ctx.fillText('99% 上限', w - pad.right - 52, y99 - 6);
+  ctx.setLineDash([]);
+
+  // T marker
+  const xT = pad.left + (T / totalTime) * cw;
+  ctx.setLineDash([4, 4]);
+  ctx.strokeStyle = '#cbd5e1';
+  ctx.beginPath();
+  ctx.moveTo(xT, pad.top);
+  ctx.lineTo(xT, pad.top + ch);
+  ctx.stroke();
+  ctx.setLineDash([]);
+  ctx.fillStyle = '#bbb';
+  ctx.textAlign = 'center';
+  ctx.fillText('T=' + (T / 60000) + 'min', xT, pad.top - 4);
+}
+
+function drawChart() {
+  drawTheoreticalCurve();
+
+  if (state.actualPoints.length < 2) return;
+
+  const w = canvas.width / (window.devicePixelRatio || 1);
+  const h = canvas.height / (window.devicePixelRatio || 1);
+  const cfg = getConfig();
+  const totalTime = cfg.expectedMs * 1.6;
+  const pad = { top: 20, right: 20, bottom: 32, left: 44 };
+  const cw = w - pad.left - pad.right;
+  const ch = h - pad.top - pad.bottom;
+
+  ctx.strokeStyle = '#2563eb';
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+
+  // Sample points to avoid drawing too many
+  const step = Math.max(1, Math.floor(state.actualPoints.length / 300));
+  for (let i = 0; i < state.actualPoints.length; i += step) {
+    const pt = state.actualPoints[i];
+    const x = pad.left + (pt.t / totalTime) * cw;
+    const y = pad.top + ch - (pt.p / 100) * ch;
+    if (i === 0) ctx.moveTo(x, y);
+    else ctx.lineTo(x, y);
+  }
+  // Always draw last point
+  const last = state.actualPoints[state.actualPoints.length - 1];
+  const lx = pad.left + (last.t / totalTime) * cw;
+  const ly = pad.top + ch - (last.p / 100) * ch;
+  ctx.lineTo(lx, ly);
+  ctx.stroke();
+
+  // Current point dot
+  ctx.fillStyle = '#2563eb';
+  ctx.beginPath();
+  ctx.arc(lx, ly, 4, 0, Math.PI * 2);
+  ctx.fill();
+}
+
+// ── Reference Table ──
+const refData = [
+  { time: '0s', ms: 0 },
+  { time: '5s', ms: 5000 },
+  { time: '1min', ms: 60000 },
+  { time: '2min', ms: 120000 },
+  { time: '4min', ms: 240000 },
+  { time: '6min', ms: 360000 },
+  { time: '8min', ms: 480000 },
+  { time: '10min', ms: 600000 },
+  { time: '12min+', ms: 720000 },
+];
+
+function buildTable() {
+  const tbody = document.getElementById('refTable');
+  const T = 480000;
+  tbody.innerHTML = '';
+  for (const row of refData) {
+    let p = calcRawProgress(row.ms, T);
+    p = Math.min(p, 99);
+    const isOvertime = row.ms > T * 1.5;
+    const lbl = getLabel(p, isOvertime);
+
+    let phase = '运行';
+    let phaseClass = 'running';
+    if (row.ms === 0) { phase = '就绪'; phaseClass = 'idle'; }
+    else if (isOvertime) { phase = '超时'; phaseClass = 'overtime'; }
+    else if (p >= 95) { phase = '收尾'; phaseClass = 'done'; }
+
+    const tr = document.createElement('tr');
+    tr.dataset.ms = row.ms;
+    tr.innerHTML = `
+      <td>${row.time}</td>
+      <td>${p.toFixed(0)}%</td>
+      <td style="color:var(--text2)">${lbl}</td>
+      <td><span class="tag ${phaseClass}">${phase}</span></td>
+    `;
+    tbody.appendChild(tr);
+  }
+}
+
+function highlightRow(elapsedMs, T) {
+  const rows = document.querySelectorAll('#refTable tr');
+  let activeIdx = -1;
+  for (let i = 0; i < refData.length; i++) {
+    if (elapsedMs >= refData[i].ms) activeIdx = i;
+  }
+  rows.forEach((r, i) => r.classList.toggle('active', i === activeIdx));
+}
+
+// ── Init ──
+buildTable();
+drawTheoreticalCurve();
+window.addEventListener('resize', () => {
+  drawTheoreticalCurve();
+  if (state.actualPoints.length > 0) drawChart();
+});
+
+// ── Quick test buttons ──
+// Allow shorter expected times for demo purposes
+document.getElementById('cfgExpected').addEventListener('change', () => {
+  if (!state.running) drawTheoreticalCurve();
+});
+</script>
+
+</body>
+</html>

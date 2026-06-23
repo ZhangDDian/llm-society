@@ -1,0 +1,599 @@
+{
+  "config": {
+    "n_problems": 10,
+    "trials_per_problem": 6,
+    "model": "qwen3-coder-plus",
+    "temperature": 0.7
+  },
+  "summary": {
+    "total_trials": 56,
+    "correct": 40,
+    "incorrect": 16,
+    "accuracy": 0.7143
+  },
+  "pairwise_resolution": {
+    "confidence": {
+      "wins": 2,
+      "ties": 12,
+      "losses": 0,
+      "total_pairs": 14,
+      "resolution": 0.5714
+    },
+    "effort": {
+      "wins": 1,
+      "ties": 9,
+      "losses": 4,
+      "total_pairs": 14,
+      "resolution": 0.3929
+    },
+    "exploration_breadth": {
+      "wins": 0,
+      "ties": 10,
+      "losses": 4,
+      "total_pairs": 14,
+      "resolution": 0.3571
+    }
+  },
+  "trials": [
+    {
+      "problem_id": "p02",
+      "answer_given": "199",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "路长1000米，每隔5米种一棵树，两端都不种。首先计算间隔数：1000÷5=200个间隔。由于两端都不种树，所以树的数量比间隔数少1，即200-1=199棵。"
+    },
+    {
+      "problem_id": "p02",
+      "answer_given": "199",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "路长1000米，每隔5米种一棵树，两端都不种。首先计算间隔数：1000÷5=200个间隔。由于两端都不种树，所以树的数量比间隔数少1，即200-1=199棵。"
+    },
+    {
+      "problem_id": "p02",
+      "answer_given": "199",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "这条路长1000米，每隔5米种一棵树，两端都不种。首先计算间隔数：1000÷5=200个间隔。由于两端都不种树，所以树的数量比间隔数少1，即200-1=199棵。"
+    },
+    {
+      "problem_id": "p02",
+      "answer_given": "199",
+      "correct": true,
+      "confidence": 18,
+      "effort": 5,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "路长1000米，每隔5米种一棵树，两端都不种。首先计算间隔数：1000÷5=200个间隔。由于两端都不种树，所以树的数量比间隔数少1，即200-1=199棵。"
+    },
+    {
+      "problem_id": "p02",
+      "answer_given": "199",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "路长1000米，每隔5米种一棵树，两端都不种。首先计算间隔数：1000÷5=200个间隔。由于两端都不种树，所以树的数量比间隔数少1，即200-1=199棵。"
+    },
+    {
+      "problem_id": "p02",
+      "answer_given": "199",
+      "correct": true,
+      "confidence": 18,
+      "effort": 5,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "这条路长1000米，每隔5米种一棵树，两端都不种。首先计算间隔数：1000÷5=200个间隔。由于两端都不种树，所以树的数量比间隔数少1，即200-1=199棵。"
+    },
+    {
+      "problem_id": "p04",
+      "answer_given": "72",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "使用补集思想。先求总排法：6人围圆桌为(6-1)!=5!=120种。再求甲乙相邻的排法：将甲乙看作一个整体，相当于5个对象围圆桌，有(5-1)!=4!=24种排法，甲乙内部可交换位置有2种方式，所以甲乙相邻的排法为24×2=48种。因此甲乙不相邻的排法为120-48=72种。"
+    },
+    {
+      "problem_id": "p04",
+      "answer_given": "72",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 2,
+      "reasoning_snippet": "使用补集思想。先求总数：6人围圆桌的总排法为(6-1)!=5!=120种。再求甲乙相邻的情况：将甲乙看作一个整体，与其余4人共5个单位围圆桌，有(5-1)!=4!=24种排法，甲乙内部可交换位置有2种排法，所以甲乙相邻的排法为24×2=48种。因此甲乙不相邻的排法为120-48=72种。"
+    },
+    {
+      "problem_id": "p04",
+      "answer_given": "72",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 2,
+      "reasoning_snippet": "使用补集思想。先求总数：6人围圆桌的总排法为(6-1)!=5!=120种。再求甲乙相邻的情况：将甲乙看作一个整体，相当于5个对象围圆桌，有(5-1)!=4!=24种排法，甲乙内部可交换位置有2种排法，所以甲乙相邻的排法为24×2=48种。因此甲乙不相邻的排法为120-48=72种。"
+    },
+    {
+      "problem_id": "p04",
+      "answer_given": "72",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 2,
+      "reasoning_snippet": "使用补集思想。先求总排法：6人围圆桌为(6-1)!=5!=120种。再求甲乙相邻的排法：将甲乙看作一个整体，相当于5个单位围圆桌，有(5-1)!=4!=24种排法，甲乙内部可交换位置有2种，所以甲乙相邻的排法共24×2=48种。因此甲乙不相邻的排法为120-48=72种。"
+    },
+    {
+      "problem_id": "p04",
+      "answer_given": "72",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "使用补集思想。先求总排法：6人围圆桌为(6-1)!=5!=120种。再求甲乙相邻的排法：将甲乙看作一个整体，相当于5个单位围圆桌，有(5-1)!=4!=24种排法，甲乙内部可交换位置有2种，所以甲乙相邻排法为24×2=48种。因此甲乙不相邻排法为120-48=72种。"
+    },
+    {
+      "problem_id": "p04",
+      "answer_given": "72",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "使用补集思想。先算总数：6人围圆桌的总排法为(6-1)!=5!=120种。再算甲乙相邻的情况：将甲乙看作一个整体，相当于5个对象围圆桌，有(5-1)!=4!=24种排法，甲乙内部可交换位置有2种方式，所以甲乙相邻的排法为24×2=48种。因此甲乙不相邻的排法为120-48=72种。"
+    },
+    {
+      "problem_id": "p07",
+      "answer_given": "24",
+      "correct": true,
+      "confidence": 9,
+      "effort": 12,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "一个数能被4整除，当且仅当它的最后两位数能被4整除。用1,2,3,4,5组成五位数，需要找出所有可能的最后两位数组合：12(÷4=3), 13(÷4=3.25), 14(÷4=3.5), 15(÷4=3.75), 21(÷4=5.25), 23(÷4=5.75), 24(÷4=6), 25(÷4=6.25), 31(÷4=7.75), 32(÷4=8), 34(÷4=8.5), 35(÷4=8.7"
+    },
+    {
+      "problem_id": "p07",
+      "answer_given": "24",
+      "correct": true,
+      "confidence": 9,
+      "effort": 12,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "一个数能被4整除，当且仅当它的最后两位数能被4整除。用1,2,3,4,5组成五位数，需要找出所有可能的最后两位数组合：12, 13, 14, 15, 21, 23, 24, 25, 31, 32, 34, 35, 41, 42, 43, 45, 51, 52, 53, 54。其中能被4整除的有：12(÷4=3), 24(÷4=6), 32(÷4=8), 52(÷4=13)。对于每种符合条件的最后两"
+    },
+    {
+      "problem_id": "p07",
+      "answer_given": "24",
+      "correct": true,
+      "confidence": 9,
+      "effort": 12,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "一个数能被4整除，当且仅当它的最后两位数能被4整除。用1,2,3,4,5组成五位数，需要找出所有可能的最后两位数组合：12(÷4=3), 13(÷4=3.25), 14(÷4=3.5), 15(÷4=3.75), 21(÷4=5.25), 23(÷4=5.75), 24(÷4=6), 25(÷4=6.25), 31(÷4=7.75), 32(÷4=8), 34(÷4=8.5), 35(÷4=8.7"
+    },
+    {
+      "problem_id": "p07",
+      "answer_given": "24",
+      "correct": true,
+      "confidence": 9,
+      "effort": 12,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "一个数能被4整除，当且仅当它的最后两位数能被4整除。用1,2,3,4,5组成五位数，需要找出所有可能的最后两位数组合：12(÷4=3), 13(÷4=3.25), 14(÷4=3.5), 15(÷4=3.75), 21(÷4=5.25), 23(÷4=5.75), 24(÷4=6), 25(÷4=6.25), 31(÷4=7.75), 32(÷4=8), 34(÷4=8.5), 35(÷4=8.7"
+    },
+    {
+      "problem_id": "p07",
+      "answer_given": "24",
+      "correct": true,
+      "confidence": 9,
+      "effort": 12,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "一个数能被4整除，当且仅当它的最后两位数能被4整除。用1,2,3,4,5组成五位数，需要找出所有可能的最后两位数组合：12(÷4=3), 13(÷4=3.25), 14(÷4=3.5), 15(÷4=3.75), 21(÷4=5.25), 23(÷4=5.75), 24(÷4=6), 25(÷4=6.25), 31(÷4=7.75), 32(÷4=8), 34(÷4=8.5), 35(÷4=8.7"
+    },
+    {
+      "problem_id": "p07",
+      "answer_given": "24",
+      "correct": true,
+      "confidence": 9,
+      "effort": 10,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "一个数能被4整除，当且仅当它的最后两位数能被4整除。用1,2,3,4,5组成五位数，需要找出所有可能的最后两位数组合：12(÷4=3), 13(÷4=3.25), 14(÷4=3.5), 15(÷4=3.75), 21(÷4=5.25), 23(÷4=5.75), 24(÷4=6), 25(÷4=6.25), 31(÷4=7.75), 32(÷4=8), 34(÷4=8.5), 35(÷4=8.7"
+    },
+    {
+      "problem_id": "p08",
+      "answer_given": "7.2天",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 2,
+      "reasoning_snippet": "首先计算工作效率：甲每天完成1/10，乙每天完成1/15。设总用时为x天，则甲工作了(x-2)天，乙工作了x天。根据工作总量为1，建立方程：(x-2)×(1/10) + x×(1/15) = 1。化简得：(x-2)/10 + x/15 = 1。通分后：3(x-2) + 2x = 30，即3x-6+2x=30，5x=36，x=7.2天。"
+    },
+    {
+      "problem_id": "p08",
+      "answer_given": "8天",
+      "correct": false,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "首先计算工作效率：甲每天完成1/10，乙每天完成1/15。设总共用了x天，其中甲工作了(x-2)天，乙工作了x天。根据总工程量为1，建立方程：(x-2)×(1/10) + x×(1/15) = 1。解这个方程得到x=8。"
+    },
+    {
+      "problem_id": "p08",
+      "answer_given": "7.2天",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "首先计算工作效率：甲每天完成1/10，乙每天完成1/15。设总共用了x天，其中甲工作了(x-2)天，乙工作了x天。根据总工程量为1，得到方程：(x-2)×(1/10) + x×(1/15) = 1。化简得：(x-2)/10 + x/15 = 1。通分后：3(x-2) + 2x = 30，即3x-6+2x=30，5x=36，x=7.2天。"
+    },
+    {
+      "problem_id": "p08",
+      "answer_given": "8天",
+      "correct": false,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "首先计算工作效率：甲每天完成1/10，乙每天完成1/15。设总共用了x天，其中甲工作了(x-2)天，乙工作了x天。根据总工程量为1，建立方程：(x-2)×(1/10) + x×(1/15) = 1。解这个方程得到x=8。"
+    },
+    {
+      "problem_id": "p08",
+      "answer_given": "8天",
+      "correct": false,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "首先计算工作效率：甲每天完成1/10，乙每天完成1/15。设总共用了x天，其中甲工作了(x-2)天，乙工作了x天。根据总工程量为1，建立方程：(x-2)×(1/10) + x×(1/15) = 1。解这个方程得到x=8。"
+    },
+    {
+      "problem_id": "p08",
+      "answer_given": "8天",
+      "correct": false,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "首先计算工作效率：甲每天完成1/10，乙每天完成1/15。设总用时为x天，则甲工作(x-2)天，乙工作x天。根据工作总量为1，建立方程：(x-2)×(1/10) + x×(1/15) = 1。解这个方程得到x的值。"
+    },
+    {
+      "problem_id": "p11",
+      "answer_given": "1/3",
+      "correct": false,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "这是经典的条件概率问题。在有两个孩子的家庭中，所有可能的性别组合为：{男男, 男女, 女男, 女女}，每种概率相等为1/4。已知至少有一个是女孩，则排除了男男的情况，剩下三种可能：{男女, 女男, 女女}。在这三种情况中，两个都是女孩的情况只有1种。因此概率为1/3。"
+    },
+    {
+      "problem_id": "p11",
+      "answer_given": "1/3",
+      "correct": false,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "这是经典的条件概率问题。在有两个孩子的家庭中，所有可能的性别组合是：{男男, 男女, 女男, 女女}，每种概率相等为1/4。已知至少有一个是女孩，排除了男男的情况，剩下三种可能：{男女, 女男, 女女}。在这三种情况中，两个都是女孩的情况只有女女这一种。因此概率为1/3。"
+    },
+    {
+      "problem_id": "p11",
+      "answer_given": "1/3",
+      "correct": false,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "这是经典的条件概率问题。在有两个孩子的家庭中，所有可能的性别组合为：{男男, 男女, 女男, 女女}，每种情况概率相等。已知至少有一个女孩，排除了男男的情况。剩下三种可能：{男女, 女男, 女女}。其中两个都是女孩的情况只有女女这一种。因此概率为1/3。"
+    },
+    {
+      "problem_id": "p11",
+      "answer_given": "1/3",
+      "correct": false,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "这是经典的条件概率问题。在有两个孩子的家庭中，所有可能的性别组合是：{男男, 男女, 女男, 女女}，每种概率都是1/4。已知至少有一个是女孩，排除了男男的情况，剩下三种可能：{男女, 女男, 女女}。在这三种情况中，两个都是女孩的情况只有1种，所以概率是1/3。"
+    },
+    {
+      "problem_id": "p11",
+      "answer_given": "1/3",
+      "correct": false,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "这是经典的条件概率问题。在有两个孩子的家庭中，所有可能的性别组合是：{男男, 男女, 女男, 女女}，每种情况概率相等为1/4。已知至少有一个是女孩，排除了'男男'的情况，剩下三种等可能情况：{男女, 女男, 女女}。在这三种情况中，两个都是女孩的情况只有'女女'一种。因此概率为1/3。"
+    },
+    {
+      "problem_id": "p11",
+      "answer_given": "1/3",
+      "correct": false,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "这是经典的条件概率问题。在有两个孩子的家庭中，所有可能的性别组合为：{男男, 男女, 女男, 女女}，每种概率均为1/4。已知至少有一个女孩，排除了男男的情况，剩下三种可能：{男女, 女男, 女女}。其中两个都是女孩的情况只有女女这一种。因此概率为1/3。"
+    },
+    {
+      "problem_id": "p18",
+      "answer_given": "0人",
+      "correct": true,
+      "confidence": 9,
+      "effort": 7,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "使用容斥原理计算至少喜欢一种水果的人数：|A∪B∪C| = |A| + |B| + |C| - |A∩B| - |A∩C| - |B∩C| + |A∩B∩C| = 65 + 45 + 30 - 20 - 15 - 10 + 5 = 100。因此三种都不喜欢的人数 = 总人数 - 至少喜欢一种的人数 = 100 - 100 = 0。"
+    },
+    {
+      "problem_id": "p18",
+      "answer_given": "0",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "使用容斥原理计算至少喜欢一种水果的人数。设A=喜欢苹果，B=喜欢香蕉，C=喜欢橙子。根据容斥原理：|A∪B∪C| = |A| + |B| + |C| - |A∩B| - |A∩C| - |B∩C| + |A∩B∩C| = 65 + 45 + 30 - 20 - 15 - 10 + 5 = 100。因此至少喜欢一种水果的有100人，总人数也是100人，所以三种都不喜欢的有0人。"
+    },
+    {
+      "problem_id": "p18",
+      "answer_given": "0",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "使用容斥原理计算至少喜欢一种水果的人数。设A=喜欢苹果，B=喜欢香蕉，C=喜欢橙子。根据容斥原理：|A∪B∪C| = |A| + |B| + |C| - |A∩B| - |A∩C| - |B∩C| + |A∩B∩C| = 65 + 45 + 30 - 20 - 15 - 10 + 5 = 100。因此三种都不喜欢的人数 = 总人数 - 至少喜欢一种的人数 = 100 - 100 = 0。"
+    },
+    {
+      "problem_id": "p18",
+      "answer_given": "0",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "使用容斥原理计算至少喜欢一种水果的人数：|A∪B∪C| = |A| + |B| + |C| - |A∩B| - |A∩C| - |B∩C| + |A∩B∩C| = 65 + 45 + 30 - 20 - 15 - 10 + 5 = 100。因此三种都不喜欢的人数 = 总人数 - 至少喜欢一种的人数 = 100 - 100 = 0。"
+    },
+    {
+      "problem_id": "p18",
+      "answer_given": "0",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "使用容斥原理计算至少喜欢一种水果的人数。设A=喜欢苹果，B=喜欢香蕉，C=喜欢橙子。根据容斥原理：|A∪B∪C| = |A| + |B| + |C| - |A∩B| - |A∩C| - |B∩C| + |A∩B∩C| = 65 + 45 + 30 - 20 - 15 - 10 + 5 = 100。因此三种都不喜欢的人数 = 总人数 - 至少喜欢一种的人数 = 100 - 100 = 0。"
+    },
+    {
+      "problem_id": "p18",
+      "answer_given": "0",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "使用容斥原理计算至少喜欢一种水果的人数。设A=喜欢苹果，B=喜欢香蕉，C=喜欢橙子。根据容斥原理：|A∪B∪C| = |A| + |B| + |C| - |A∩B| - |A∩C| - |B∩C| + |A∩B∩C| = 65 + 45 + 30 - 20 - 15 - 10 + 5 = 100。因此三种都不喜欢的人数 = 总人数 - 至少喜欢一种的人数 = 100 - 100 = 0。"
+    },
+    {
+      "problem_id": "p21",
+      "answer_given": "78",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "使用容斥原理。总排列数为5!=120。设A在第一位的排列数为|A|=4!=24，B在第二位的排列数为|B|=4!=24，A在第一位且B在第二位的排列数为|A∩B|=3!=6。根据容斥原理，至少有一个限制被违反的排列数为|A∪B|=|A|+|B|-|A∩B|=24+24-6=42。因此满足条件的排列数为120-42=78。"
+    },
+    {
+      "problem_id": "p21",
+      "answer_given": "78",
+      "correct": true,
+      "confidence": 18,
+      "effort": 12,
+      "exploration_breadth": 8,
+      "decision_points": 2,
+      "reasoning_snippet": "使用容斥原理。总排列数为5!=120。设A在第一位的排列数为|A|=4!=24，B在第二位的排列数为|B|=4!=24，A在第一位且B在第二位的排列数为|A∩B|=3!=6。根据容斥原理，至少有一个限制被违反的排列数为|A∪B|=|A|+|B|-|A∩B|=24+24-6=42。因此满足条件的排列数为120-42=78。"
+    },
+    {
+      "problem_id": "p21",
+      "answer_given": "78",
+      "correct": true,
+      "confidence": 18,
+      "effort": 12,
+      "exploration_breadth": 8,
+      "decision_points": 2,
+      "reasoning_snippet": "使用容斥原理。总排列数为5!=120。设A在第一位的情况数为|A|=4!=24，B在第二位的情况数为|B|=4!=24，A在第一位且B在第二位的情况数为|A∩B|=3!=6。根据容斥原理，至少有一个限制被违反的情况数为|A∪B|=|A|+|B|-|A∩B|=24+24-6=42。因此满足条件的排列数为120-42=78。"
+    },
+    {
+      "problem_id": "p21",
+      "answer_given": "78",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "使用容斥原理。总排列数为5!=120。设A在第一位的情况数为|A|=4!=24，B在第二位的情况数为|B|=4!=24，A在第一位且B在第二位的情况数为|A∩B|=3!=6。根据容斥原理，至少有一个限制被违反的情况数为|A∪B|=|A|+|B|-|A∩B|=24+24-6=42。因此满足条件的排列数为120-42=78。"
+    },
+    {
+      "problem_id": "p21",
+      "answer_given": "78",
+      "correct": true,
+      "confidence": 18,
+      "effort": 12,
+      "exploration_breadth": 8,
+      "decision_points": 2,
+      "reasoning_snippet": "使用容斥原理。总排列数为5!=120。设A在第一位的情况数为|A|=4!=24，B在第二位的情况数为|B|=4!=24，A在第一位且B在第二位的情况数为|A∩B|=3!=6。根据容斥原理，至少有一个限制被违反的情况数为|A∪B|=|A|+|B|-|A∩B|=24+24-6=42。因此满足条件的排列数为120-42=78。"
+    },
+    {
+      "problem_id": "p21",
+      "answer_given": "78",
+      "correct": true,
+      "confidence": 18,
+      "effort": 12,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "使用容斥原理。总排列数为5!=120。设A在第一位的排列数为|A|=4!=24，B在第二位的排列数为|B|=4!=24，A在第一位且B在第二位的排列数为|A∩B|=3!=6。根据容斥原理，至少有一个限制条件被违反的排列数为|A∪B|=|A|+|B|-|A∩B|=24+24-6=42。因此满足条件的排列数为120-42=78。"
+    },
+    {
+      "problem_id": "p23",
+      "answer_given": "先手必胜",
+      "correct": false,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 12,
+      "decision_points": 2,
+      "reasoning_snippet": "这是经典的博弈论问题。关键是要找到必败位置。由于取到最后一颗棋子的人输，所以当剩下1-3颗棋子时，当前玩家必败。反向推理：如果能将对手置于4的倍数个棋子的状态，就能获胜。因为无论对手取1、2、3颗，自己都能取相应数量使总数保持为4的倍数。初始25不是4的倍数(25=6×4+1)，先手可以取1颗，变成24颗(6×4)，之后每次与对手取的棋子数之和为4即可获胜。"
+    },
+    {
+      "problem_id": "p23",
+      "answer_given": "先手必胜",
+      "correct": false,
+      "confidence": 18,
+      "effort": 12,
+      "exploration_breadth": 8,
+      "decision_points": 2,
+      "reasoning_snippet": "这是经典的博弈论问题。关键是要找到必败位置。如果轮到某人时桌上剩下1-3颗棋子，他必须取走全部并输掉游戏，所以1-3是必败位置。为了达到必败位置，需要让对手面对4颗棋子（对手取1-3颗后都会变成1-3颗）。继续推导：要让对手面对4颗，自己需要面对5-7颗（取相应数量使剩余4颗）。所以4是关键数字。25÷4=6余1，说明先手取1颗后，桌上剩24颗（4的倍数），之后先手总能通过取4-对手所取数量来保持"
+    },
+    {
+      "problem_id": "p23",
+      "answer_given": "先手必胜",
+      "correct": false,
+      "confidence": 18,
+      "effort": 12,
+      "exploration_breadth": 12,
+      "decision_points": 2,
+      "reasoning_snippet": "这是典型的博弈论问题。关键是要找到必败态：当轮到某人时只剩1-3颗棋子，他必输。反向推理：4颗棋子是必胜态（可以留给对手1-3颗使其必败）。8颗棋子是必胜态（可以取1-3颗让对手面对4颗棋子的必败态）。以此类推，发现形如4k的棋子数都是必败态。25 = 4×6 + 1，不是4的倍数，所以先手可以取1颗棋子，剩下24 = 4×6颗棋子给后手，使后手处于必败态。"
+    },
+    {
+      "problem_id": "p23",
+      "answer_given": "先手必胜",
+      "correct": false,
+      "confidence": 18,
+      "effort": 12,
+      "exploration_breadth": 16,
+      "decision_points": 3,
+      "reasoning_snippet": "这是经典的博弈论问题。关键是要找到必败位置。由于取到最后一颗棋子的人输，所以当剩余1-3颗棋子时，当前玩家必败。反向推理：如果能将对手置于4的倍数个棋子的状态，就能获胜。因为无论对手取1、2、3颗，自己都能取到让总数减4。初始25颗，25除以4余1，不是4的倍数。先手取3颗后剩22颗（不是4的倍数），先手取2颗后剩23颗（不是4的倍数），先手取1颗后剩24颗（是4的倍数）。所以先手应取1颗，将棋子"
+    },
+    {
+      "problem_id": "p23",
+      "answer_given": "后手必胜",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 2,
+      "reasoning_snippet": "这是经典的博弈论问题。关键在于找到必败位置。如果轮到某人时桌上剩下1-3颗棋子，他必须取走最后一颗而输掉，所以4颗是必胜位置。同理，8颗、12颗、16颗、20颗、24颗都是必胜位置（因为可以取1-3颗让对手面对必败位置）。25颗时，先手只能取1-3颗变成24-22颗，都让后手处于必胜位置。所以后手必胜。"
+    },
+    {
+      "problem_id": "p23",
+      "answer_given": "先手必胜",
+      "correct": false,
+      "confidence": 8,
+      "effort": 12,
+      "exploration_breadth": 8,
+      "decision_points": 2,
+      "reasoning_snippet": "这是典型的博弈论问题。关键是要找到必败位置。由于取到最后一颗棋子的人输，所以当剩下1-3颗棋子时，当前玩家必败。反向推理：如果能将棋子数控制在4的倍数+1的位置（即1,5,9,13,17,21,25），那么对手无论取1-3颗，都能将其重新调整回4的倍数+1的形式。从25开始，先手无法直接获胜，但可以通过取棋子数量控制来迫使后手进入必败状态。具体分析：25→(取2颗)→23→对手取x颗→(23-x)"
+    },
+    {
+      "problem_id": "p03",
+      "answer_given": "8.5年前",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "设x年前父亲的年龄是儿子的5倍。则有方程：46-x = 5(16-x)。展开得46-x = 80-5x，移项得4x = 34，解得x = 8.5。验证：8.5年前父亲37.5岁，儿子7.5岁，37.5÷7.5=5，符合题意。"
+    },
+    {
+      "problem_id": "p03",
+      "answer_given": "8.5年前",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "设x年前父亲的年龄是儿子的5倍。则有方程：46-x = 5(16-x)。展开得46-x = 80-5x，移项得4x = 34，解得x = 8.5。验证：8.5年前，父亲37.5岁，儿子7.5岁，37.5÷7.5=5倍。"
+    },
+    {
+      "problem_id": "p03",
+      "answer_given": "8.5年前",
+      "correct": true,
+      "confidence": 9,
+      "effort": 5,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "设x年前父亲的年龄是儿子的5倍。则有方程：46-x = 5(16-x)。展开得46-x = 80-5x，移项得4x = 34，解得x = 8.5。验证：8.5年前父亲37.5岁，儿子7.5岁，37.5÷7.5=5倍。"
+    },
+    {
+      "problem_id": "p03",
+      "answer_given": "8.5年前",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "设x年前父亲的年龄是儿子的5倍。则有方程：46-x = 5(16-x)。展开得46-x = 80-5x，移项得4x = 34，解得x = 8.5。验证：8.5年前父亲37.5岁，儿子7.5岁，37.5÷7.5=5倍。"
+    },
+    {
+      "problem_id": "p03",
+      "answer_given": "8.5年前",
+      "correct": true,
+      "confidence": 9,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "设x年前父亲的年龄是儿子的5倍。则有方程：46-x = 5(16-x)。展开得46-x = 80-5x，移项得4x = 34，解得x = 8.5。验证：8.5年前父亲37.5岁，儿子7.5岁，37.5÷7.5=5倍，符合题意。"
+    },
+    {
+      "problem_id": "p03",
+      "answer_given": "8.5年前",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 8,
+      "decision_points": 1,
+      "reasoning_snippet": "设x年前父亲的年龄是儿子的5倍。则有方程：46-x = 5(16-x)。展开得46-x = 80-5x，移项得4x = 34，解得x = 8.5。验证：8.5年前父亲37.5岁，儿子7.5岁，37.5÷7.5=5倍。"
+    },
+    {
+      "problem_id": "p19",
+      "answer_given": "1",
+      "correct": false,
+      "confidence": 6,
+      "effort": 7,
+      "exploration_breadth": 14,
+      "decision_points": 3,
+      "reasoning_snippet": "设个位为x，则十位为2x，百位为4x。由于是三位数，所以4x≤9且x≥1，得出x≤2.25，因此x可取1或2。当x=1时，三位数为841；当x=2时，三位数为428。验证：841中8=4×2，4=1×2；428中4=2×2，2=8×0.25...不对，应该是百位4是十位2的2倍，十位2是个位8的0.25倍，不符合条件。重新分析：十位=2×个位，百位=2×十位=4×个位。个位x，十位2x，百位4x。"
+    },
+    {
+      "problem_id": "p19",
+      "answer_given": "2",
+      "correct": true,
+      "confidence": 18,
+      "effort": 8,
+      "exploration_breadth": 12,
+      "decision_points": 1,
+      "reasoning_snippet": "设个位为x，则十位为2x，百位为4x。由于是三位数，各数位必须在0-9范围内且百位不能为0。所以需要：1≤4x≤9（百位），0≤2x≤9（十位），0≤x≤9（个位）。从第一个条件得x≥1/4，x≤9/4，即x可以是1或2。当x=1时，数字是421；当x=2时，数字是842。x=3时百位变成12不符合一位数要求。"
+    }
+  ]
+}
